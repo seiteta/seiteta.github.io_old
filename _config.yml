@@ -1,8 +1,8 @@
 # Site settings
-title: Datanese
+title: How to Train Your Data
 # email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  How to Train Your Data.
+  Yet another Data Science blog.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://seiteta.github.io" # the base hostname & protocol for your site
 twitter_username: seiteta
