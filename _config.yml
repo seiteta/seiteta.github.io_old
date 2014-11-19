@@ -2,7 +2,7 @@
 title: Datanese
 # email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Trying to speak with data and training robot.
+  How to Train Your Data.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://seiteta.github.io" # the base hostname & protocol for your site
 twitter_username: seiteta
