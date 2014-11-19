@@ -29,3 +29,6 @@ cfg = {
 K = Kartograph()
 K.generate(cfg, outfile='mymap.svg')
 {% endhighlight %}
+
+And here is an image:
+[My first image](/downloads/branching.png)
