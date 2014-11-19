@@ -32,3 +32,6 @@ K.generate(cfg, outfile='mymap.svg')
 
 And here is an image:
 [My first image](/downloads/branching.png)
+
+Image displayed:
+<img src ="/downloads/branching.png" align="center" title="Branching on GH" class="img"</img>
