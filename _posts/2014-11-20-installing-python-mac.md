@@ -2,6 +2,7 @@
 layout: post
 permalink: /installing-python-mac.html
 title: Installing Python on a Mac OS X for novice
+tags: Python Mac-OS-X
 ---
 
 I have lost a few hours trying to make Python work correctly on Mac OS X so I'm writting this post in case you're also in trouble.
