@@ -10,7 +10,10 @@ I have lost a few hours trying to make Python work correctly on Mac OS X so I'm 
 Python is already installed in Mac OS X but, as I understand it, it's better to install another version of it so you can control everything and choose your version.
 
 
-So I tried to install Python following from the [official documentation](https://docs.python.org/2/using/mac.html) but I wasn't able to use modules through the IDE. In fact, the modules were install from the terminal and only work with the built-in version of Python. After some screams and tears, and a cup of tea, I finally find the [method](http://docs.python-guide.org/en/latest/starting/install/osx/) that made everything works like a charm.
+So I tried to install Python following the instructions from the [official documentation](https://docs.python.org/2/using/mac.html) but I wasn't able to load modules through the IDE. In fact, the modules were install from the terminal and only work with the built-in version of Python. 
+
+
+After some screams and tears, and a cup of tea, I finally find the [method](http://docs.python-guide.org/en/latest/starting/install/osx/) that made everything work like a charm.
 
 
 #The solution: [Homebrew](http://brew.sh/)
