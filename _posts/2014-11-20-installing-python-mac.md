@@ -13,7 +13,7 @@ Python is already installed in Mac OS X but, as I understand it, it's better to 
 So I tried to install Python following the instructions from the [official documentation](https://docs.python.org/2/using/mac.html) but I wasn't able to load modules through the IDE. In fact, the modules were install from the terminal and only work with the built-in version of Python. 
 
 
-After some screams and tears, and a cup of tea, I finally find the [method](http://docs.python-guide.org/en/latest/starting/install/osx/) that made everything work like a charm.
+After some screams and tears, followed by a hot cup of tea, I've finally found a [method](http://docs.python-guide.org/en/latest/starting/install/osx/) that made everything work like a charm.
 
 
 #The solution: [Homebrew](http://brew.sh/)
@@ -22,7 +22,7 @@ Homebrew is a package manager (like Synaptic if you are familiar with Ubuntu) th
 {% highlight bash %}
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 {% endhighlight %}
-and you just follow the instruction that it told you. For example, since I had some bad previous installation, I hade to run `brew doctor` to clean up everything. You will also need to change the PATH, but again Homebrew will told you what to do.
+and you just follow its instructions. For example, it told to run `brew doctor` to clean up my previous attempt. You will also need to change the PATH, but again Homebrew will told you how to do.
 
 
 Then, when you are ready to brew, run
