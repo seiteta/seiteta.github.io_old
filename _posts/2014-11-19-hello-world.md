@@ -15,6 +15,13 @@ K.generate(cfg, outfile='mymap.svg')
 {% endhighlight %}
 
 
+Code syntax is:
+{% highlight markdown %}
+{% raw %}{% highlight markdown %}{% endraw %}
+{% raw %}{% highlight endhighlight %}{% endraw %}
+{% endhighlight %}
+
+
 #Image
 Here is a link to my first image:
 [My first image](/downloads/branching.png)
