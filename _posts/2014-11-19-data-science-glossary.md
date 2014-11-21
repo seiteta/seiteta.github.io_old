@@ -12,4 +12,6 @@ Because it's better if you have all the vocabulary you need into a single place.
    DataKind connects organizations and data scientists who volunteer to help them understanding their data.  
    >Data for Good  
    
-* ##[Other](http://www.example.org/)
+* ##[Julia](http://julialang.org/)
+
+   Julia is programming language designed for scientific computing and [approaching the performance of C](http://julialang.org/benchmarks/). Its syntax is [close to MATLAB](https://github.com/lakras/matlab-to-julia).
