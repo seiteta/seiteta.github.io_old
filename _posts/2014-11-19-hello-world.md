@@ -16,7 +16,7 @@ K.generate(cfg, outfile='mymap.svg')
 
 
 Code syntax is:
-{% highlight markdown %}
+{% highlight text %}
 {% raw %}{% highlight markdown %}{% endraw %}
 {% raw %}{% highlight endhighlight %}{% endraw %}
 {% endhighlight %}
