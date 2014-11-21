@@ -13,3 +13,10 @@ from kartograph import Kartograph
 K = Kartograph()
 K.generate(cfg, outfile='mymap.svg')
 {% endhighlight %}
+
+
+Code syntax is:
+{% highlight markdown %}
+{% highlight markdown %}
+{% endhighlight %}
+{% endhighlight %}
