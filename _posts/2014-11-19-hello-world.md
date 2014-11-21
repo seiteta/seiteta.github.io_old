@@ -33,8 +33,12 @@ K.generate(cfg, outfile='mymap.svg')
 And here is an image:
 [My first image](/downloads/branching.png)
 
-Image displayed this way:
+Images displayed this way appear on GitHub but not on the Jekyll:
 <img src ="/downloads/branching.png" align="center" title="Branching on GH" class="img"</img>
 
-Or this way:
+This way works better:
 ![branching](/downloads/branching.png "Branching on GH")
+
+
+
+[branching](/downloads/branching.png "Branching on GH")
