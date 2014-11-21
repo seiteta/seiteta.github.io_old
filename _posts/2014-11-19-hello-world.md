@@ -14,7 +14,7 @@ K = Kartograph()
 K.generate(cfg, outfile='mymap.svg')
 {% endhighlight %}
 
-
+<!---
 Code syntax is:
 {% highlight markdown %}
 test
@@ -35,3 +35,4 @@ This way works better:
 {% highlight markdown %}
 ![branching](/downloads/branching.png "Branching on GH")
 {% endhighlight %}
+-->
