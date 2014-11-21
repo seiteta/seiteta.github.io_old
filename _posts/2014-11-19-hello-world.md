@@ -30,8 +30,8 @@ Here is a link to my first image:
 
 Images displayed this way appear on GitHub but not on the Jekyll:
 <img src ="/downloads/branching.png" align="center" title="Branching on GH" class="img"</img>
-{% highlight markdown %}
-<img src ="/downloads/branching.png" align="center" title="Branching on GH" class="img"</img>
+{% highlight text %}
+{% raw %}<img src ="/downloads/branching.png" align="center" title="Branching on GH" class="img"</img>{% endraw %}
 {% endhighlight %}
 
 This way works better:
