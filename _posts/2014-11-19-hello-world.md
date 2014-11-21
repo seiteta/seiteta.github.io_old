@@ -5,7 +5,7 @@ title: Hello world
 ---
 
 Hello world, this is my first post using Jekyll! やった!!
-
+<!---
 #Code
 This is some Python:
 {% highlight python %}
@@ -14,7 +14,7 @@ K = Kartograph()
 K.generate(cfg, outfile='mymap.svg')
 {% endhighlight %}
 
-<!---
+
 Code syntax is:
 {% highlight markdown %}
 test
