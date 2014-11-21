@@ -36,6 +36,6 @@ Images displayed this way appear on GitHub but not on the Jekyll:
 
 This way works better:
 ![branching](/downloads/branching.png "Branching on GH")
-{% highlight markdown %}
+{% highlight text %}
 {% raw %}![branching](/downloads/branching.png "Branching on GH"){% endraw %}
 {% endhighlight %}
