@@ -35,6 +35,7 @@ Images displayed this way appear on GitHub but not on the Jekyll:
 {% raw %}<img src ="/downloads/branching.png" align="center" title="Branching on GH" class="img"</img>{% endraw %}
 {% endhighlight %}
 
+
 This way works better:
 ![branching](/downloads/branching.png "Branching on GH")
 {% highlight text %}
