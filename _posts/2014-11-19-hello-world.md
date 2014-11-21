@@ -15,10 +15,18 @@ K.generate(cfg, outfile='mymap.svg')
 {% endhighlight %}
 
 
-Code syntax is:
+#Image
+Here is a link to my first image:
+[My first image](/downloads/branching.png)
+
+Images displayed this way appear on GitHub but not on the Jekyll:
+<img src ="/downloads/branching.png" align="center" title="Branching on GH" class="img"</img>
 {% highlight markdown %}
-/{/% highlight markdown /%/}
-/{/% endhighlight /%/}
+<img src ="/downloads/branching.png" align="center" title="Branching on GH" class="img"</img>
 {% endhighlight %}
 
-test
+This way works better:
+![branching](/downloads/branching.png "Branching on GH")
+{% highlight markdown %}
+![branching](/downloads/branching.png "Branching on GH")
+{% endhighlight %}
