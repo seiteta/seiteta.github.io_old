@@ -57,9 +57,16 @@ backpack["pocket"][0]
 
 ##for loop
 **Warning**: don't forget the `:`
+With a list:
 {% highlight python %}
 felid = ["tiger","linx","snow leopard","cat"]
 for name in felid:
     print name
 {% endhighlight %}
 
+With a dictionary:
+{% highlight python %}
+for key in dictionary:
+    print dictionary[key]
+    #print values associated with keys, in no particular order
+{% endhighlight %}
