@@ -15,10 +15,10 @@ Pairs of key and value.
 {% highlight python %}
 ponies = { 'Twilight Sparkle' : 'Unicorn pony',
 'Applejack' : 'Earth pony',
-'Fluttershy' : 'Pegasus pony',
 'Pinkie Pie' : 'Earth pony',
-'Rarity' : 'Unknown',
-'Rainbow Dash' : 'Pegasus pony',}
+'Fluttershy' : 'Pegasus pony',
+'Rainbow Dash' : 'Pegasus pony',
+'Rarity' : 'Unknown'}
 {% endhighlight %}
 
 Change an item:
