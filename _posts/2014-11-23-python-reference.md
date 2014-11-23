@@ -54,7 +54,7 @@ backpack["pocket"][0]
 
 
 #Loops
-## for loop
+##for loop
 **Warning**: don't forget the `:`
 {% highlight python %}
 felid = ["tiger","linx","snow leopard","cat"]
