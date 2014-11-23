@@ -5,14 +5,12 @@ title: My Python cheat sheet
 tags: Python cheat-sheet
 ---
 
-#My Python cheat sheet
-
-## List
+# List
 {% highlight python %}
 awesome-band = ["TTNG","toe","Clever Girl"]
 {% endhighlight %}
 
-## Dictionaries
+# Dictionaries
 Pairs of key and value.
 {% highlight python %}
 ponies = { 'Twilight Sparkle' : 'Unicorn pony',
