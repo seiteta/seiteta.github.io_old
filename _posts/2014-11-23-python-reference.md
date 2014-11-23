@@ -70,3 +70,42 @@ for key in dictionary:
     print dictionary[key]
     #print values associated with keys, in no particular order
 {% endhighlight %}
+
+Codecademy Supermarket example:
+{% highlight python %}
+shopping_list = ["banana", "orange", "apple"]
+
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
+    
+prices = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
+
+def compute_bill(food):
+    total = 0
+    for fruit in food:
+        if stock[fruit] <> 0:
+            total += prices[fruit]
+            stock[fruit] += -1
+            #first time I think "Python is beautiful"
+    return total
+{% endhighlight %}
+
+# Comparison operators
+Equal is `==`:
+{% highlight python %}
+a == b
+{% endhighlight %}
+
+Not equal is `!=`:
+{% highlight python %}
+a != b
+{% endhighlight %}
