@@ -13,4 +13,4 @@ Because it's better if you have all the vocabulary you need into a single place.
    
 * #[Julia](http://julialang.org/)
 
-   Julia is programming language designed for scientific computing and [approaching the performance of C](http://julialang.org/benchmarks/). Its syntax is [close to MATLAB](https://github.com/lakras/matlab-to-julia).
+   Julia is a programming language designed for scientific computing and [approaching the performance of C](http://julialang.org/benchmarks/). Its syntax is [close to MATLAB](https://github.com/lakras/matlab-to-julia).
