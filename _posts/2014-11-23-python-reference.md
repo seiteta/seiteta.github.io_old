@@ -7,14 +7,14 @@ tags: Python cheat-sheet
 
 # List
 * Create a list:
-{% highlight python %}
-favmathband = ["TTNG","toe","Clever Girl","Radiohead"]
-{% endhighlight %}
+    {% highlight python %}
+    favmathband = ["TTNG","toe","Clever Girl","Radiohead"]
+    {% endhighlight %}
 
 * Add an item:
-{% highlight python %}
-favmathband.append("Tangled Hair")
-{% endhighlight %}
+    {% highlight python %}
+    favmathband.append("Tangled Hair")
+    {% endhighlight %}
 
 * Delete an item:
 {% highlight python %}
