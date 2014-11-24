@@ -12,15 +12,15 @@ tags: Python cheat-sheet
     {% endhighlight %}
 
 * Add an item:
-    {% highlight python %}
-    favmathband.append("Tangled Hair")
-    {% endhighlight %}
+   {% highlight python %}
+   favmathband.append("Tangled Hair")
+   {% endhighlight %}
 
 * Delete an item:
 {% highlight python %}
 favmathband.remove("Radiohead")
 {% endhighlight %}
-or (**Warning**: first index is 0)
+   or (**Warning**: first index is 0)
 {% highlight python %}
 favmathband.pop(3)
 {% endhighlight %}
