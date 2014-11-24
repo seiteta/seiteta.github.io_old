@@ -6,43 +6,35 @@ tags: Python cheat-sheet
 ---
 
 # List
-### Create a list:
-
-    {% highlight python %}
-    favmathband = ["TTNG","toe","Clever Girl","Radiohead"]
-    {% endhighlight %}
+Create a list:
+{% highlight python %}
+favmathband = ["TTNG","toe","Clever Girl","Radiohead"]
+{% endhighlight %}
 
 * Add an item:
-
-   {% highlight python %}
-   favmathband.append("Tangled Hair")
-   {% endhighlight %}
+{% highlight python %}
+favmathband.append("Tangled Hair")
+{% endhighlight %}
 
 * Delete an item:
-
-   {% highlight python %}
-   favmathband.remove("Radiohead")
-   {% endhighlight %}
-   
-   or (**Warning**: first index is 0)
-   
-   {% highlight python %}
-   favmathband.pop(3)
-   {% endhighlight %}
-
-   or
-
-   {% highlight python %}
-   del(favmathband[3])
-   {% endhighlight %}
+{% highlight python %}
+favmathband.remove("Radiohead")
+{% endhighlight %}
+or (**Warning**: first index is 0)
+{% highlight python %}
+favmathband.pop(3)
+{% endhighlight %}
+or
+{% highlight python %}
+del(favmathband[3])
+{% endhighlight %}
 
 * Range list:
-
-   {% highlight python %}
-   range(6) # => [0,1,2,3,4,5]
-   range(1,6) # => [1,2,3,4,5]
-   range(1,6,3) # => [1,4]
-   {% endhighlight %}
+{% highlight python %}
+range(6) # => [0,1,2,3,4,5]
+range(1,6) # => [1,2,3,4,5]
+range(1,6,3) # => [1,4]
+{% endhighlight %}
 
 * Two methods to iterate over a list (the second one make it possible to modify the list):
 {% highlight python %}
@@ -57,7 +49,7 @@ for i in range(len(list)):
 
 # Dictionaries
 Pairs of key and value. **Warning**: dictionaries are unordered.
-Create a dictionnary:
+* Create a dictionnary:
 {% highlight python %}
 ponies = { 'Twilight Sparkle' : 'Unicorn pony',
 'Applejack' : 'Earth pony',
@@ -67,17 +59,17 @@ ponies = { 'Twilight Sparkle' : 'Unicorn pony',
 'Rarity' : 'Unknown'}
 {% endhighlight %}
 
-Change an item:
+* Change an item:
 {% highlight python %}
 ponies['Rarity'] = 'Unicorn pony'
 {% endhighlight %}
 
-Delete an item:
+* Delete an item:
 {% highlight python %}
 del ponies['Rarity']
 {% endhighlight %}
 
-Values can be list, int, string...
+* Values can be list, int, string...
 {% highlight python %}
 backpack = {
     'money' : 30,
@@ -85,7 +77,7 @@ backpack = {
 }
 {% endhighlight %}
 
-Access a value in a list in a dictionary:
+* Access a value in a list in a dictionary:
 {% highlight python %}
 backpack["pocket"][0]
 # return glasses \o-o/
@@ -147,4 +139,13 @@ a == b
 Not equal is `!=`:
 {% highlight python %}
 a != b
+{% endhighlight %}
+
+# Random
+
+* Random integer
+{% highlight python %}
+from random import randint
+coin = randint(0, 1)
+dice = randint(1, 6)
 {% endhighlight %}
