@@ -7,19 +7,22 @@ tags: Python cheat-sheet
 
 # List
 * Create a list:
+
     {% highlight python %}
     favmathband = ["TTNG","toe","Clever Girl","Radiohead"]
     {% endhighlight %}
 
 * Add an item:
+
    {% highlight python %}
    favmathband.append("Tangled Hair")
    {% endhighlight %}
 
 * Delete an item:
-{% highlight python %}
-favmathband.remove("Radiohead")
-{% endhighlight %}
+
+   {% highlight python %}
+   favmathband.remove("Radiohead")
+   {% endhighlight %}
    or (**Warning**: first index is 0)
 {% highlight python %}
 favmathband.pop(3)
