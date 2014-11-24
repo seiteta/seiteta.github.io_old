@@ -6,7 +6,7 @@ tags: Python cheat-sheet
 ---
 
 # List
-* Create a list:
+### Create a list:
 
     {% highlight python %}
     favmathband = ["TTNG","toe","Clever Girl","Radiohead"]
