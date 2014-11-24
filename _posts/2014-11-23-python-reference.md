@@ -5,18 +5,18 @@ title: My Python cheat sheet
 tags: Python cheat-sheet
 ---
 
-#List
-*Create a list:
+# List
+* Create a list:
 {% highlight python %}
 favmathband = ["TTNG","toe","Clever Girl","Radiohead"]
 {% endhighlight %}
 
-*Add an item:
+* Add an item:
 {% highlight python %}
 favmathband.append("Tangled Hair")
 {% endhighlight %}
 
-*Delete an item:
+* Delete an item:
 {% highlight python %}
 favmathband.remove("Radiohead")
 {% endhighlight %}
@@ -29,14 +29,14 @@ or
 del(favmathband[3])
 {% endhighlight %}
 
-*Range list:
+* Range list:
 {% highlight python %}
 range(6) # => [0,1,2,3,4,5]
 range(1,6) # => [1,2,3,4,5]
 range(1,6,3) # => [1,4]
 {% endhighlight %}
 
-*Two methods to iterate over a list (the second one make it possible to modify the list):
+* Two methods to iterate over a list (the second one make it possible to modify the list):
 {% highlight python %}
 for item in list:
     print item
