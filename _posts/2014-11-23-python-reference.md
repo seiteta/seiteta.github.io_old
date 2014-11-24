@@ -8,13 +8,44 @@ tags: Python cheat-sheet
 # List
 Create a list:
 {% highlight python %}
-favmathband = ["TTNG","toe","Clever Girl",'Radiohead']
+favmathband = ["TTNG","toe","Clever Girl","Radiohead"]
+{% endhighlight %}
+
+Add an item:
+{% highlight python %}
+favmathband.append("Tangled Hair")
 {% endhighlight %}
 
 Delete an item:
 {% highlight python %}
-favmathband.remove('Radiohead')
+favmathband.remove("Radiohead")
 {% endhighlight %}
+or (**Warning**: first index is 0)
+{% highlight python %}
+favmathband.pop(3)
+{% endhighlight %}
+or
+{% highlight python %}
+del(favmathband[3])
+{% endhighlight %}
+
+Range list:
+{% highlight python %}
+range(6) # => [0,1,2,3,4,5]
+range(1,6) # => [1,2,3,4,5]
+range(1,6,3) # => [1,4]
+{% endhighlight %}
+
+Two methods to iterate over a list (the second one make it possible to modify the list):
+{% highlight python %}
+for item in list:
+    print item
+{% endhighlight %}
+{% highlight python %}
+for i in range(len(list)):
+    print list[i]
+{% endhighlight %
+
 
 # Dictionaries
 Pairs of key and value. **Warning**: dictionaries are unordered.
