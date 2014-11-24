@@ -23,21 +23,26 @@ tags: Python cheat-sheet
    {% highlight python %}
    favmathband.remove("Radiohead")
    {% endhighlight %}
+   
    or (**Warning**: first index is 0)
-{% highlight python %}
-favmathband.pop(3)
-{% endhighlight %}
-or
-{% highlight python %}
-del(favmathband[3])
-{% endhighlight %}
+   
+   {% highlight python %}
+   favmathband.pop(3)
+   {% endhighlight %}
+
+   or
+
+   {% highlight python %}
+   del(favmathband[3])
+   {% endhighlight %}
 
 * Range list:
-{% highlight python %}
-range(6) # => [0,1,2,3,4,5]
-range(1,6) # => [1,2,3,4,5]
-range(1,6,3) # => [1,4]
-{% endhighlight %}
+
+   {% highlight python %}
+   range(6) # => [0,1,2,3,4,5]
+   range(1,6) # => [1,2,3,4,5]
+   range(1,6,3) # => [1,4]
+   {% endhighlight %}
 
 * Two methods to iterate over a list (the second one make it possible to modify the list):
 {% highlight python %}
