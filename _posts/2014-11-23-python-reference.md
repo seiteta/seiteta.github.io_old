@@ -44,7 +44,7 @@ for item in list:
 {% highlight python %}
 for i in range(len(list)):
     print list[i]
-{% endhighlight %
+{% endhighlight %}
 
 
 # Dictionaries
