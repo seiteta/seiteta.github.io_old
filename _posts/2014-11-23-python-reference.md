@@ -87,7 +87,7 @@ backpack["pocket"][0]
 #Loops
 
 ##for loop
-With a list: (**Warning**: don't forget the `:`)
+With a list: (**warning**: don't forget the `:`)
 {% highlight python %}
 felid = ["tiger","linx","snow leopard","cat"]
 for name in felid:
@@ -100,6 +100,11 @@ choices = ['veggie pizza', 'seitan curry', 'chocolate']
 print 'Your choices are:'
 for index, item in enumerate(choices):
     print index+1, item
+{% endhighlight %}
+
+Iterate over multiple lists (**warning**: it stop at the shortest list):
+{% highlight python %}
+for a, b in zip(list_a, list_b):
 {% endhighlight %}
 
 With a dictionary:
