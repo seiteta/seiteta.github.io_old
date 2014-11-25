@@ -87,12 +87,19 @@ backpack["pocket"][0]
 #Loops
 
 ##for loop
-**Warning**: don't forget the `:`
-With a list:
+With a list: (**Warning**: don't forget the `:`)
 {% highlight python %}
 felid = ["tiger","linx","snow leopard","cat"]
 for name in felid:
     print name
+{% endhighlight %}
+
+If you need to know how far into the list you are:
+{% highlight python %}
+choices = ['veggie pizza', 'seitan curry', 'chocolate']
+print 'Your choices are:'
+for index, item in enumerate(choices):
+    print index+1, item
 {% endhighlight %}
 
 With a dictionary:
