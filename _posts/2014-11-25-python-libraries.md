@@ -4,6 +4,8 @@ permalink: /python-libraries.html
 title: My Python libraries cheat sheet
 tags: Python library cheat-sheet
 ---
+# [scipy](http://www.scipy.org/)
+*scipy* is an eccosystem that includes several libraries like NumPy, matplotlib, IPython, Sympy and pandas.
 
 # [pandas](http://pandas.pydata.org/)
 *pandas* is a data analysis library. For example, it provides tools to read and write CSV files.
@@ -63,9 +65,12 @@ Results:
 ![cat](/downloads/cat-activities.png "My cat activities")
 
 # [numpy](http://www.numpy.org/)
-*numpy* is a scientific computing library, allowing user to uses matrices.
+*numpy* is a scientific computing library, allowing user to uses matrices amongst others.
 
 {% highlight python %}
 import numpy.random as npr
 A = npr.rand(3, 3) #create a 3x3 random matrix
 {% endhighlight %}
+
+# [scikit-learn](http://scikit-learn.org/)
+*scikit-learn* ia a machine learning library, built on NumPy, SciPy, and matplotlib.
