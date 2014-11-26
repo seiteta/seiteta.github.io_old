@@ -11,7 +11,7 @@ tags: Python library cheat-sheet
 # [matplotlib](http://matplotlib.org)
 *matplotlib* is a 2D plotting library.
 
-## * Color
+* Color
 
   There are several ways to define colors:
 
