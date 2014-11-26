@@ -5,7 +5,7 @@ title: My Python cheat sheet
 tags: Python cheat-sheet
 ---
 
-# List
+## List
 * Create a list:
 {% highlight python %}
 favmathband = ["TTNG","toe","Clever Girl","Radiohead"]
@@ -47,7 +47,7 @@ for i in range(len(list)):
 {% endhighlight %}
 
 
-# Dictionaries
+## Dictionaries
 Pairs of key and value. **Warning**: dictionaries are unordered.
 * Create a dictionnary:
 {% highlight python %}
@@ -84,9 +84,9 @@ backpack["pocket"][0]
 {% endhighlight %}
 
 
-#Loops
+## Loops
 
-##for loop
+### for loop
 With a list: (**warning**: don't forget the `:`)
 {% highlight python %}
 felid = ["tiger","linx","snow leopard","cat"]
@@ -142,7 +142,7 @@ def compute_bill(food):
     return total
 {% endhighlight %}
 
-# Comparison operators
+## Comparison operators
 Equal is `==`:
 {% highlight python %}
 a == b
@@ -153,7 +153,7 @@ Not equal is `!=`:
 a != b
 {% endhighlight %}
 
-# Random
+## Random
 
 * Random integer
 {% highlight python %}
