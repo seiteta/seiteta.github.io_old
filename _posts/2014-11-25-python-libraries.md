@@ -15,8 +15,8 @@ tags: Python library cheat-sheet
 
   There are several ways to define colors:
 
-Color model| Code 
---- | ---
+Color model|Code 
+:---:|:---:
 RVB|`(0.2, 0.2, 0.6)`
 RVBA (i.e. RVB + opacity)|`(0.2, 0.2, 0.6, 0.5)`
 Hex|`'#FF9E4A'`
