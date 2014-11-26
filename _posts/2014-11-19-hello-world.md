@@ -6,7 +6,7 @@ title: Hello world
 
 Hello world, this is my first post using Jekyll! やった!!
 
-#Code
+## Code
 This is some Python:
 {% highlight python %}
 from kartograph import Kartograph
@@ -23,7 +23,7 @@ My code here
 {% endhighlight %}
 
 
-#Image
+## Image
 Here is a link to my first image:
 [My first image](/downloads/branching.png)
 
