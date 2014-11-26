@@ -11,6 +11,16 @@ tags: Python library cheat-sheet
 # [matplotlib](http://matplotlib.org)
 *matplotlib* is a 2D plotting library.
 
+* Color
+There are several ways to define colors:
+RVB: `(0.2, 0.2, 0.6)`
+RVBA (i.e. RVB + opacity):`(0.2, 0.2, 0.6, 0.5)`
+Hex: `'#FF9E4A'`
+Name:`gold`
+Abbreviation (for basic colors, like yellow or cyan):`y`
+Grayscale:`'0.15'`
+
+
 * [Pie chart](http://matplotlib.org/api/pyplot_api.html?highlight=pie#matplotlib.pyplot.pie)
 {% highlight python %}
 import matplotlib.pyplot as plt
