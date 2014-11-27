@@ -4,7 +4,7 @@ import prettyplotlib as ppl
 import scipy as sp
 import os
 
-data_directory = r'/Users/fbardolle/Documents/Perso/Data Science Test/'
+data_directory = r'/Users/fred/Documents/Perso/Data Science Test/'
 
 data_file = os.path.join(data_directory, 'census_income_learn.csv')
 
@@ -42,16 +42,19 @@ for column in census_header:
     census_fifty = fifty_grand[column]
     census_not_fifty = not_fifty_grand[column]
     census_all = census_data[column]
+    
     # Count unique values
     counts_fifty=census_fifty.value_counts()
     counts_not_fifty=census_not_fifty.value_counts()
     counts_all=census_all.value_counts()
+    
     # Create x, y and labels for the bars
     x = sp.arange(len(counts_all))
     y1 = autoformat(counts_fifty.values)
     y2 = autoformat(counts_not_fifty.values)
     y3 = autoformat(counts_all.values)
     labels = counts_all.keys()
+    
     # Create the plots
     fig, ax = plt.subplots()
     width = 0.35
@@ -59,6 +62,7 @@ for column in census_header:
     bar1 = ppl.bar(ax, x, y1 , width, color = ppl.colors.set2[0])
     bar2 = ppl.bar(ax, x + width, y2, width, color = ppl.colors.set2[2])
     bar3 = ppl.bar(ax, x + width - width2/2, y3, width2, color = ppl.colors.set2[1])
+    
     # Set plots parameters
     ax.set_xticks(x + width)
     ax.set_xticklabels(counts_fifty.keys())
@@ -71,9 +75,10 @@ for column in census_header:
     autolabel(bar3)
     plt.title(column)
     fig.tight_layout()
+    
     # Display the figure
     plt.show()
 
 
 # Add describe(), a pandas function that generates various summary statistics
-# Regarder les valeurs vides
+# Have a look at empty values
