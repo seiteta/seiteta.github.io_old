@@ -9,23 +9,25 @@ data_directory = r'/Users/fred/Documents/Perso/Data Science Test/'
 data_file = os.path.join(data_directory, 'census_income_learn.csv')
 
 # Create a header containing column name and import the date from the csv file
-census_header = ("AAGE", "ACLSWKR", "ADTIND", "ADTOCC", "AHGA", "AHRSPAY", "AHSCOL", "AMARITL", "AMJIND", "AMJOCC", "ARACE", "AREORGN", "ASEX", "AUNMEM", "AUNTYPE", "AWKSTAT", "CAPGAIN", "CAPLOSS", "DIVVAL", "FILESTAT", "GRINREG", "GRINST", "HHDFMX", "HHDREL", "MARSUPWT", "MIGMTR1", "MIGMTR3", "MIGMTR4", "MIGSAME", "MIGSUN", "NOEMP", "PARENT", "PEFNTVTY", "PEMNTVTY", "PENATVTY", "PRCITSHP", "SEOTR", "VETQVA", "VETYN", "WKSWORK", "YOC", "FFTYK")
+census_header = ["age", "class of worker", "industry code", "occupation code", "education", "wage per hour", "enrolled in edu inst last wk", "marital status", "major industry code", "major occupation code", "race", "hispanic Origin", "sex", "member of a labor union", "reason for unemployment", "full or part time employment stat", "capital gains", "capital losses", "divdends from stocks", "tax filer status", "region of previous residence", "state of previous residence", "detailed household and family stat", "detailed household summary in household", "instance weight", "migration code-change in msa", "migration code-change in reg", "migration code-move within reg", "live in this house 1 year ago", "migration prev res in sunbelt", "num persons worked for employer", "family members under 18", "country of birth father", "country of birth mother", "country of birth self", "citizenship", "own business or self employed", "fill inc questionnaire for veteran's admin", "veterans benefits", "weeks worked in year", "year of census", "50K"]
 census_data = pd.read_csv(data_file, names = census_header, header = None)
+del census_data["instance weight"]
+census_header.remove("instance weight")
 
 # Change the type of the columns including categorical numeric values
-continuous_col = ['ADTIND', 'ADTOCC', 'SEOTR', 'VETYN', 'YOC']
+continuous_col = ['industry code', 'occupation code', 'own business or self employed', 'veterans benefits', 'year of census']
 for col in continuous_col:
 	census_data[col] = census_data[col].astype(str)
 
 # Create new DateFrames for the two classes
-census_fifty_data = census_data[census_data['FFTYK'] == " 50000+."]
-census_not_fifty_data = census_data[census_data['FFTYK'] == " - 50000."]
+census_fifty_data = census_data[census_data['50K'] == " 50000+."]
+census_not_fifty_data = census_data[census_data['50K'] == " - 50000."]
 
 
 # The next two functions are used later, inside the for loop
 
 # Transform values into percentage 
-def autoformat(lst):
+def autoformat(lst):x
     lst = [float(element) for element in lst]
     lst = [element * 100 / sum(lst) for element in lst]
     return lst
@@ -42,7 +44,7 @@ def niu_remove(dict):
         return dict
 
 # Iterate through column
-for column in census_header:
+for column in census_header[:-1]:
         # Create new arrays containing only one column
         census_fifty = census_fifty_data[column]
         census_not_fifty = census_not_fifty_data[column]
@@ -56,9 +58,9 @@ for column in census_header:
                 counts_not_fifty=census_not_fifty.value_counts()
                 counts_all=census_all.value_counts()
 
-                counts_fifty=niu_remove(counts_fifty)
-                counts_not_fifty=niu_remove(counts_not_fifty)
-                counts_all=niu_remove(counts_all)              
+##                counts_fifty=niu_remove(counts_fifty)
+##                counts_not_fifty=niu_remove(counts_not_fifty)
+##                counts_all=niu_remove(counts_all)              
 
                 # Create x, y and labels for the bars
                 x1 = sp.arange(len(counts_fifty))
@@ -87,13 +89,24 @@ for column in census_header:
                 autolabel(bar1)
                 autolabel(bar2)
                 autolabel(bar3)
+##                ax.text(0.5, 1, census_all.describe(), ha='center', va='center', bbox={'facecolor':'white'})
+                ax.annotate(census_all.describe(), xy=(0.5, 0.9), xycoords='axes fraction', ha = 'center', va = 'top', bbox={'facecolor':'white'})
                 plt.title(column)
                 if len(x3) > 7:
                         plt.xticks(rotation = 'vertical')
                 fig.tight_layout()
                 # Display the figure
                 plt.show()
+                
+        else:
+                fig, ax = plt.subplots(3, sharex=True)
+                ax[0].annotate(census_all.describe(), xy=(0.5, 0.9), xycoords='axes fraction', ha = 'center', va = 'top', bbox={'facecolor':'white'})
+                ax[0].axis('off')
+                ax[1].hist(census_all, color = ppl.colors.set2[0], bins = 100, normed = True, edgecolor = "white", label = 'all')
+                ax[1].legend()
+                ax[2].hist((census_fifty, census_not_fifty), color = ppl.colors.set2[1:3], normed = True, edgecolor = "white", label = ['50000+', '- 50000'])
+                ax[2].legend()
+                plt.show()                
+                
 
-
-# Add describe(), a pandas function that generates various summary statistics
 # Have a look at empty values
