@@ -4,7 +4,7 @@ import prettyplotlib as ppl
 import scipy as sp
 import os
 
-data_directory = r'/Users/fbardolle/Documents/Perso/Data Science Test/'
+data_directory = r'/Users/fred/Documents/Perso/Data Science Test/'
 
 data_file = os.path.join(data_directory, 'census_income_learn.csv')
 
