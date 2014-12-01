@@ -48,8 +48,8 @@ graph.write_pdf("iris2.pdf")
 
 
 
-Useful links:
-http://statcompute.wordpress.com/2012/12/05/learning-decision-tree-in-scikit-learn-package/
-http://statcompute.wordpress.com/2012/12/05/decision-tree-with-python/
-http://fastml.com/converting-categorical-data-into-numbers-with-pandas-and-scikit-learn/
-https://github.com/zygmuntz/kaggle-happiness/blob/master/vectorize_validation.py
+#Useful links:
+#http://statcompute.wordpress.com/2012/12/05/learning-decision-tree-in-scikit-learn-package/
+#http://statcompute.wordpress.com/2012/12/05/decision-tree-with-python/
+#http://fastml.com/converting-categorical-data-into-numbers-with-pandas-and-scikit-learn/
+#https://github.com/zygmuntz/kaggle-happiness/blob/master/vectorize_validation.py
