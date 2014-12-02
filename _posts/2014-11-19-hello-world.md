@@ -43,5 +43,5 @@ This way works better:
 {% endhighlight %}
 
 
-JSFiddle test:
+JSFiddle test2:
 <iframe width="100%" height="300" src="http://jsfiddle.net/ym8azwjs/3/embedded/" allowfullscreen="allowfullscreen"></iframe>
