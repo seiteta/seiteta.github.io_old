@@ -44,4 +44,4 @@ This way works better:
 
 
 JSFiddle test:
-<iframe width="100%" height="300" src="http://jsfiddle.net/ym8azwjs/3/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="http://jsfiddle.net/ym8azwjs/3/embedded/" allowfullscreen="allowfullscreen"></iframe>
