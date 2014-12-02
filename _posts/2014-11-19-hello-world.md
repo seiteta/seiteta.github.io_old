@@ -45,8 +45,4 @@ This way works better:
 
 JSFiddle test3:
 
-<iframe width="100%" height="300" src="http://jsfiddle.net/ym8azwjs/3/embedded/" allowfullscreen="allowfullscreen"> </iframe>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/EKoxLxzWNOk" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-
-<iframe width="420" height="315" src="http://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="600" src="http://jsfiddle.net/ym8azwjs/3/embedded/" allowfullscreen="allowfullscreen"> </iframe>
