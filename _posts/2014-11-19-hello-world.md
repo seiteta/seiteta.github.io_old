@@ -41,3 +41,7 @@ This way works better:
 {% highlight text %}
 {% raw %}![branching](/downloads/branching.png "Branching on GH"){% endraw %}
 {% endhighlight %}
+
+
+JSFiddle test:
+<iframe width="100%" height="300" src="http://jsfiddle.net/ym8azwjs/3/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
