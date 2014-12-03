@@ -4,7 +4,9 @@ permalink: /income-test.html
 title: Census income test
 ---
 
-## Used columns (difference between classes > 10%):
+## Used columns
+
+Difference between classes > 10%.
 
 Class|Values
 :---:|:---:
@@ -23,7 +25,7 @@ sex|Female, Male
 tax filer status|Joint both under 65, Nonfiler
 veterans benefits|0, 2
 
-## Used colums (continuous variables):
+Continuous variables :
 
 |Variables|
 |:---:|
@@ -51,5 +53,6 @@ veterans benefits|0, 2
 
 ## Decision tree
 
-![income-tree](/downloads/income-tree.png "Decision tree, minimun samples leaf = 5000")
 Decision tree, minimun samples leaf = 5000
+
+![income-tree](/downloads/income-tree.png "Decision tree, minimun samples leaf = 5000")
