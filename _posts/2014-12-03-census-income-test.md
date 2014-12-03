@@ -5,7 +5,7 @@ title: Census income test
 ---
 ## Used columns
 
-Difference between classes > 10%.
+* Difference between classes > 10%.
 
 Class|Values
 :---:|:---:
@@ -24,8 +24,7 @@ sex|Female, Male
 tax filer status|Joint both under 65, Nonfiler
 veterans benefits|0, 2
 
-Continuous variables :  
-
+* Continuous variables :
 
 |Variables|
 |:---:|
@@ -55,11 +54,10 @@ Continuous variables :
 
 ## Decision tree
 
-Decision tree, minimun samples leaf = 5000
+* Decision tree, minimun samples leaf = 5000
 
 ![income-tree](/downloads/income-tree.png "Decision tree, minimun samples leaf = 5000")
 
-
-Optimization of the classifier hyperparameters
+* Optimization of the classifier hyperparameters
 
 ![optimization](/downloads/optimization.png "Optimization of the classifier hyperparameters")
