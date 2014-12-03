@@ -58,3 +58,5 @@ Continuous variables :
 Decision tree, minimun samples leaf = 5000
 
 ![income-tree](/downloads/income-tree.png "Decision tree, minimun samples leaf = 5000")
+
+![optimization](/downloads/optimization.png "Optimization of the classifier hyperparameters")
