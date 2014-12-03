@@ -4,7 +4,7 @@ permalink: /income-test.html
 title: Census income test
 ---
 
-Used columns (difference between classes > 10%):
+## Used columns (difference between classes > 10%):
 
 Class|Values
 :---:|:---:
@@ -23,7 +23,10 @@ sex|Female, Male
 tax filer status|Joint both under 65, Nonfiler
 veterans benefits|0, 2
 
-Used colums (continuous values):
+## Used colums (continuous variables):
+
+Variables
+:---:
 age
 wage per hour
 capital gains
@@ -31,6 +34,8 @@ capital losses
 divdends from stocks
 num persons worked for employer
 weeks worked in year
+
+## Some histograms and bars
 
 ![class of worker](/downloads/class of worker.png)
 ![major industry code](/downloads/major industry code.png)
