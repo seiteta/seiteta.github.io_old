@@ -4,12 +4,11 @@ permalink: /income-test.html
 title: Census income test
 ---
 
-Used columns (difference between the two classes > 10%):
+Used columns (difference between classes > 10%):
 
 Class|Values
 :---:|:---:
-class of worker|Not in universe
-class of worker|Private
+class of worker|Not in universe, Private
 detailed household and family stat|Child <18 never marr not in subfamily, Householder
 detailed household summary in household|Child under 18 never married, Householder
 education|Bachelors degree(BA AB BS), Children, Masters degree(MA MS MEng MEd MSW MBA)
@@ -19,8 +18,7 @@ industry code|0
 major industry code|Not in universe or children
 major occupation code|Executive admin and managerial, Not in universe, Professional specialty
 marital status|Married-civilian spouse present, Never married
-occupation code|0
-occupation code|2
+occupation code|0, 2
 sex|Female, Male
 tax filer status|Joint both under 65, Nonfiler
 veterans benefits|0, 2
