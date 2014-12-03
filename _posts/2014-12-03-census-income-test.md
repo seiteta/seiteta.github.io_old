@@ -36,6 +36,7 @@ veterans benefits|0, 2
 |divdends from stocks|
 |num persons worked for employer|
 |weeks worked in year|
+| |
 
 
 ## Some histograms and bars
