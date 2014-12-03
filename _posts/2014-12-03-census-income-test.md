@@ -3,7 +3,6 @@ layout: post
 permalink: /income-test.html
 title: Census income test
 ---
-
 ## Used columns
 
 Difference between classes > 10%.
@@ -25,6 +24,7 @@ sex|Female, Male
 tax filer status|Joint both under 65, Nonfiler
 veterans benefits|0, 2
 
+
 Continuous variables :
 
 |Variables|
@@ -36,6 +36,7 @@ Continuous variables :
 |divdends from stocks|
 |num persons worked for employer|
 |weeks worked in year|
+
 
 ## Some histograms and bars
 
@@ -50,6 +51,7 @@ Continuous variables :
 ![sex](/downloads/sex.png "Sex by classes bar chart")
 
 ![tax filer status](/downloads/tax filer status.png "Tax filer status by classes chart")
+
 
 ## Decision tree
 
