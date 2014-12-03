@@ -25,15 +25,15 @@ veterans benefits|0, 2
 
 ## Used colums (continuous variables):
 
-Variables
-:---:
-age
-wage per hour
-capital gains
-capital losses
-divdends from stocks
-num persons worked for employer
-weeks worked in year
+|Variables|
+|:---:|
+|age|
+|wage per hour|
+|capital gains|
+|capital losses|
+|divdends from stocks|
+|num persons worked for employer|
+|weeks worked in year|
 
 ## Some histograms and bars
 
