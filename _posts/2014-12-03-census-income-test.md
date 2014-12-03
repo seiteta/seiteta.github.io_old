@@ -24,8 +24,8 @@ sex|Female, Male
 tax filer status|Joint both under 65, Nonfiler
 veterans benefits|0, 2
 
-
 Continuous variables :
+
 
 |Variables|
 |:---:|
