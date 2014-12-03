@@ -5,6 +5,7 @@ title: Census income test
 ---
 
 Used columns (difference between the two classes > 10%):
+
 Class|Values
 :---:|:---:
 class of worker|Not in universe
