@@ -37,9 +37,18 @@ veterans benefits|0, 2
 
 ## Some histograms and bars
 
-![class of worker](/downloads/class of worker.png)
-![major industry code](/downloads/major industry code.png)
-![sex](/downloads/sex.png)
-![tax filer status](/downloads/tax filer status.png)
-![age](/downloads/age.png)
-![weeks worked in year](/downloads/weeks worked in year.png)
+![age](/downloads/age.png "Age histogram")
+
+![weeks worked in year](/downloads/weeks worked in year.png "Number of weeks worked histogram")
+
+![class of worker](/downloads/class of worker.png "Class of worker by classes bar chart")
+
+![major industry code](/downloads/major industry code.png "Major industry code by classes bar chart")
+
+![sex](/downloads/sex.png "Sex by classes bar chart")
+
+![tax filer status](/downloads/tax filer status.png "Tax filer status by classes chart")
+
+## Decision tree
+
+![income tree](/downloads/income tree.png "Decision tree, minimun samples leaf = 5000")
