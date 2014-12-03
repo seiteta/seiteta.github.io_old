@@ -32,4 +32,9 @@ divdends from stocks
 num persons worked for employer
 weeks worked in year
 
+![class of worker](/downloads/class of worker.png)
+![major industry code](/downloads/major industry code.png)
+![sex](/downloads/sex.png)
+![tax filer status](/downloads/tax filer status.png)
 ![age](/downloads/age.png)
+![weeks worked in year](/downloads/weeks worked in year.png)
