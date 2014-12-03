@@ -32,4 +32,4 @@ divdends from stocks
 num persons worked for employer
 weeks worked in year
 
-
+![age](/downloads/age.png)
