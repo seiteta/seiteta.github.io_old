@@ -23,4 +23,8 @@ In unsupervised learning, the algorithm has no idea what is a "correct output". 
 Clustering: data are grouped inside separated clusters. Example: Google News related articles.
 Cocktail party algorithm. Example: Separation of two sounds played together.
 
-## 2.Linear Regression with One Variable (Week 1)
+## II. Linear Regression with One Variable (Week 1)
+Definitons: a function *h* (for hypothesis) maps from input variables *x*'s to output variables *y*'s.
+*h* is a linear function: `h_\theta (x) = \theta_0 + \theta_1 x`. `\theta_0` and `\theta_1` are the parameters.
+
+Training set: 
