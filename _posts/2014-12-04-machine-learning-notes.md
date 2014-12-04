@@ -25,6 +25,6 @@ Cocktail party algorithm. Example: Separation of two sounds played together.
 
 ## II. Linear Regression with One Variable (Week 1)
 
-Definitons: a function *h* (for hypothesis) maps from input variables *x*'s to output variables *y*'s. Couple `(x, y)` are training example (from the training set).
+Definitons: a function $$h$$ (for hypothesis) maps from input variables $$x$$ to output variables $$y$$. Couple $$(x, y)$$ are training example (from the training set).
 
 Here, $$h$$ is a linear function: $$h_\theta (x) = \theta_0 + \theta_1 x$$. $$\theta_0$$ and $$\theta_1$$ are the parameters. To find the best model is to find the parameters that minimize the sum of the squared difference between $$h_\theta (x^{(i)})$$ and $$y^{(i)}$$. The cost functiom is then the squared error function.
