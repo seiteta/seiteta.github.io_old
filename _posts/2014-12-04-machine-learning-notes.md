@@ -10,7 +10,7 @@ Some notes from the [ML Coursera class](https://www.coursera.org/course/ml), tau
 
 ### Supervised learning
 
-Supervised learning means that the algorithm know "correct" outputs.
+Supervised learning means that the algorithm know the "correct" outputs.
 
 Regression problem: when the outputs have continuous values. Example: Housing price vs Housing size.
 
