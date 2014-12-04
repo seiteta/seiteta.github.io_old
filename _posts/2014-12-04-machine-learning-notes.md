@@ -6,7 +6,7 @@ title: Machine learning notes
 
 Some notes from the [ML Coursera class](https://www.coursera.org/course/ml), taught by Andrew Ng.
 
-1. Introduction (Week 1)
+## I. Introduction (Week 1)
 
 ### Supervised learning
 
@@ -23,4 +23,4 @@ In unsupervised learning, the algorithm has no idea what is a "correct output". 
 Clustering: data are grouped inside separated clusters. Example: Google News related articles.
 Cocktail party algorithm. Example: Separation of two sounds played together.
 
-1. Linear Regression with One Variable (Week 1)
+## 2.Linear Regression with One Variable (Week 1)
