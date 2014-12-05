@@ -53,3 +53,5 @@ graph.write_pdf("iris2.pdf")
 #http://statcompute.wordpress.com/2012/12/05/decision-tree-with-python/
 #http://fastml.com/converting-categorical-data-into-numbers-with-pandas-and-scikit-learn/
 #https://github.com/zygmuntz/kaggle-happiness/blob/master/vectorize_validation.py
+
+## http://blog.yhathq.com/posts/predicting-customer-churn-with-sklearn.html
