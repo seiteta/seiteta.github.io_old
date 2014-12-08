@@ -24,4 +24,4 @@ Because it's better if you have all the vocabulary you need into a single place.
 
 * ## [Plotly](https://plot.ly/)
 
-  *Plotly* is an online data visualization platform.
+  *Plotly* is an online data visualization platform. It was built using Python and the Django framework, with a front end using JavaScript and the visualization library D3.js.
