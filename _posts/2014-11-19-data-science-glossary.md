@@ -6,6 +6,10 @@ title: Data science glossary
 
 Because it's better if you have all the vocabulary you need into a single place.
 
+* ## [Data munging](http://en.wikipedia.org/wiki/Data_wrangling)
+
+  *Data munging* or *data wrangling* is the process of cleaning data from one "raw" form into a structured, purged one.
+
 * ## [DataKind](http://www.datakind.org/)
 
    *DataKind* is a nonprofit that connects organizations and data scientists who volunteer to help them understanding their data.  
