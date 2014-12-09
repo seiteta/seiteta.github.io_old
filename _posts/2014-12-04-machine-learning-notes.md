@@ -31,4 +31,4 @@ Here, $$h$$ is a linear function: $$h_\theta (x) = \theta_0 + \theta_1 x$$. $$\t
 
 ### Gradient descent algorithm
 
-For a linear function, repeat until convergence $$\theta_j := \theta_j - \alpha \dfrac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) $$ and simultaneously update for $$j=0$$ and $$j=1$$.
+For a linear function, repeat until convergence $$\theta_j := \theta_j - \alpha \dfrac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) $$ and simultaneously update for $$j=0$$ and $$j=1$$. $$\alpha$$ is the learning rate, $$\dfrac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) $$ is the derivative term.
