@@ -31,7 +31,9 @@ Here, $$h$$ is a linear function: $$h_\theta (x) = \theta_0 + \theta_1 x$$. $$\t
 
 ### Gradient descent algorithm
 
-For a two parameters model, repeat until convergence $$\theta_j := \theta_j - \alpha \dfrac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) $$ and simultaneously update for $$j=0$$ and $$j=1$$. $$J$$ is the cost function, $$\alpha$$ is the learning rate that control the speed of the descent and $$\dfrac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) $$ is the derivative term that give the direction of the slope.
+For a two parameters model, repeat until convergence $$\theta_j := \theta_j - \alpha \dfrac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) $$ and simultaneously update for $$j=0$$ and $$j=1$$.
+
+$$J$$ is the cost function, $$\alpha$$ is the learning rate that control the speed of the descent and $$\dfrac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) $$ is the derivative term that give the direction of the slope.
 
 One problem is that if the initial values give a cost function located in local minimum, the parameters won't move since the derivative term is equal to zero.
 
