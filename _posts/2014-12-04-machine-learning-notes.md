@@ -28,9 +28,9 @@ Cocktail party algorithm. Example: Separation of two sounds played together.
 Definitons: a function $$h$$ (for hypothesis) maps from input variables $$x$$ to output variables $$y$$. Couple $$(x, y)$$ are training example (from the training set).
 
 Here, $$h$$ is a linear function: 
-$$
-h_\theta (x) = \theta_0 + \theta_1 x
-$$
+
+$$ h_\theta (x) = \theta_0 + \theta_1 x $$
+
 $$\theta_0$$ and $$\theta_1$$ are the parameters. To find the best model is to find the parameters that minimize the sum of the squared difference between $$h_\theta (x^{(i)})$$ and $$y^{(i)}$$. The cost functiom is then the squared error function: $$J(\theta_0, \theta_1) = \dfrac{1}{2m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)})^2$$.
 
 ### Gradient descent algorithm
