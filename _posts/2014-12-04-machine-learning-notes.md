@@ -55,10 +55,10 @@ One advantage is that we don't have to change $$\alpha$$ to slow things down as 
 
 For a linear regression model, repeat until convergence 
 
-\left\{\begin{matrix*}[l]
+$$\left\{\begin{matrix*}[l]
 \theta_0 := \theta_0 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)}) 
 \\ 
 \theta_1 := \theta_1 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)})\cdot  x^{(i)}
-\end{matrix*}\righ
+\end{matrix*}\righ$$
 
 and simultaneously update for $$j=0$$ and $$j=1$$.
