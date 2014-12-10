@@ -67,12 +67,10 @@ and simultaneously update $$\theta_0$$ and $$\theta_1$$.
 
 ### Multivariate linear regression:
 
-$$x_j^{i}$$ is the value of feature $$j$$ in the $$i$$<sup>th</sup> training example. $$m$$ is the number of training examples and $$n=|x^{i}|$$ is the number of features.
+$$x_j^{(i)}$$ is the value of feature $$j$$ in the $$i$$<sup>th</sup> training example. $$m$$ is the number of training examples and $$n=\|x^{i}\|$$ is the number of features.
 
 The hypothesis function become:
 
 
 Using the definition of matrix multiplication, our multivariable hypothesis function can be concisely represented as:
-$$
-h_\theta (x) = \begin{bmatrix} \theta_0  &\theta_1  & ... & \theta_n \end{bmatrix} + \begin{bmatrix}  x_0  \\ x_1  \\ ...  \\ x_n\end{bmatrix}
-$$
+$$h_\theta (x) = \begin{bmatrix} \theta_0  &\theta_1  & ... & \theta_n \end{bmatrix} + \begin{bmatrix}  x_0  \\ x_1  \\ ...  \\ x_n\end{bmatrix} = \theta^T x$$
