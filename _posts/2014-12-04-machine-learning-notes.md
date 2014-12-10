@@ -31,11 +31,18 @@ Here, $$h$$ is a linear function:
 
 $$ h_\theta (x) = \theta_0 + \theta_1 x $$
 
-$$\theta_0$$ and $$\theta_1$$ are the parameters. To find the best model is to find the parameters that minimize the sum of the squared difference between $$h_\theta (x^{(i)})$$ and $$y^{(i)}$$. The cost functiom is then the squared error function: $$J(\theta_0, \theta_1) = \dfrac{1}{2m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)})^2$$.
+$$\theta_0$$ and $$\theta_1$$ are the parameters. To find the best model is to find the parameters that minimize the sum of the squared difference between $$h_\theta (x^{(i)})$$ and $$y^{(i)}$$. The cost functiom is then the squared error function:
+
+$$J(\theta_0, \theta_1) = \dfrac{1}{2m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)})^2$$.
+
 
 ### Gradient descent algorithm
 
-For a two parameters model, repeat until convergence $$\theta_j := \theta_j - \alpha \dfrac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) $$ and simultaneously update for $$j=0$$ and $$j=1$$.
+For a two parameters model, repeat until convergence 
+
+$$\theta_j := \theta_j - \alpha \dfrac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) $$
+
+and simultaneously update for $$j=0$$ and $$j=1$$.
 
 $$J$$ is the cost function, $$\alpha$$ is the learning rate that control the speed of the descent and $$\dfrac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) $$ is the derivative term that give the direction of the slope.
 
