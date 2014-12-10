@@ -55,8 +55,14 @@ One advantage is that we don't have to change $$\alpha$$ to slow things down as 
 
 For a linear regression model, repeat until convergence:
 
-$$\theta_0 := \theta_0 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)})$$
+$$\theta_0 := \theta_0 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} \left (h_\theta (x^{(i)}) - y^{(i)} \right )$$
 
-$$\theta_1 := \theta_1 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)})\cdot  x^{(i)}$$
+$$\theta_1 := \theta_1 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} \left (h_\theta (x^{(i)}) - y^{(i)} \right)\cdot  x^{(i)}$$
+
+$$\left\{\begin{matrix}
+\theta_0 := \theta_0 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)}) 
+\\ 
+\theta_1 := \theta_1 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)})\cdot  x^{(i)}
+\end{matrix}\right $$
 
 and simultaneously update $$\theta_0$$ and $$\theta_1$$.
