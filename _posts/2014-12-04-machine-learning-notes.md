@@ -65,6 +65,19 @@ and simultaneously update $$\theta_0$$ and $$\theta_1$$.
 
 ## IV. Linear Regression with Multiple Variables (Week 2)
 
+### Multivariate linear regression:
+
+$$x_j^{i}$$ is the value of feature $$j$$ in the $$i$$^th training example. $$m$$ is the number of training examples and n=|x^{i}| is the number of features.
+
+The hypothesis function become:
+
+
+Using the definition of matrix multiplication, our multivariable hypothesis function can be concisely represented as:
+$$
+h_\theta (x) = \begin{bmatrix} \theta_0 \\ \theta_1 \\ ... \\ \theta_n \end{bmatrix} + \begin{bmatrix}  x_0  & x_1  & ...  & x_n\end{bmatrix}
+$$ 
+
+
 $$
 \begin{bmatrix}
 \mathbf{i} & \mathbf{j} & \mathbf{k} \\
