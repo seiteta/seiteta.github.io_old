@@ -27,13 +27,13 @@ Cocktail party algorithm. Example: Separation of two sounds played together.
 
 ### Linear Regression Model
 
-Definitons: a function $$h$$ (for hypothesis) maps from input variables $$x$$ to output variables $$y$$. Couple $$(x, y)$$ are training example (from the training set).
+Definitons: a function $h$ (for hypothesis) maps from input variables $x$ to output variables $y$. Couple $(x, y)$ are training example (from the training set).
 
-Here, $$h$$ is a linear function: 
+Here, $h$ is a linear function: 
 
 $$ h_\theta (x) = \theta_0 + \theta_1 x $$
 
-$$\theta_0$$ and $$\theta_1$$ are the parameters. To find the best model is to find the parameters that minimize the sum of the squared difference between $$h_\theta (x^{(i)})$$ and $$y^{(i)}$$. The cost functiom is then the squared error function:
+$\theta_0$ and $\theta_1$ are the parameters. To find the best model is to find the parameters that minimize the sum of the squared difference between $h_\theta (x^{(i)})$ and $y^{(i)}$. The cost functiom is then the squared error function:
 
 $$J(\theta_0, \theta_1) = \dfrac{1}{2m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)})^2$$
 
@@ -43,13 +43,13 @@ For a two parameters model, repeat until convergence
 
 $$\theta_j := \theta_j - \alpha \dfrac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) $$
 
-and simultaneously update for $$j=0$$ and $$j=1$$.
+and simultaneously update for $j=0$ and $j=1$.
 
-$$J$$ is the cost function, $$\alpha$$ is the learning rate that control the speed of the descent and $$\dfrac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) $$ is the derivative term that give the direction of the slope.
+$J$ is the cost function, $\alpha$ is the learning rate that control the speed of the descent and $\dfrac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) $ is the derivative term that give the direction of the slope.
 
 One problem is that if the initial values give a cost function located in local minimum, the parameters won't move since the derivative term is equal to zero.
 
-One advantage is that we don't have to change $$\alpha$$ to slow things down as we approach the minimum because the derivative is getting smaller and smaller, and so are the steps.
+One advantage is that we don't have to change $\alpha$ to slow things down as we approach the minimum because the derivative is getting smaller and smaller, and so are the steps.
 
 ### Gradient Descent for Linear Regression
 
@@ -61,4 +61,4 @@ $$\left\{\begin{matrix}
 \theta_1 := \theta_1 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)})\cdot  x^{(i)}
 \end{matrix}\righ$$
 
-and simultaneously update for $$j=0$$ and $$j=1$$.
+and simultaneously update $\theta_0$ and $\theta_1$.
