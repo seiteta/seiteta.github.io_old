@@ -67,7 +67,7 @@ and simultaneously update $$\theta_0$$ and $$\theta_1$$.
 
 ### Multivariate linear regression:
 
-$$x_j^{(i)}$$ is the value of feature $$j$$ in the $$i$$<sup>th</sup> training example. $$m$$ is the number of training examples and $$n=\|x^{i}\|$$ is the number of features.
+$$x_j^{(i)}$$ is the value of feature $$j$$ in the $$i$$<sup>th</sup> training example. $$m$$ is the number of training examples and $$n=\norm{x^{(i)}}$$ is the number of features.
 
 The hypothesis function become:
 
