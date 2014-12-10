@@ -60,3 +60,5 @@ $$\theta_0 := \theta_0 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} \left (h_\theta (x^{
 $$\theta_1 := \theta_1 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} \left (h_\theta (x^{(i)}) - y^{(i)} \right)\cdot  x^{(i)}$$
 
 and simultaneously update $$\theta_0$$ and $$\theta_1$$.
+
+### IV. Linear Regression with Multiple Variables (Week 2)
