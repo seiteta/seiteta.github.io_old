@@ -74,3 +74,6 @@ A = npr.rand(3, 3) #create a 3x3 random matrix
 
 ## [scikit-learn](http://scikit-learn.org/)
 *scikit-learn* ia a machine learning library, built on NumPy, SciPy, and matplotlib.
+
+##[bokeh](http://bokeh.pydata.org/)
+*bokeh* is an interactive web visualization library.
