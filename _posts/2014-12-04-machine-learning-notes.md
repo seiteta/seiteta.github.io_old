@@ -59,10 +59,4 @@ $$\theta_0 := \theta_0 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} \left (h_\theta (x^{
 
 $$\theta_1 := \theta_1 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} \left (h_\theta (x^{(i)}) - y^{(i)} \right)\cdot  x^{(i)}$$
 
-$$\left\{\begin{matrix}
-\theta_0 := \theta_0 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)}) 
-\\ 
-\theta_1 := \theta_1 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)})\cdot  x^{(i)}
-\end{matrix}\right $$
-
 and simultaneously update $$\theta_0$$ and $$\theta_1$$.
