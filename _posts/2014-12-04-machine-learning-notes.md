@@ -33,9 +33,11 @@ Here, $$h$$ is a linear function:
 
 $$ h_\theta (x) = \theta_0 + \theta_1 x $$
 
-$$\theta_0$$ and $$\theta_1$$ are the parameters. To find the best model is to find the parameters that minimize the sum of the squared difference between $$h_\theta (x^{(i)})$$ and $$y^{(i)}$$. The cost functiom is then the squared error function:
+$$\theta_0$$ and $$\theta_1$$ are the parameters. To find the best model is to find the parameters that minimize the sum of the squared difference between $$h_\theta (x^{(i)})$$ and $$y^{(i)}$$. The cost function $$J$$ is then the squared error function:
 
 $$J(\theta_0, \theta_1) = \dfrac{1}{2m} \sum_{i=1}^{m} \left(h_\theta (x^{(i)}) - y^{(i)}\right)^2$$
+
+where $$m$$ is the size of the training set. 
 
 ### Gradient descent algorithm
 
@@ -62,3 +64,9 @@ $$\theta_1 := \theta_1 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} \left (h_\theta (x^{
 and simultaneously update $$\theta_0$$ and $$\theta_1$$.
 
 ## IV. Linear Regression with Multiple Variables (Week 2)
+
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
+\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0
+\end{vmatrix}
