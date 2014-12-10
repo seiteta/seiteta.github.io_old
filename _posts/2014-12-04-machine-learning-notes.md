@@ -25,6 +25,8 @@ Cocktail party algorithm. Example: Separation of two sounds played together.
 
 ## II. Linear Regression with One Variable (Week 1)
 
+### Linear Regression Model
+
 Definitons: a function $$h$$ (for hypothesis) maps from input variables $$x$$ to output variables $$y$$. Couple $$(x, y)$$ are training example (from the training set).
 
 Here, $$h$$ is a linear function: 
@@ -48,3 +50,15 @@ $$J$$ is the cost function, $$\alpha$$ is the learning rate that control the spe
 One problem is that if the initial values give a cost function located in local minimum, the parameters won't move since the derivative term is equal to zero.
 
 One advantage is that we don't have to change $$\alpha$$ to slow things down as we approach the minimum because the derivative is getting smaller and smaller, and so are the steps.
+
+### Gradient Descent for Linear Regression
+
+For a linear regression model, repeat until convergence 
+
+\left\{\begin{matrix*}[l]
+\theta_0 := \theta_0 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)}) 
+\\ 
+\theta_1 := \theta_1 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} (h_\theta (x^{(i)}) - y^{(i)})\cdot  x^{(i)}
+\end{matrix*}\righ
+
+and simultaneously update for $$j=0$$ and $$j=1$$.
