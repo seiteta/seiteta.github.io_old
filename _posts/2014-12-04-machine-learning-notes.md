@@ -72,8 +72,8 @@ Size ($$x_1$$)|Number of bedroom ($$x_2$$)|Age of home ($$x_3$$)|Price ($$y$$)
 2104|5|45|460 000
 1646|3|40|232 000
 852|2|36|178 000
-  
-  
+|||
+
 * $$x_j^{(i)}$$ is the value of feature $$j$$ in the $$i$$<sup>th</sup> training example.
 * $$m$$ is the number of training examples
 * $$n=\|x^{(i)}\|$$ is the number of features.
