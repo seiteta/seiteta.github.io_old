@@ -84,10 +84,11 @@ $$h_\theta (x) = \begin{bmatrix} \theta_0  &\theta_1  & ... & \theta_n \end{bmat
 
 $$\theta = \begin{bmatrix} \theta_0  \\ \theta_1  \\ ... \\ \theta_n \end{bmatrix}$$ is a parameter vector.
 
-### Feature scaling
+### Feature scaling and mean normalization
 Make sure the feature are on a similar scale in order to avoid hemstitching phenomenon due to the narrow valley of the cost function. In practice, it means to get every value of the different features between -1 and 1 approximately.
 
 And substract the mean (mean normalization).
 
 $$x_j := \dfrac{x_j - \mu_j}{s_j}$$
+
 With $$\mu_j$$ the mean of the feature $$j$$ and $$s_j$$ its standard deviation.
