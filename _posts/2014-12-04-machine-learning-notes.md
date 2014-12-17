@@ -92,3 +92,8 @@ And substract the mean (mean normalization).
 $$x_j := \dfrac{x_j - \mu_j}{s_j}$$
 
 With $$\mu_j$$ the mean of the feature $$j$$ and $$s_j$$ its standard deviation.
+
+### Learning rate
+Choose the learning rate: plot cost function vs number of iteration. The cost function $$J(\theta)$$ should decrease every iteration. If it's not, choose a smaller $$\alpha$$. But be careful because if $$\alpha$$ is too small, the algorithm will take foreeeeeeeever to converge.
+
+It is also possible to use a convergence test: for example, you can declare convergence if the cost function decrease by less than $$10^-3$$ in one iteration.
