@@ -6,6 +6,10 @@ title: Data science glossary
 
 Because it's better if you have all the vocabulary you need into a single place.
 
+* ## [Convolutional Neural Network](http://en.wikipedia.org/wiki/Convolutional_neural_network)
+
+ *Convolutional Neural Networks* are a type of artifical neural network used in deep learning, especially for image recognition.
+
 * ## [Data munging](http://en.wikipedia.org/wiki/Data_wrangling)
 
   *Data munging* or *data wrangling* is the process of cleaning data from one "raw" form into a structured, purged one.
@@ -29,3 +33,7 @@ Because it's better if you have all the vocabulary you need into a single place.
 * ## [Plotly](https://plot.ly/)
 
   *Plotly* is an online data visualization platform. It was built using Python and the Django framework, with a front end using JavaScript and the visualization library D3.js.
+  
+* ## [Recurrent Neural Network](http://en.wikipedia.org/wiki/Recurrent_neural_network)
+
+  *Recurrent Neural Networks* are a type of artifical neural network used in text analysis and natural language processing.
