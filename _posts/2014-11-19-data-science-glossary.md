@@ -24,7 +24,7 @@ Because it's better if you have all the vocabulary you need into a single place.
 
 * ## [MetricsGraphics.js](http://metricsgraphicsjs.org/)
 
-  *MetricsGraphics.js* is a graphic library build on top of D3 optimized for plotting time-series data.
+  *MetricsGraphics.js* is a graphic library build on top of D3 optimized for plotting time-series data. It was created by people from Mozilla. See some examples [here] (http://metricsgraphicsjs.org/examples.htm).
 
 * ## [Plotly](https://plot.ly/)
 
