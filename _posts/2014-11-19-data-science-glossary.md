@@ -8,7 +8,7 @@ Because it's better if you have all the vocabulary you need into a single place.
 
 * ## [Convolutional Neural Network](http://en.wikipedia.org/wiki/Convolutional_neural_network)
 
-  *Convolutional Neural Networks* are a type of artifical neural network used in deep learning, especially for image recognition.
+  *Convolutional Neural Networks* (or *convnets*) are a type of artifical neural network used in deep learning, especially for image recognition.
 
 * ## [Data munging](http://en.wikipedia.org/wiki/Data_wrangling)
 
