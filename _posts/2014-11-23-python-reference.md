@@ -142,6 +142,13 @@ def compute_bill(food):
     return total
 {% endhighlight %}
 
+Repeat `n` times (from `0` to `n-1`):
+{% highlight python %}
+n=3
+for x in range(0, n):
+    print "We're on time %d" % (x)
+{% endhighlight %}
+
 ## Comparison operators
 Equal is `==`:
 {% highlight python %}
