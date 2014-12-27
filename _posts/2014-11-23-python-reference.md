@@ -20,7 +20,7 @@ words = sentence.split(" ") #the result is a list containing the words
 
 * Join a list of words to create a sentence:
 {% highlight python %}
-" ".join(words) #Continuing the above example
+sentence2 = " ".join(words) #Continuing the above example
 {% endhighlight %}
 
 ## List
