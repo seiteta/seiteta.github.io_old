@@ -4,6 +4,24 @@ permalink: /python-reference.html
 title: My Python cheat sheet
 tags: Python cheat-sheet
 ---
+## String
+* Iterate over a string:
+{% highlight python %}
+word = "hello"
+for char in word:
+    print char
+{% endhighlight %}
+
+* Split a sentence:
+{% highlight python %}
+sentence = "As you wish"
+words = sentence.split(" ") #the result is a list containing the words
+{% endhighlight %}
+
+* Join a list of words to create a sentence:
+{% highlight python %}
+" ".join(words) #Continuing the above example
+{% endhighlight %}
 
 ## List
 * Create a list:
@@ -138,7 +156,7 @@ def compute_bill(food):
         if stock[fruit] <> 0:
             total += prices[fruit]
             stock[fruit] += -1
-            #first time I think "wow, Python is beautiful"
+            #first time I thought "wow, Python is beautiful"
     return total
 {% endhighlight %}
 
