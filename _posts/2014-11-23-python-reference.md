@@ -101,6 +101,18 @@ backpack["pocket"][0]
 # return glasses \o-o/
 {% endhighlight %}
 
+* Keys and values:
+{% highlight python %}
+backpack.items()  #return an array of tuples, each containing a key/value pair
+backpack.values() #return an array of the dictionary's values
+backpack.keys()   #return an array of the dictionary's keys
+{% endhighlight %}
+
+* Iterate over a dicitonary (again in no specific order):
+{% highlight python %}
+for key in ponies:
+    print key, ponies[key]
+{% endhighlight %}
 
 ## Loops
 
