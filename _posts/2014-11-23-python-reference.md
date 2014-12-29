@@ -180,21 +180,23 @@ for x in range(0, n):
 {% endhighlight %}
 
 ## Comparison operators
-Equal is `==`:
+* Equal is `==`:
 {% highlight python %}
 a == b
 {% endhighlight %}
 
-Not equal is `!=`:
+* Not equal is `!=`:
 {% highlight python %}
 a != b
 {% endhighlight %}
 
 ## Random
-
 * Random integer
 {% highlight python %}
 from random import randint
 coin = randint(0, 1)
 dice = randint(1, 6)
 {% endhighlight %}
+
+## Matrix (np.array)
+* See this [page](http://sebastianraschka.com/Articles/2014_matrix_cheatsheet_table.html) giving MATLAB/Python equivalents. Or this [one](wiki.scipy.org/NumPy_for_Matlab_Users).
