@@ -200,3 +200,15 @@ dice = randint(1, 6)
 
 ## Matrix (np.array)
 * See this [page](http://sebastianraschka.com/Articles/2014_matrix_cheatsheet_table.html) giving MATLAB/Python equivalents. Or this [one](http://wiki.scipy.org/NumPy_for_Matlab_Users#head-13d7391dd7e2c57d293809cff080260b46d8e664).
+
+## List comprehension
+* A concise way to create lists
+{% highlight python %}
+evens_to_50 = [i for i in range(51) if i % 2 == 0]
+
+# instead of:
+evens_to_50 = []
+for i in range(51):
+    if i % 2 == 0:
+        evens_to_50.append(i)
+{% endhighlight %}
