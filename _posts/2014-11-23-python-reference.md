@@ -202,11 +202,13 @@ dice = randint(1, 6)
 * See this [page](http://sebastianraschka.com/Articles/2014_matrix_cheatsheet_table.html) giving MATLAB/Python equivalents. Or this [one](http://wiki.scipy.org/NumPy_for_Matlab_Users#head-13d7391dd7e2c57d293809cff080260b46d8e664).
 
 ## List comprehension
-* A concise way to create lists
+* A concise way to create lists. For example, to build the list of even numbers from 0 to 50:
 {% highlight python %}
 evens_to_50 = [i for i in range(51) if i % 2 == 0]
+{% endhighlight %}
 
-# instead of:
+instead of:
+{% highlight python %}
 evens_to_50 = []
 for i in range(51):
     if i % 2 == 0:
