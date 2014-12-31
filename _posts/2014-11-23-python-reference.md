@@ -64,6 +64,35 @@ for i in range(len(list)):
     print list[i]
 {% endhighlight %}
 
+* List comprehension: a concise way to create lists. For example, to build the list of even numbers from 0 to 50:
+{% highlight python %}
+evens_to_50 = [i for i in range(51) if i % 2 == 0]
+{% endhighlight %}
+
+instead of:
+{% highlight python %}
+evens_to_50 = []
+for i in range(51):
+    if i % 2 == 0:
+        evens_to_50.append(i)
+{% endhighlight %}
+
+* List slicing `[start:end:stride]`:
+{% highlight python %}
+my_list = [i ** 2 for i in range(1, 11)]
+# Should be [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+print my_list[2:9:2]
+# Return [9, 25, 49, 81]
+{% endhighlight %}
+
+Default value are `[0:len(my_list):1]`.
+
+A nice way to reverse the element of a list:
+{% highlight python %}
+my_list = range(1, 11)
+backwards = my_list[::-1]
+{% endhighlight %}
 
 ## Dictionaries
 Pairs of key and value. **Warning**: dictionaries are unordered.
@@ -201,16 +230,4 @@ dice = randint(1, 6)
 ## Matrix (np.array)
 * See this [page](http://sebastianraschka.com/Articles/2014_matrix_cheatsheet_table.html) giving MATLAB/Python equivalents. Or this [one](http://wiki.scipy.org/NumPy_for_Matlab_Users#head-13d7391dd7e2c57d293809cff080260b46d8e664).
 
-## List comprehension
-* A concise way to create lists. For example, to build the list of even numbers from 0 to 50:
-{% highlight python %}
-evens_to_50 = [i for i in range(51) if i % 2 == 0]
-{% endhighlight %}
 
-instead of:
-{% highlight python %}
-evens_to_50 = []
-for i in range(51):
-    if i % 2 == 0:
-        evens_to_50.append(i)
-{% endhighlight %}
