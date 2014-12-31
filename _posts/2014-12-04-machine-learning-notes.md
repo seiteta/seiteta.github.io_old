@@ -108,3 +108,10 @@ can be transformed into a multivariate linear model by changing the features $$(
 $$ h_\theta (x) = \theta_0 + \theta_1 x_1 + \theta_2 x_2 $$
 
 In that case, it's even more important to take care of the *feature scaling* because the scale difference is squared.
+
+### Normal equation
+
+Another of finding the minimum of the cost function is to use the normal equation. Basically, you have to find the parameter vector $$\theta$$ for which the partial derivatives of $$J(\theta)$$ equal to zero. Under some assumptions, a solution to this problem is (see proof [here](http://en.wikipedia.org/wiki/Linear_least_squares_%28mathematics%29#The_general_problem)):
+
+$$ \theta=(X^TX)^{-1}X^Ty $$
+
