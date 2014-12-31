@@ -97,3 +97,12 @@ With $$\mu_j$$ the mean of the feature $$j$$ and $$s_j$$ its standard deviation.
 Choose the learning rate: plot cost function vs number of iteration. The cost function $$J(\theta)$$ should decrease every iteration. If it's not, choose a smaller $$\alpha$$. But be careful because if $$\alpha$$ is too small, the algorithm will take foreeeeeeeever to converge.
 
 It is also possible to use a convergence test: for example, you can declare convergence if the cost function decrease by less than $$10^{-3}$$ in one iteration.
+
+### Polynomial regression
+A model represented as a polynomial equation, for example:
+
+$$ h_\theta (x) = \theta_0 + \theta_1 (size) + \theta_2 (size) ^2$$
+
+can be transformed into a multivariate linear model by changing the features ($$(size) = x_1$$ and $$ (size)^2 = x_2$$), becoming:
+
+$$ h_\theta (x) = \theta_0 + \theta_1 (size) + \theta_2 (size) ^2$$
