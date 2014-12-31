@@ -106,3 +106,5 @@ $$ h_\theta (x) = \theta_0 + \theta_1 (size) + \theta_2 (size) ^2$$
 can be transformed into a multivariate linear model by changing the features $$(size) = x_1$$ and $$ (size)^2 = x_2$$:
 
 $$ h_\theta (x) = \theta_0 + \theta_1 x_1 + \theta_2 x_2 $$
+
+In that case, it's even more important to take care of the *feature scaling* because scale difference is squared.
