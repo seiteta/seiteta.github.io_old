@@ -103,6 +103,6 @@ A model represented as a polynomial equation, for example:
 
 $$ h_\theta (x) = \theta_0 + \theta_1 (size) + \theta_2 (size) ^2$$
 
-can be transformed into a multivariate linear model by changing the features ($$(size) = x_1$$ and $$ (size)^2 = x_2$$), becoming:
+can be transformed into a multivariate linear model by changing the features $$(size) = x_1$$ and $$ (size)^2 = x_2$$:
 
-$$ h_\theta (x) = \theta_0 + \theta_1 (size) + \theta_2 (size) ^2$$
+$$ h_\theta (x) = \theta_0 + \theta_1 x_1 + \theta_2 x_2 $$
