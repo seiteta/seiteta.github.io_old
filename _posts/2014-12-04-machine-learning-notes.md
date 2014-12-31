@@ -115,3 +115,4 @@ Another of finding the minimum of the cost function is to use the normal equatio
 
 $$ \theta=(X^TX)^{-1}X^Ty $$
 
+Compared to the descent algorithm, there is no need to choose $$\alpha$$ nor the number of iteration, which is good. But the inversion of the matrix make the algorithme slow when the number of features $$n$$ become big (for our computer $$n>=10^6$$) because its complexity is in $$\O(n^3)$$.
