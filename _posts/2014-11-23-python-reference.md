@@ -77,6 +77,11 @@ for i in range(51):
         evens_to_50.append(i)
 {% endhighlight %}
 
+List comprehension can contain more than one for loop (example taken from [here](http://intermediatepythonista.com/python-comprehensions)):
+{% highlight python %}
+combinations = [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+{% endhighlight %}
+
 * List slicing `[start:end:stride]`:
 {% highlight python %}
 my_list = [i ** 2 for i in range(1, 11)]
