@@ -14,6 +14,10 @@ Because it's better if you have all the vocabulary you need into a single place.
 
   *Data munging* or *data wrangling* is the process of cleaning data from one "raw" form into a structured, purged one.
 
+* ## [Data scraping](http://en.wikipedia.org/wiki/Data_scraping)
+
+  *Data scraping* is a technique in which a computer program extracts data from human-readable output.
+
 * ## [DataKind](http://www.datakind.org/)
 
   *DataKind* is a nonprofit that connects organizations and data scientists who volunteer to help them understanding their data. 
