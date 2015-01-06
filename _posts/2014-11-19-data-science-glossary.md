@@ -37,3 +37,7 @@ Because it's better if you have all the vocabulary you need into a single place.
 * ## [Recurrent Neural Network](http://en.wikipedia.org/wiki/Recurrent_neural_network)
 
   *Recurrent Neural Networks* are a type of artifical neural network used in text analysis and natural language processing.
+
+* ## [Scala](http://www.scala-lang.org/)
+
+  *Scala* is a programming language both object-oriented and functional. Scala is very close to Java since it is possible to run Scale code directly in Java or to use Java libraries directly in Scala.
