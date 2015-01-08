@@ -12,6 +12,13 @@ The objective of this test are:
 
 The Python code is in this [repo](https://github.com/seiteta/dataiku_test).
 
+The libraries I used:
+
+* `matplotlib` and `prettyplotlib` to create beautiful graphic
+* `pandas` to import the csv file
+* `sklearn` to build the model
+* and also `scipy`, `numpy`, `pydot` and `os`
+
 ## Used columns
 
 * Difference between classes > 10%.
