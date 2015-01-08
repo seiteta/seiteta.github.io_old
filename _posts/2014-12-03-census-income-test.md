@@ -20,7 +20,7 @@ The libraries I used:
 * and also `scipy`, `numpy`, `pydot` and `os`
 
 ## Explanatory variables 
-I decided to consider variables as explantory when the frequency difference between classes is superior to a threshold (here it's 10%).
+I've decided to consider variables as explantory when the frequency difference between classes is superior to a threshold (here it's 10%).
 
 * Discrete variables :
 
