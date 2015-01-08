@@ -6,6 +6,7 @@ title: Dataiku test
 The dataset used in this project come from the US Census Bureau and contain 42 anonymised information about approx. 300,000 persons. The goal was to predict whether or not these people earns more than 50k$ per year.
 
 The objective of this test are:
+
 1. Describe the different variables
 2. Create a categorization model.
 
