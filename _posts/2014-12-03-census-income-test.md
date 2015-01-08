@@ -10,7 +10,7 @@ The objective of this test are:
 1. Describe the different variables
 2. Create a categorization model.
 
-The Python code is in this repo: https://github.com/seiteta/dataiku_test
+The Python code is in this [repo](https://github.com/seiteta/dataiku_test).
 
 ## Used columns
 
