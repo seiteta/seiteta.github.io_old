@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /income-test.html
-title: Census income test
+title: Dataiku test
 ---
 ## Used columns
 
