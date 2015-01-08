@@ -4,7 +4,7 @@ permalink: /python-reference.html
 title: My Python cheat sheet
 tags: Python cheat-sheet
 ---
-$('#main_content').toc();
+<script src="/path/to/jquery.toc.js"></script>
 
 ## String
 * Iterate over a string:
