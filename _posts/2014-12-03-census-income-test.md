@@ -19,9 +19,10 @@ The libraries I used:
 * `sklearn` to build the model
 * and also `scipy`, `numpy`, `pydot` and `os`
 
-## Used columns
+## Explanatory variables 
+I decided to consider variables as explantory when the frequency difference between classes is superior to a threshold (here it's 10%).
 
-* Difference between classes > 10%.
+* Discrete variables :
 
 Class|Values
 :---:|:---:
@@ -55,7 +56,9 @@ veterans benefits|0, 2
 | |
 
 
-## Some histograms and bars
+## Vizualisation 
+
+Some histograms and bar charts
 
 ![age](/downloads/age.png "Age histogram")
 
@@ -70,7 +73,7 @@ veterans benefits|0, 2
 ![tax filer status](/downloads/tax filer status.png "Tax filer status by classes chart")
 
 
-## Decision tree
+## Modelization
 
 * Decision tree, minimun samples leaf = 5000
 
