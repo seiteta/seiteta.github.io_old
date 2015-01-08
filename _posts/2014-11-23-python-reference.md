@@ -4,6 +4,8 @@ permalink: /python-reference.html
 title: My Python cheat sheet
 tags: Python cheat-sheet
 ---
+$('#main_content').toc();
+
 ## String
 * Iterate over a string:
 {% highlight python %}
