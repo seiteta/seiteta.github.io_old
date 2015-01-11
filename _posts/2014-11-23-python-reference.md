@@ -235,4 +235,13 @@ dice = randint(1, 6)
 ## Matrix (np.array)
 * See this [page](http://sebastianraschka.com/Articles/2014_matrix_cheatsheet_table.html) giving MATLAB/Python equivalents. Or this [one](http://wiki.scipy.org/NumPy_for_Matlab_Users#head-13d7391dd7e2c57d293809cff080260b46d8e664).
 
-
+## Anonymous function
+* Lambda syntax:
+{% highlight python %}
+lambda x: x % 3 == 0
+{% endhighlight %}
+is equivalent to:
+{% highlight python %}
+def by_three(x):
+    return x % 3 == 0
+{% endhighlight %}
