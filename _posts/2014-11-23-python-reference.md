@@ -232,9 +232,6 @@ coin = randint(0, 1)
 dice = randint(1, 6)
 {% endhighlight %}
 
-## Matrix (np.array)
-* See this [page](http://sebastianraschka.com/Articles/2014_matrix_cheatsheet_table.html) giving MATLAB/Python equivalents. Or this [one](http://wiki.scipy.org/NumPy_for_Matlab_Users#head-13d7391dd7e2c57d293809cff080260b46d8e664).
-
 ## Anonymous function
 * Lambda syntax:
 {% highlight python %}
@@ -245,3 +242,9 @@ is equivalent to:
 def by_three(x):
     return x % 3 == 0
 {% endhighlight %}
+
+## Matrix (np.array)
+* See this [page](http://sebastianraschka.com/Articles/2014_matrix_cheatsheet_table.html) giving MATLAB/Python equivalents. Or this [one](http://wiki.scipy.org/NumPy_for_Matlab_Users#head-13d7391dd7e2c57d293809cff080260b46d8e664).
+
+## Regular expression
+* See this [page](https://developers.google.com/edu/python/regular-expressions) from Google's Python Class.
