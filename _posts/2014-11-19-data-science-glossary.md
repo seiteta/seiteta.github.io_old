@@ -32,7 +32,7 @@ Because it's better if you have all the vocabulary you need into a single place.
 
 * ## [*k*-means clustering](http://en.wikipedia.org/wiki/K-means_clustering)
 
-  *k-means clustering* is a clustering method that aims to partition *n* observations into *k* clusters. To use this method, each cluster must have roughly equal number of observations (see this [article](http://varianceexplained.org/r/kmeans-free-lunch/) about the drawbacks of *k-means*).
+  *k-means clustering* is a clustering method that aims to partition *n* observations into *k* clusters. To use this method, each cluster must have roughly the same number of observations (see this [article](http://varianceexplained.org/r/kmeans-free-lunch/) about the drawbacks of *k-means*).
 
 * ## [MetricsGraphics.js](http://metricsgraphicsjs.org/)
 
