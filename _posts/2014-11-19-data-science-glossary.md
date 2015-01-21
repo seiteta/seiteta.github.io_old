@@ -30,6 +30,10 @@ Because it's better if you have all the vocabulary you need into a single place.
 
   *Julia* is a programming language designed for scientific computing and [approaching the performance of C](http://julialang.org/benchmarks/). Its syntax is [close to MATLAB](https://github.com/lakras/matlab-to-julia).
 
+* ## [K-means_clustering](http://en.wikipedia.org/wiki/K-means_clustering)
+
+  *K-means_clustering* is a clustering method that aims to partition *n* observations into *k* clusters. To use this method, each cluster must have roughly equal number of observations (see this [article](http://varianceexplained.org/r/kmeans-free-lunch/) about the drawbacks of *k-means*).
+
 * ## [MetricsGraphics.js](http://metricsgraphicsjs.org/)
 
   *MetricsGraphics.js* is a graphic library build on top of D3 optimized for plotting time-series data. It was created by people from Mozilla. See some examples [here](http://metricsgraphicsjs.org/examples.htm).
