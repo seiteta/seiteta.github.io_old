@@ -4,7 +4,7 @@ permalink: /ml-notes.html
 title: Machine learning notes
 ---
 
-Some notes from the [ML Coursera class](https://www.coursera.org/course/ml), taught by Andrew Ng.
+My notes from the [ML Coursera class](https://www.coursera.org/course/ml), taught by Andrew Ng.
 
 ## I. Introduction (Week 1)
 
@@ -114,5 +114,7 @@ In that case, it's even more important to take care of the *feature scaling* bec
 Another of finding the minimum of the cost function is to use the normal equation. Basically, you have to find the parameter vector $$\theta$$ for which the partial derivatives of $$J(\theta)$$ equal to zero. Under some assumptions, a solution to this problem is (see proof [here](http://en.wikipedia.org/wiki/Linear_least_squares_%28mathematics%29#The_general_problem)):
 
 $$ \theta=(X^TX)^{-1}X^Ty $$
+
+Note that if $$ X^TX $$ is non-invertible, the pseudoinverse of the matrix can be used. The MATLAB function is ['pinv'](http://fr.mathworks.com/help/matlab/ref/pinv.html), instead of 'inv'.
 
 Compared to the descent algorithm, there is no need to choose $$\alpha$$ nor the number of iteration, which is good. But the inversion of the matrix can make the algorithme slow when the number of features $$n$$ become big (for our computer $$n>=10^6$$) because it has a complexity in $$O(n^3)$$.
