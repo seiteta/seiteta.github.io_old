@@ -115,6 +115,6 @@ Another of finding the minimum of the cost function is to use the normal equatio
 
 $$ \theta=(X^TX)^{-1}X^Ty $$
 
-Note that if $$ X^TX $$ is non-invertible, the pseudoinverse of the matrix can be used. The MATLAB function is [`pinv`](http://fr.mathworks.com/help/matlab/ref/pinv.html), instead of `inv`.
+Note that if $$ X^TX $$ is non-invertible (it can happen when their are too many features or when they are linearly dependant), the pseudoinverse of the matrix can be used. The MATLAB function is [`pinv`](http://fr.mathworks.com/help/matlab/ref/pinv.html), instead of [`inv`](http://fr.mathworks.com/help/matlab/ref/inv.html).
 
 Compared to the descent algorithm, there is no need to choose $$\alpha$$ nor the number of iteration, which is good. But the inversion of the matrix can make the algorithme slow when the number of features $$n$$ become big (for our computer $$n>=10^6$$) because it has a complexity in $$O(n^3)$$.
