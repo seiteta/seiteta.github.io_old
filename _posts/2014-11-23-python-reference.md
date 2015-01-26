@@ -248,3 +248,5 @@ def by_three(x):
 
 ## Regular expression
 * See this [page](https://developers.google.com/edu/python/regular-expressions) from Google's Python Class.
+
+## Class
