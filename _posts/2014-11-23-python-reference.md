@@ -250,3 +250,40 @@ def by_three(x):
 * See this [page](https://developers.google.com/edu/python/regular-expressions) from Google's Python Class.
 
 ## Class
+* Basic class syntax
+{% highlight python %}
+class Robot(object):
+    def __init__(self, name):
+        self.name = name
+{% endhighlight %}
+
+ * More advanced syntax with a method (`description`) and a member variable(`is_alcoholic`)
+{% highlight python %}
+class Robot(object):
+    is_alcoholic = True
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def description(self):
+        print "My name is %s and I was build %s years ago." % (self.name, self.age)
+{% endhighlight %}
+
+* Create new instances of the class
+{% highlight python %}
+bending_unit = Robot("Bender", 2)
+astomech_droid = Robot("R2D2", 32)
+{% endhighlight %}
+
+* Access to the attributes. Note that only the variable in Bender changed, not in R2D2.
+{% highlight python %}
+print bending_unit.is_alcoholic #True
+astomech_droid.is_alcoholic = False
+print astomech_droid.is_alcoholic #False
+{% endhighlight %}
+
+* Call a method
+{% highlight python %}
+bending_unit.description()
+astomech_droid.description()
+{% endhighlight %}
