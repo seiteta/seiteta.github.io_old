@@ -123,6 +123,17 @@ Compared to the descent algorithm, there is no need to choose $$\alpha$$ nor the
 
 ### Vectorization
 
-One can implement this equation
-$$h_{\theta_0}(x) = \sum_{j=0}^{n} \theta_j x_j$$
+One can implement this equation $$h_{\theta}(x) = \sum_{j=0}^{n} \theta_j x_j$$ with this code:
 
+{% highlight matlab %}
+prediction = 0.0;
+for j = 1:n+1,
+  prediction += theta(j) * x(j);
+end;
+{% endhighlight %}
+
+But since it's equivalent to $$h_{\theta}(x) = \theta^T x$$, it can be implemented in one line:
+
+{% highlight matlab %}
+prediction = theta' * x;
+{% endhighlight %}
