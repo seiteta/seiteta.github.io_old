@@ -118,3 +118,11 @@ $$ \theta=(X^TX)^{-1}X^Ty $$
 Note that if $$ X^TX $$ is non-invertible (it can happen when their are too many features or when they are linearly dependant), the pseudoinverse of the matrix can be used. The MATLAB function is [`pinv`](http://mathworks.com/help/matlab/ref/pinv.html), instead of [`inv`](http://mathworks.com/help/matlab/ref/inv.html).
 
 Compared to the descent algorithm, there is no need to choose $$\alpha$$ nor the number of iteration, which is good. But the inversion of the matrix can make the algorithme slow when the number of features $$n$$ become big (for our computer $$n>=10^6$$) because it has a complexity in $$O(n^3)$$.
+
+## V. Octave Tutorial (Week 2)
+
+### Vectorization
+
+One can implement this equation
+$$h_{\theta_0}(x) = \sum_{j=0}^{n} \theta_j x_j$$
+
