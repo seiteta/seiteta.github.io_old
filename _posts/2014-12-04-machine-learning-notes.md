@@ -132,7 +132,7 @@ for j = 1:n+1,
 end;
 {% endhighlight %}
 
-But since it's equivalent to $$h_{\theta}(x) = \theta^T x$$, it can be implemented in one line:
+But since it's equivalent to $$h_{\theta}(x) = \theta^T x$$, it can be implemented in a vectorized way:
 
 {% highlight matlab %}
 prediction = theta' * x;
