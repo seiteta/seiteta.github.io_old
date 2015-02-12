@@ -21,6 +21,9 @@ Because it's better if you have all the vocabulary you need into a single place.
 * ## [DataKind](http://www.datakind.org/)
 
   *DataKind* is a nonprofit that connects organizations and data scientists who volunteer to help them understanding their data. 
+* ## [Factorization Machine]()
+
+* ## [Feature engineering]()
 
 * ## [Hive](https://hive.apache.org/)
 
@@ -49,3 +52,5 @@ Because it's better if you have all the vocabulary you need into a single place.
 * ## [Scala](http://www.scala-lang.org/)
 
   *Scala* is a programming language both object-oriented and functional. Scala is very close to Java since it is possible to run Scale code directly in Java or to use Java libraries directly in Scala.
+
+* ## [Vowpal Wabbit]()
