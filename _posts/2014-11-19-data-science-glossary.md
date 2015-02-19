@@ -25,6 +25,10 @@ Because it's better if you have all the vocabulary you need into a single place.
 
 * ## [Feature engineering]()
 
+* ## [Gephi](http://gephi.github.io/)
+
+  *Gephi* is an interactive visualization and exploration platform for graphs and network.
+
 * ## [Hive](https://hive.apache.org/)
 
   *Hive* is a data warehouse infrastructure built on top of Hadoop for providing data summarization, query, and analysis. It was initially developed by Facebook.
