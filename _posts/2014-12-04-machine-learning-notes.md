@@ -147,6 +147,7 @@ Logistic regression is used for classification problem. In this chapter, we stud
 ##Hypothesis representation
 
 We use the sigmoid function:
+
 $$ h_\theta (x) = \dfrac{1}{1+e^{-\theta^T x}}$$
 
 $$h_\theta$$ give us the probability that our output is 1:
