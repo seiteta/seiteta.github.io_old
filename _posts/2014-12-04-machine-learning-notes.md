@@ -137,3 +137,9 @@ But since it's equivalent to $$h_{\theta}(x) = \theta^T x$$, it can be implement
 {% highlight matlab %}
 prediction = theta' * x;
 {% endhighlight %}
+
+## VI. Logistic Regression (Week 3)
+
+## Classification
+
+Logistic regression is used for classification problem. In this chapter, we study binary classification problem. The output $$y$$ is either 0 or 1, where 0 is the "negative class" and 1 is the "positive class".
