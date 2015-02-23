@@ -143,3 +143,8 @@ prediction = theta' * x;
 ## Classification
 
 Logistic regression is used for classification problem. In this chapter, we study binary classification problem. The output $$y$$ is either 0 or 1, where 0 is the "negative class" and 1 is the "positive class".
+
+##Hypothesis representation
+
+We use the sigmoid function:
+$$ h_\theta (x) = 1/{1+e{-\theta^T x}}$$
