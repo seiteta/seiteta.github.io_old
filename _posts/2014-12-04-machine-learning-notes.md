@@ -149,4 +149,6 @@ Logistic regression is used for classification problem. In this chapter, we stud
 We use the sigmoid function:
 $$ h_\theta (x) = \dfrac{1}{1+e^{-\theta^T x}}$$
 
+$$h_\theta$$ give us the probability that our output is 1:
+
 $$h_\theta(x) = P(y=1 | x ; \theta)$$
