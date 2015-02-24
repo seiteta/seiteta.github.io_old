@@ -165,3 +165,12 @@ $$h_\theta$$ give us the probability that our output is 1:
 $$h_\theta(x) = P(y=1 | x ; \theta)$$
 
 ### Decision boundary
+
+To get our binary classification we can translate the output of the hypothesis function as follows:
+
+$$
+\begin{align*}
+& h_\theta(x) \geq 0.5 \rightarrow y = 1 \newline
+& h_\theta(x) < 0.5 \rightarrow y = 0 \newline
+\end{align*}
+$$
