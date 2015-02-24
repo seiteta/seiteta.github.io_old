@@ -146,7 +146,7 @@ Logistic regression is used for classification problem. In this chapter, we stud
 
 ### Hypothesis representation
 
-We use the sigmoid function:
+Our hypothesis function is:
 
 $$
 \begin{align*}
@@ -156,7 +156,7 @@ $$
 \end{align*}
 $$
 
-or more simply:
+$$g$$ is called the sigmoid function. More simply, the hypothesis function is:
 
 $$ h_\theta (x) = \dfrac{1}{1+e^{-\theta^T x}}$$
 
