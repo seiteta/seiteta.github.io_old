@@ -175,6 +175,6 @@ $$
 \end{align*}
 $$
 
-$$h_\theta(x) = 0.5 $$ define a line: the decision boundary. For example, if $$& \theta = \begin{bmatrix} -3 \\ 1 \\ 1 \end{bmatrix}$$, then $$h_\theta(x) = g(\theta_0 + \theta_1 x_1 + \theta_2 x_2) = g(-3 +  x_1 +  x_2)$$ and the boudary line is $$ x_1 +  x_2 = 3$$.
+$$h_\theta(x) = 0.5 $$ define a line: the decision boundary. For example, if $$\theta = \begin{bmatrix} -3 \\ 1 \\ 1 \end{bmatrix}$$, then $$h_\theta(x) = g(\theta_0 + \theta_1 x_1 + \theta_2 x_2) = g(-3 +  x_1 +  x_2)$$ and the boudary line is $$ x_1 +  x_2 = 3$$.
 
 $$y = 1$$ in the region define by  $$ x_1 +  x_2 \geq 3$$ and $$y = 0$$ in the region define by  $$ x_1 +  x_2 < 3$$
