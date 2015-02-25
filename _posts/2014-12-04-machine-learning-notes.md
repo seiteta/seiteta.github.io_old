@@ -180,3 +180,7 @@ $$h_\theta(x) = 0.5 $$ define a line: the decision boundary. For example, if $$\
 $$y = 1$$ in the region define by  $$ x_1 +  x_2 \geq 3$$ and $$y = 0$$ in the region define by  $$ x_1 +  x_2 < 3$$
 
 By adding polynomial terms to the hypothesis function, it is possible to have more complex decision boundaries, like conics and complicated shapes.
+
+### Cost function
+
+The cost function used in linear regression can't be used in logistic regression because it become non-convex.
