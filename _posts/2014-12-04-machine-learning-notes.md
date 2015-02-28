@@ -184,3 +184,4 @@ By adding polynomial terms to the hypothesis function, it is possible to have mo
 ### Cost function
 
 The cost function used in linear regression can't be used in logistic regression because it become non-convex.
+Add note from [here](https://share.coursera.org/wiki/index.php/ML:Logistic_Regression#Simplified_Cost_Function_and_Gradient_Descent)
