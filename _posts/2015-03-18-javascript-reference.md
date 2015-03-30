@@ -12,9 +12,24 @@ var timesTwo = function(number) {
 };
 {% endhighlight %}
 
-Syntax:
+General syntax:
 {% highlight javascript %}
-var functionName = function(input) {
-    //do something
+// Create a function:
+var functionName = function(input1, input2) {
+    //do something here;
 };
+
+// Call a function:
+functionName(value1,value2);
+{% endhighlight %}
+
+## If/else
+General syntax:
+{% highlight javascript %}
+if (condition1) {
+    return "some string";
+}
+else {
+    return "another string";
+}
 {% endhighlight %}
