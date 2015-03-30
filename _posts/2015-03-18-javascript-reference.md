@@ -11,3 +11,10 @@ var timesTwo = function(number) {
     return number * 2;
 };
 {% endhighlight %}
+
+Syntax:
+{% highlight javascript %}
+var functionName = function(input) {
+    /do something
+};
+{% endhighlight %}
