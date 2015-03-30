@@ -15,6 +15,6 @@ var timesTwo = function(number) {
 Syntax:
 {% highlight javascript %}
 var functionName = function(input) {
-    /do something
+    //do something
 };
 {% endhighlight %}
