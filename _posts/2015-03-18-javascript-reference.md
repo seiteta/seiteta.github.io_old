@@ -39,3 +39,32 @@ Random number between 0 and 1:
 {% highlight javascript %}
 Math.random()
 {% endhighlight %}
+
+## General syntax
+Single line comment:
+{% highlight javascript %}
+// this is a comment
+{% endhighlight %}
+
+Multi-line comment:
+{% highlight javascript %}
+/*
+Is this the real life?
+Is this just fantasy?
+Caught in a landslide,
+No escape from reality.
+*/
+{% endhighlight %}
+
+Some comparison operators:
+{% highlight javascript %}
+a === 3;	//equal value and equal type
+b <= 8;     //less than or equal to
+{% endhighlight %}
+
+Logical Operators:
+{% highlight javascript %}
+x < 10 && y > 1;    //and
+x === 5 || y === 5; //or
+!(x === y);         //not
+{% endhighlight %}
