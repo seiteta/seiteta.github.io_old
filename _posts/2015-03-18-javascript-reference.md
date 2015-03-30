@@ -33,3 +33,9 @@ else {
     return "another string";
 }
 {% endhighlight %}
+
+## Random
+Random number between 0 and 1:
+{% highlight javascript %}
+Math.random()
+{% endhighlight %}
