@@ -23,7 +23,7 @@ Homebrew is a package manager (like Synaptic if you are familiar with Ubuntu) th
 {% highlight bash %}
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 {% endhighlight %}
-and you just follow its instructions. For example, it told to run `brew doctor` to clean up my previous attempt. You will also need to change the PATH, but again Homebrew will told you how to do.
+and you just follow its instructions. For example, Homebrew told me to run `brew doctor` to clean up my previous attempt. You will also need to change the PATH, but again, Homebrew will told you how to do it.
 
 
 Then, when you are ready to brew, run
