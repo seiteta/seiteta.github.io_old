@@ -79,4 +79,4 @@ A = npr.rand(3, 3) #create a 3x3 random matrix
 *bokeh* is an interactive web visualization library.
 
 ##[mlxtend](https://github.com/rasbt/mlxtend)
-*mlxtend* is a library of extension and helper modules for Python's data analysis and machine learning libraries.
+*mlxtend* is a library of extension and helper modules for Python's data analysis and machine learning libraries, made by [Sebastian Raschka](https://twitter.com/rasbt).
