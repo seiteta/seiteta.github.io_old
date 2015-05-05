@@ -1,3 +1,3 @@
 seiteta.github.io
 =================
-This website is created with Jekyll.
+Created with [Jekyll](http://jekyllrb.com/docs/quickstart/).
