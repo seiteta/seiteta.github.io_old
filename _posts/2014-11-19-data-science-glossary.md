@@ -2,6 +2,7 @@
 layout: post
 permalink: /glossary.html
 title: Data science glossary
+post_author: Frédéric Bardolle
 ---
 
 Because it's better if you have all the vocabulary you need into a single place.
