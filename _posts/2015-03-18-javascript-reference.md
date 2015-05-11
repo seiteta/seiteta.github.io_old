@@ -3,6 +3,7 @@ layout: post
 permalink: /javascript-reference.html
 title: My Javascript cheat sheet
 tags: Javascript cheat-sheet
+author: Frédéric Bardolle
 ---
 ## Function
 * Create a function:
