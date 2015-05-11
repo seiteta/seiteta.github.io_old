@@ -2,6 +2,7 @@
 layout: post
 permalink: /ml-notes.html
 title: Machine learning notes
+author: Frédéric Bardolle
 ---
 
 My notes from the [ML Coursera class](https://www.coursera.org/course/ml), taught by Andrew Ng.
