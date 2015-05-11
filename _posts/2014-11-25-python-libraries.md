@@ -3,6 +3,7 @@ layout: post
 permalink: /python-libraries.html
 title: My Python libraries cheat sheet
 tags: Python library cheat-sheet
+author: Frédéric Bardolle
 ---
 ## [scipy](http://www.scipy.org/)
 *scipy* is an eccosystem that includes several libraries like NumPy, matplotlib, IPython, Sympy and pandas.
