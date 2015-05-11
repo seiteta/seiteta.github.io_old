@@ -3,6 +3,7 @@ layout: post
 permalink: /python-reference.html
 title: My Python cheat sheet
 tags: Python cheat-sheet
+author: Frédéric Bardolle
 ---
 ## String
 * Iterate over a string:
