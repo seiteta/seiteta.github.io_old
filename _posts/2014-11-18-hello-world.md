@@ -2,6 +2,7 @@
 layout: post
 permalink: /hello.html
 title: Hello world
+author: Frédéric Bardolle
 ---
 
 Hello world, this is my first post using Jekyll! やった!!
