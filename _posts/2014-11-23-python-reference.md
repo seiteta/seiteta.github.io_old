@@ -204,7 +204,7 @@ def compute_bill(food):
         if stock[fruit] <> 0:
             total += prices[fruit]
             stock[fruit] += -1
-            #first time I thought "wow, Python is beautiful"
+            #first time I thought "wow, Python really is beautiful"
     return total
 {% endhighlight %}
 
