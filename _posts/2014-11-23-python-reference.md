@@ -102,6 +102,7 @@ backwards = my_list[::-1]
 
 ## Dictionaries
 Pairs of key and value. **Warning**: dictionaries are unordered.
+
 * Create a dictionnary:
 {% highlight python %}
 ponies = { 'Twilight Sparkle' : 'Unicorn pony',
