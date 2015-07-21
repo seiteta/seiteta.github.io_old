@@ -123,7 +123,7 @@ ponies['Rarity'] = 'Unicorn pony'
 del ponies['Rarity']
 {% endhighlight %}
 
-* Values can be list, int, string...
+* Values can be `list`, `int`, `string`...
 {% highlight python %}
 backpack = {
     'money' : 30,
