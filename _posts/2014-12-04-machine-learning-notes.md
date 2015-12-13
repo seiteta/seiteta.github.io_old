@@ -120,6 +120,8 @@ Note that if $$ X^TX $$ is non-invertible (it can happen when their are too many
 
 Compared to the descent algorithm, there is no need to choose $$\alpha$$ nor the number of iteration, which is good. But the inversion of the matrix can make the algorithme slow when the number of features $$n$$ become big (for our computer $$n>=10^6$$) because it has a complexity in $$O(n^3)$$.
 
+One last thing:  using the normal equation does not require any feature scaling.
+
 ## V. Octave Tutorial (Week 2)
 
 ### Vectorization
