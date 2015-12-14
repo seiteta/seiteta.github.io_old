@@ -126,7 +126,7 @@ One last thing:  using the normal equation does not require any feature scaling.
 
 ### Vectorization
 
-One can implement this equation $$h_{\theta}(x) = \sum_{j=0}^{n} \theta_j x_j$$ with this code:
+One can implement the equation $$h_{\theta}(x) = \sum_{j=0}^{n} \theta_j x_j$$ with this code:
 
 {% highlight matlab %}
 prediction = 0.0;
@@ -140,6 +140,8 @@ But since it's equivalent to $$h_{\theta}(x) = \theta^T x$$, it can be implement
 {% highlight matlab %}
 prediction = theta' * x;
 {% endhighlight %}
+
+The vectorized implementation should be preferred because it is more concise and runs much faster.
 
 ## VI. Logistic Regression (Week 3)
 
