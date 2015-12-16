@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /ml-notes.html
-title: Machine learning notes
+title: Machine learning notes 🤖
 author: Frédéric Bardolle
 ---
 
