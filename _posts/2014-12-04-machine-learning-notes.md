@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /ml-notes.html
-title: Machine learning notes 🤖
+title: Machine learning notes
 author: Frédéric Bardolle
 ---
 
@@ -151,7 +151,7 @@ The vectorized implementation should be preferred because it is more concise and
 
 ### Classification
 
-Logistic regression is used for classification problem. In this chapter, we study binary classification problem. The output $$y$$ is either 0 or 1, where 0 is the "negative class" and 1 is the "positive class".
+Logistic regression is used for classification problem. In this chapter, we study binary classification problem. The output $$y$$ is either 0 or 1, where 0 is the "negative class" and 1 is the "positive class". Hence, $$h_\theta (x)$$ should always be between 0 and 1 for binary classification.
 
 ### Hypothesis representation
 
