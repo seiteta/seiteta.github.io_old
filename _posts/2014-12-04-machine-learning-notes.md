@@ -64,6 +64,10 @@ $$\theta_1 := \theta_1 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} \left (h_\theta (x^{
 
 and simultaneously update $$\theta_0$$ and $$\theta_1$$.
 
+## III. Linear Algebra Review (Week 1)
+
+![<3 matrices](http://ihaveagif.com/img/gifs/R3/R3P4VJM3.gif)
+
 ## IV. Linear Regression with Multiple Variables (Week 2)
 
 ### Multivariate linear regression:
