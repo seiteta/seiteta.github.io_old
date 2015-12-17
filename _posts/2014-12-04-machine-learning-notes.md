@@ -165,13 +165,15 @@ $$
 \end{align*}
 $$
 
-$$g$$ is called the sigmoid function. More simply, the hypothesis function is:
+$$g$$ is called the sigmoid function or the logistic function. More simply, the hypothesis function is:
 
 $$ h_\theta (x) = \dfrac{1}{1+e^{-\theta^T x}}$$
 
 $$h_\theta$$ give us the probability that our output is 1:
 
 $$h_\theta(x) = P(y=1 | x ; \theta)$$
+
+that read "the probability that $$y=1$$, given $$x$$, parametrized by $$/theta$$
 
 ### Decision boundary
 
