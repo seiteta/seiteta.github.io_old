@@ -173,7 +173,7 @@ $$h_\theta$$ give us the probability that our output is 1:
 
 $$h_\theta(x) = P(y=1 | x ; \theta)$$
 
-that read "the probability that $$y=1$$, given $$x$$, parametrized by $$/theta$$
+that reads "the probability that $$y=1$$, given $$x$$, parametrized by $$\theta$$
 
 ### Decision boundary
 
