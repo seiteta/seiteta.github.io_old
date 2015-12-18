@@ -5,7 +5,7 @@ title: Machine learning notes
 author: Frédéric Bardolle
 ---
 
-My notes from the [ML Coursera class](https://www.coursera.org/course/ml), taught by Andrew Ng.
+My notes from the [ML Coursera class](https://www.coursera.org/course/ml), taught by Andrew Ng. See also thie [wiki](https://share.coursera.org/wiki/index.php/ML:Main)
 
 ## I. Introduction (Week 1)
 
@@ -211,3 +211,31 @@ The gradient descent looks exactly the same, except for the hypothesis function.
 $$\theta_j := \theta_j - \alpha \dfrac{1}{m} \sum_{i=1}^{m} \left (h_\theta (x^{(i)}) - y^{(i)} \right)\cdot  x_j^{(i)}$$
 
 and simultaneously update all $$\theta_j$$.
+
+### Advanced Optimization
+Instead of gradient descent, it is possible to minimize the cost function with other algorithms like conjugate gradient, BFGS or L-BFGS. Some of their advantages is that $$\alpha$$ is automatically updated and they converge faster.
+
+These algorithms already exist in librairies, but to use them, we need to write a function that return the cost function and the partial derivatives:
+
+{% highlight matlab %}
+function [jVal, gradient] = costFunction(theta)
+  jval = []; %code to compute J(theta)
+  gradient = []; % code to compute partial derivative of J(theta)
+end
+{% endhighlight %}
+
+and then call it with a solver like [`fminunc`](http://fr.mathworks.com/help/optim/ug/fminunc.html):
+
+{% highlight matlab %}
+options = optimset('GradObj', 'on', 'MaxIter', 100);
+initialTheta = zeros(2,1);
+
+[optTheta, functionVal, exitFlag] = fminunc(@costFunction, initialTheta, options); %the @ is for Octave, not sure about MATLAB
+{% endhighlight %}
+
+### Multiclass Classification: One-vs-all
+If the problem is multiclass instead of binary, we can use the one-vs-all (or one-vs-rest) approach. The idea is to train a single classifier for each class $$i$$:
+
+$$h_\theta^{(i)}(x) = P(y = i | x ; \theta)$$
+
+To make new prediction for a new sample $$x$$: $$\max_i( h_\theta ^{(i)}(x) $$.
