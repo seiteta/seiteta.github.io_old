@@ -197,4 +197,4 @@ $$
 \end{align}
 $$
 
-This way, when $$y = 1$$, if $$ h_\theta(x) = 1$$, $$cost(h_\theta(x),y) = 0$$ and when $$ h_\theta(x) \rightarrow 0$$, $$ cost(h_\theta(x),y) \rightarrow \infty$$.
+This way, when $$y = 1$$, if $$ h_\theta(x) = 1$$, then $$cost(h_\theta(x),y) = 0$$, and when $$ h_\theta(x) \rightarrow 0$$, then $$ cost(h_\theta(x),y) \rightarrow \infty$$.
