@@ -204,7 +204,7 @@ This way, when $$y = 1$$, if $$ h_\theta(x) = 1$$, then $$\text{cost}(h_\theta(x
 
 Since $$y$$ is always equal to either $$0$$ or $$1$$, the cost function can be expressed as: 
 
-$$J(\theta) = - \frac{1}{m} \sum_{i=1}^m \left [y^{(i)}\log (h_\theta (x^{(i)})) + (1 - y^{(i)})\log (1 - h_\theta(x^{(i)})) \right ]$$
+$$J(\theta) = - \frac{1}{m} \sum_{i=1}^m \left [y^{(i)}\log (h_\theta \left (x^{(i)}) \right) + (1 - y^{(i)})\log \left (1 - h_\theta(x^{(i)}) \right ) \right ]$$
 
 The gradient descent looks exactly the same, except for the hypothesis function. Repeat until convergence:
 
