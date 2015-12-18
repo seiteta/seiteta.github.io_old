@@ -189,6 +189,7 @@ The cost function used in linear regression can't be used in logistic regression
 $$J(\theta) =  \dfrac{1}{m} \sum_{i=1}^{m} \left ( cost(h_\theta (x^{(i)}), y^{(i)}\right )$$
 
 with
+
 $$
 \begin{align*}
 cost(h_\theta(x),y)=−log(h_\theta(x))$$ if $$y = 1
