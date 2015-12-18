@@ -186,7 +186,7 @@ By adding polynomial terms to the hypothesis function, it is possible to have mo
 
 The cost function used in linear regression can't be used in logistic regression because it become non-convex, with many local minima. It can be written as:
 
-$$J(\theta) =  \dfrac{1}{m} \sum_{i=1}^{m} \left ( cost(h_\theta (x^{(i)}), y^{(i)}\right )$$
+$$J(\theta) =  \dfrac{1}{m} \sum_{i=1}^{m} \left ( \text{cost}(h_\theta (x^{(i)}), y^{(i)}\right )$$
 
 with
 
