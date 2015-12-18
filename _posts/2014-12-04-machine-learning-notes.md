@@ -238,4 +238,4 @@ If the problem is multiclass instead of binary, we can use the one-vs-all (or on
 
 $$h_\theta^{(i)}(x) = P(y = i | x ; \theta)$$
 
-To make new prediction for a new sample $$x$$: $$\max_i( h_\theta ^{(i)}(x) $$.
+To make new prediction for a new sample $$x$$: $$\text{prediction}=\max_i( h_\theta ^{(i)}(x) $$.
