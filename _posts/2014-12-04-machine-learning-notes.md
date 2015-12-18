@@ -155,17 +155,7 @@ Logistic regression is used for classification problem. In this chapter, we stud
 
 ### Hypothesis representation
 
-Our hypothesis function is:
-
-$$
-\begin{align*}
-& h_\theta (x) =  g ( \theta^T x ) \newline \newline
-& z = \theta^T x \newline
-& g(z) = \dfrac{1}{1 + e^{-z}}
-\end{align*}
-$$
-
-$$g$$ is called the sigmoid function or the logistic function. More simply, the hypothesis function is:
+The hypothesis function for logistic regression is called the sigmoid function or the logistic function:
 
 $$ h_\theta (x) = \dfrac{1}{1+e^{-\theta^T x}}$$
 
@@ -194,5 +184,10 @@ By adding polynomial terms to the hypothesis function, it is possible to have mo
 
 ### Cost function
 
-The cost function used in linear regression can't be used in logistic regression because it become non-convex.
-Add note from [here](https://share.coursera.org/wiki/index.php/ML:Logistic_Regression#Simplified_Cost_Function_and_Gradient_Descent)
+The cost function used in linear regression can't be used in logistic regression because it become non-convex, with many local minima. It can be written as:
+
+$$J(\theta) =  \dfrac{1}{m} \sum_{i=1}^{m} \left ( cost(h_\theta (x^{(i)}), y^{(i)}\right )$$
+
+with
+$$cost(h_\theta(x),y)=−log(h_\theta(x))$$ if $$y = 1$$
+$$cost(h_\theta(x),y)=−log(1−h_\theta(x))$$ if $$y = 0$$
