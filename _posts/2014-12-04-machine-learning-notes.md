@@ -192,8 +192,8 @@ with
 
 $$
 \begin{align*}
-cost(h_\theta(x),y)=−log(h_\theta(x))$$ if $$y = 1
-cost(h_\theta(x),y)=−log(1−h_\theta(x))$$ if $$y = 0
+cost(h_\theta(x),y)=−log(h_\theta(x))  \text{if} y = 1
+cost(h_\theta(x),y)=−log(1−h_\theta(x)) \text{if} y = 0
 \end{align*}
 $$
 
