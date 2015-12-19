@@ -239,3 +239,20 @@ If the problem is multiclass instead of binary, we can use the one-vs-all (or on
 $$h_\theta^{(i)}(x) = P(y = i | x ; \theta)$$
 
 To make new prediction for a new sample $$x$$: $$\text{prediction}=\max_i( h_\theta ^{(i)}(x) $$.
+
+## VII. Regularization (Week 3)
+
+### The Problem of Overfitting
+A model that is too simple can lead to underfitting (or high bias). Conversely, a model that is too complex can lead to overfitting (or high variance), meaning that the learned hypothesis fits the train set very well but fail to generalize to new examples.
+
+There are two main options to address the issue of overfitting:
+1. Reduce the number of features.
+2. Regularization.
+
+
+### Cost Function
+
+### Regularized Linear Regression
+
+### Regularized Logistic Regression
+
