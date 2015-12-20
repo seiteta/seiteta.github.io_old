@@ -256,7 +256,32 @@ The idea behind regularization is having small values for the parameters $$\thet
 
 $$J(\theta_0, \theta_1) = \dfrac{1}{2m} \left[ \sum_{i=1}^{m} \left(h_\theta (x^{(i)}) - y^{(i)}\right)^2 + \lambda\ \sum_{j=1}^n \theta_j^2 \right]$$
 
+$$\lambda$$ is called the regularization parameter.
+
 ### Regularized Linear Regression
+For gradient descent:
+
+$$
+\begin{align*}
+& \theta_0 := \theta_0 - \alpha\ \frac{1}{m}\ \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})x_0^{(i)} \\
+& \theta_j := \theta_j - \alpha\ \left[ \left( \frac{1}{m}\ \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})x_j^{(i)} \right) + \frac{\lambda}{m}\theta_j \right] &\ \ \ \ \ j \in \lbrace 1,2...n\rbrace \\
+\end{align*}
+$$
+
+For normal equation:
+$$
+\begin{align*}
+& \theta = \left( X^TX + \lambda \cdot L \right)^{-1} X^Ty \\
+& \text{where}\ \ L = 
+\begin{bmatrix}
+ 0 & & & & \\
+ & 1 & & & \\
+ & & 1 & & \\
+ & & & \ddots & \\
+ & & & & 1 \\
+\end{bmatrix}
+\end{align*}
+$$
 
 ### Regularized Logistic Regression
 
