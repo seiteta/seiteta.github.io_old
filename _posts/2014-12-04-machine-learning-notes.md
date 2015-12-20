@@ -252,6 +252,9 @@ There are two main options to address the issue of overfitting:
 
 
 ### Cost Function
+The idea behind regularization is having small values for the parameters $$\theta_j$$ to have a simpler hypothesis. Basically, it is a way to use less features as possible.
+
+$$J(\theta_0, \theta_1) = \dfrac{1}{2m} \left] \sum_{i=1}^{m} \left(h_\theta (x^{(i)}) - y^{(i)}\right)^2 + \lambda\ \sum_{j=1}^n \theta_j^2 \right]$$
 
 ### Regularized Linear Regression
 
