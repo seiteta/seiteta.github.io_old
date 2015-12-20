@@ -264,7 +264,7 @@ For gradient descent:
 $$
 \begin{align*}
 & \theta_0 := \theta_0 - \alpha\ \frac{1}{m}\ \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})x_0^{(i)} \\
-& \theta_j := \theta_j - \alpha\ \left[ \left( \frac{1}{m}\ \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})x_j^{(i)} \right) + \frac{\lambda}{m}\theta_j \right] &\ \ \ \ \ j \in \lbrace 1,2...n\rbrace \\
+& \theta_j := \theta_j - \alpha\ \left[ \left( \frac{1}{m}\ \sum_{i=1}^m (h_\theta(x^{(i)}) - y^{(i)})x_j^{(i)} \right) + \frac{\lambda}{m}\theta_j \right] & \text{for } j \in \lbrace 1,2...n\rbrace \\
 \end{align*}
 $$
 
@@ -273,7 +273,7 @@ For normal equation:
 $$
 \begin{align*}
 & \theta = \left( X^TX + \lambda \cdot L \right)^{-1} X^Ty \\
-& \text{where}\ \ L = 
+& \text{where } L = 
 \begin{bmatrix}
  0 & & & \\
  & 1 & & \\
@@ -283,5 +283,12 @@ $$
 \end{align*}
 $$
 
+A quick note about non-invertibility: supposed the $$m \le n$$ (i.e. there are more features than examples), the matrix $$X^TX$$ is non-invertible (or singular), but the matrix $$X^TX + \lambda \cdot L$$ is invertible. Thank you regularization!
+
 ### Regularized Logistic Regression
+
+For logistic regression, the cost function becomes:
+$$ J(\theta) = - \frac{1}{m} \sum_{i=1}^m \left [y^{(i)}\log \left (h_\theta (x^{(i)}) \right) + (1 - y^{(i)})\log \left (1 - h_\theta(x^{(i)}) \right ) \right ] + \frac{\lambda}{2m}\sum_{j=1}^n \theta_j^2 $$
+
+and the gradient descent algorithm looks like the same as the one for linear regression, exept $$\h(\theta)$$ is a different function.
 
