@@ -290,5 +290,5 @@ A quick note about non-invertibility: supposed the $$m \le n$$ (i.e. there are m
 For logistic regression, the cost function becomes:
 $$ J(\theta) = - \frac{1}{m} \sum_{i=1}^m \left [y^{(i)}\log \left (h_\theta (x^{(i)}) \right) + (1 - y^{(i)})\log \left (1 - h_\theta(x^{(i)}) \right ) \right ] + \frac{\lambda}{2m}\sum_{j=1}^n \theta_j^2 $$
 
-and the gradient descent algorithm looks like the same as the one for linear regression, exept $$\h(\theta)$$ is a different function.
+and the gradient descent algorithm looks like the one for linear regression, exept $$h_\theta$$ is a different function.
 
