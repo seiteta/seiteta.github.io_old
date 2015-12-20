@@ -269,16 +269,16 @@ $$
 $$
 
 For normal equation:
+
 $$
 \begin{align*}
 & \theta = \left( X^TX + \lambda \cdot L \right)^{-1} X^Ty \\
 & \text{where}\ \ L = 
 \begin{bmatrix}
- 0 & & & & \\
- & 1 & & & \\
- & & 1 & & \\
- & & & \ddots & \\
- & & & & 1 \\
+ 0 & & & \\
+ & 1 & & \\
+ & & \ddots & \\
+ & & & 1 \\
 \end{bmatrix}
 \end{align*}
 $$
