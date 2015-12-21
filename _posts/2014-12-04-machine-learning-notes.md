@@ -295,7 +295,7 @@ and the gradient descent algorithm looks like the one for linear regression, exe
 
 ### Non-linear Hypotheses
 
-The problem with methods like logistic regression is that if we want to build a non-linear hypothesis function, we need approximatly $ \dfrac{n^2}{2}$$ parameters for $$n$$ features to include all the quadratic term. But an image of only 50x50 pixels have 2500 features if it is grayscale, and 7500 if it is colored. That means 3 millions features for the grayscale version and 28 millions features for the colored ones.
+The problem with methods like logistic regression is that if we want to build a non-linear hypothesis function, we need approximatly $$\dfrac{n^2}{2}$$ parameters for $$n$$ features to include all the quadratic term. But an image of only 50x50 pixels have 2500 features if it is grayscale, and 7500 if it is colored. That means 3 millions features for the grayscale version and 28 millions features for the colored ones.
 
 ### Neurons and the Brain
 
