@@ -298,10 +298,13 @@ and the gradient descent algorithm looks like the one for linear regression, exe
 The problem with methods like logistic regression is that if we want to build a non-linear hypothesis function, we need approximatly $ \dfrac{n^2}{2}$$ parameters for $$n$$ features to include all the quadratic term. But an image of only 50x50 pixels have 2500 features if it is grayscale, and 7500 if it is colored. That means 3 millions features for the grayscale version and 28 millions features for the colored ones.
 
 ### Neurons and the Brain
+
 ![Pinky and the Brain](https://media.giphy.com/media/JGWTrgUc1WMDe/giphy.gif)
+
 Some "rewiring" experiences prove that the brain have what is call "neuroplasticity", which basically means that every piece of the brain can learn to perform any task.
 
 ### Model Representation I
+
 $$\theta$$ parameters are sometimes called "weights" in the neural networks model. The first layer is called the "input layer", the last is called "output layer" and the layers in-between are called "hidden layers".
 
-%%a_i^{j}%% is the activation of the unit $$i$$ in the layer $$j$$. The parameters are represented in $$\Theta^{j}%%, a matrix of weights controlling the mapping from a layer $$j$$ to a layer $$j+1$$.
+$$a_i^{j}$$ is the activation of the unit $$i$$ in the layer $$j$$. The parameters are represented in $$\Theta^{j}%%, a matrix of weights controlling the mapping from a layer $$j$$ to a layer $$j+1$$.
