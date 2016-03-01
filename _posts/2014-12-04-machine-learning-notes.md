@@ -308,11 +308,13 @@ Some "rewiring" experiences prove that the brain have what is call "neuroplastic
 $$\theta$$ parameters are sometimes called "weights" in the neural networks model. The first layer is called the "input layer", the last is called "output layer" and the layers in-between are called "hidden layers".
 
 * $$a_i^{j}$$ is the activation of the unit $$i$$ in the layer $$j$$.
-* The parameters are represented in $$\Theta^{j}$$, a matrix of weights controlling the mapping from a layer $$j$$ to a layer $$j+1$$.
+* Parameters are represented in $$\Theta^{j}$$, a matrix of weights controlling the mapping from a layer $$j$$ to a layer $$j+1$$.
 * If network has $$s_j$$ units in layer $$j$$ and $$s_{j+1}$$ units in layer $$j+1$$, then $$\Theta^{j}$$ will be of dimension $$s_{j+1}×(s_{j}+1)$$.
 
 ### Model Representation II
 
+Considering only the last hidden unit and the output unit, we are doing exactly the same thing as we did in logistic regression, excepted that the neural network, rather than using the original features, is using new features, computed by the hidden unit.
+8:30
 
 
 
