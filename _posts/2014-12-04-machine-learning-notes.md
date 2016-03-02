@@ -303,7 +303,7 @@ The problem with methods like logistic regression is that if we want to build a 
 
 Some "rewiring" experiences prove that the brain have what is call "neuroplasticity", which basically means that every piece of the brain can learn to perform any task.
 
-### Model Representation I
+### Model Representation I & II
 
 $$\theta$$ parameters are sometimes called "weights" in the neural networks model. The first layer is called the "input layer", the last is called "output layer" and the layers in-between are called "hidden layers".
 
@@ -311,11 +311,9 @@ $$\theta$$ parameters are sometimes called "weights" in the neural networks mode
 * Parameters are represented in $$\Theta^{j}$$, a matrix of weights controlling the mapping from a layer $$j$$ to a layer $$j+1$$.
 * If network has $$s_j$$ units in layer $$j$$ and $$s_{j+1}$$ units in layer $$j+1$$, then $$\Theta^{j}$$ will be of dimension $$s_{j+1}×(s_{j}+1)$$.
 
-### Model Representation II
-
 Considering only the last hidden unit and the output unit, we are doing exactly the same thing as we did in logistic regression, excepted that the neural network, rather than using the original features, is using new features, computed by the hidden unit. More details on the vector implementation can be founded [here](https://share.coursera.org/wiki/index.php/ML:Neural_Networks:_Representation#Model_Representation_II).
 
-### Examples and Intuitions I
+### Examples and Intuitions I & II
 
 It is easy to build AND and OR function using simple single-layer neural network:
 
@@ -327,6 +325,7 @@ It is easy to build AND and OR function using simple single-layer neural network
 |  $$0$$  |  $$1$$  | $$g(-10) \approx 0$$ |
 |  $$1$$  |  $$0$$  | $$g(-10) \approx 0$$ |
 |  $$1$$  |  $$1$$  |  $$g(10) \approx 1$$ |
+|         |         |                      |
 
 * OR: If $$\Theta^{1} = \begin{bmatrix} -10 & 20 & 20 \end{bmatrix}$$, then $$h_\Theta(x) = g(-10 + 20x_1 + 20x_2)$$:
 
@@ -336,3 +335,6 @@ It is easy to build AND and OR function using simple single-layer neural network
 |  $$0$$  |  $$1$$  |  $$g(10) \approx 1$$ |
 |  $$1$$  |  $$0$$  |  $$g(10) \approx 1$$ |
 |  $$1$$  |  $$1$$  |  $$g(30) \approx 1$$ |
+|         |         |                      |
+
+It is possible to build more complicated function (XNOR for example) by adding an hidden layer.
