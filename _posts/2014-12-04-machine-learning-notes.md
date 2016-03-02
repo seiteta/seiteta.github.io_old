@@ -319,12 +319,12 @@ Considering only the last hidden unit and the output unit, we are doing exactly 
 
 It is easy to build AND and OR function using simple single-layer neural network:
 
-AND: If $$\Theta^{1} = \begin{bmatrix} -30 & 20 & 20 \end{bmatrix}$$, then $$h_\Theta(x) = g(-30 + 20x_1 + 20x_2)$$. The thruth table is:
+AND: If $$\Theta^{1} = \begin{bmatrix} -30 & 20 & 20 \end{bmatrix}$$, then $$h_\Theta(x) = g(-30 + 20x_1 + 20x_2)$$:
 
-| $$x_1$$ | $$x_2$$ | h_\Theta(x)          |
-|:-------:|---------|----------------------|
-| 0       | 0       | $$g(-30) \approx 0$$ |
-| 0       | 1       | $$g(-10) \approx 0$$ |
-| 1       | 0       | $$g(-10) \approx 0$$ |
-| 1       | 1       | $$g(10) \approx 1$$  |
+| $$x_1$$ | $$x_2$$ |    $$h_\Theta(x)$$   |
+|:-------:|:-------:|:--------------------:|
+|  $$0$$  |  $$0$$  | $$g(-30) \approx 0$$ |
+|  $$0$$  |  $$1$$  | $$g(-10) \approx 0$$ |
+|  $$1$$  |  $$0$$  | $$g(-10) \approx 0$$ |
+|  1$$1$$ |  $$1$$  |  $$g(10) \approx 1$$ |
 
