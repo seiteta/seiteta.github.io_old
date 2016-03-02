@@ -313,6 +313,9 @@ $$\theta$$ parameters are sometimes called "weights" in the neural networks mode
 
 Considering only the last hidden unit and the output unit, we are doing exactly the same thing as we did in logistic regression, excepted that the neural network, rather than using the original features, is using new features, computed by the hidden unit. More details on the vector implementation can be founded [here](https://share.coursera.org/wiki/index.php/ML:Neural_Networks:_Representation#Model_Representation_II).
 
+* $$a^{(j)} = g(z^{(j)})$$
+* $$z^{(j)} = \Theta^{(j-1)}a^{(j-1)}$$
+
 ### Examples and Intuitions I & II
 
 It is easy to build AND and OR function using simple single-layer neural network:
@@ -338,3 +341,7 @@ It is easy to build AND and OR function using simple single-layer neural network
 |         |         |                      |
 
 It is possible to build more complicated function (XNOR for example) by adding an hidden layer.
+
+### Multiclass Classification
+
+To do multiclass classification, we [one-hot](https://en.wikipedia.org/wiki/One-hot) encode the resulting classes.
