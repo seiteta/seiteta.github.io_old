@@ -313,8 +313,17 @@ $$\theta$$ parameters are sometimes called "weights" in the neural networks mode
 
 ### Model Representation II
 
-Considering only the last hidden unit and the output unit, we are doing exactly the same thing as we did in logistic regression, excepted that the neural network, rather than using the original features, is using new features, computed by the hidden unit.
-8:30
+Considering only the last hidden unit and the output unit, we are doing exactly the same thing as we did in logistic regression, excepted that the neural network, rather than using the original features, is using new features, computed by the hidden unit. More details on the vector implementation can be founded [here](https://share.coursera.org/wiki/index.php/ML:Neural_Networks:_Representation#Model_Representation_II).
 
+### Examples and Intuitions I
 
+It is easy to build AND and OR function using simple single-layer neural network:
+
+AND: If $$\Theta^{1}$$ = \begin{bmatrix} -30 & 20 & 20 \end{bmatrix}$$, then $$h_\Theta(x) = g(-30 + 20x_1 + 20x_2)$$. The thruth table is:
+| $$x_1$$ | $$x_2$$ | h_\Theta(x)          |
+|:-------:|---------|----------------------|
+| 0       | 0       | $$g(-30) \approx 0$$ |
+| 0       | 1       | $$g(-10) \approx 0$$ |
+| 1       | 0       | $$g(-10) \approx 0$$ |
+| 1       | 1       | $$g(10) \approx 1$$  |
 
