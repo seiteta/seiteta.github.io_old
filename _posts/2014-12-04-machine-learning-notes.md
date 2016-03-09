@@ -355,3 +355,11 @@ To do multiclass classification, we [one-hot](https://en.wikipedia.org/wiki/One-
 The neural network cost function is a generalization of the one we used for logistic regression. With $$L$$ the number of layers, $$s_l$$ the number of units (not counting bias unit) in layer $$l$$ and $$K$$ the number of output units/classes:
 
 $$J(\Theta) = - \frac{1}{m} \left[ \sum_{i=1}^m \sum_{k=1}^K y^{(i)}_k \log ((h_\Theta (x^{(i)}))_k) + (1 - y^{(i)}_k)\log (1 - (h_\Theta(x^{(i)}))_k)\right] + \frac{\lambda}{2m}\sum_{l=1}^{L-1} \sum_{i=1}^{s_l} \sum_{j=1}^{s_{l+1}} ( \Theta_{j,i}^{(l)})^2$$
+
+### Backpropagation Algorithm
+
+Since we try to minimize $$J(\Theta)$$, we will need to compute $$J(\Theta)$$ and $$\dfrac{\partial}{\partial \Theta_{i,j}^{(l)}}J(\Theta)$$.
+
+For each example in the training set, we have to do a forward propagation to compute the activation values, then do a backward propagation to compute the $$\delta_j^{(l)}$$ ("error" of node $$j$$ in layer $$l$$) which are added in an "accumulator": $$\Delta^{(l)}_{i,j} := \Delta^{(l)}_{i,j} + a_j^{(l)} \delta_i^{(l+1)}$$.
+
+More details in the [wiki](https://share.coursera.org/wiki/index.php/ML:Neural_Networks:_Learning#Backpropagation_Algorithm).
