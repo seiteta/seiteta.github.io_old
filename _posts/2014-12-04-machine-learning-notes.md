@@ -345,3 +345,13 @@ It is possible to build more complicated function (XNOR for example) by adding a
 ### Multiclass Classification
 
 To do multiclass classification, we [one-hot](https://en.wikipedia.org/wiki/One-hot) encode the resulting classes.
+
+
+
+## IX. Neural Networks: Learning (Week 5)
+
+### Cost Function
+
+The neural network cost function is a generalization of the one we used for logistic regression. With $$L$$ the number of layers, $$s_l$$ the number of units (not counting bias unit) in layer $$l$$ and $$K$$ the number of output units/classes:
+
+$$J(\Theta) = - \frac{1}{m} \left[ \sum_{i=1}^m \sum_{k=1}^K y^{(i)}_k \log ((h_\Theta (x^{(i)}))_k) + (1 - y^{(i)}_k)\log (1 - (h_\Theta(x^{(i)}))_k)\right] + \frac{\lambda}{2m}\sum_{l=1}^{L-1} \sum_{i=1}^{s_l} \sum_{j=1}^{s_{l+1}} ( \Theta_{j,i}^{(l)})^2$$
