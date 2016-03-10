@@ -369,5 +369,5 @@ More details in the [wiki](https://share.coursera.org/wiki/index.php/ML:Neural_N
 Computation of an activation weight:
 First, compute $$ z_1^{(3)} =  \Theta^{(2)}_{10} * 1 + \Theta^{(2)}_{11} * a_1^{(2)} + \Theta^{(2)}_{12} * a_2^{(2)}$$ and then $$a_1^{(3)} = g(z_1^{(3)})$$.
 
-Computation of $$/delta$$ "errors" are very similar:
+Computation of $$\delta$$ "errors" are very similar:
 For example $$\delta_2^{(2)} = \Theta^{(2)}_{12} * \delta_1^{(3)} + \Theta^{(2)}_{22} * \delta_2^{(3)} $$
