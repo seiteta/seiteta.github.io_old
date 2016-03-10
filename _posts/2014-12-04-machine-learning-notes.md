@@ -386,3 +386,32 @@ Theta1 = reshape(thetaVector(1:110),10,11)
 Theta2 = reshape(thetaVector(111:220),10,11)
 Theta3 = reshape(thetaVector(221:231),1,11)
 {% endhighlight %}
+
+### Gradient Checking
+
+Backpropagation is tricky to implement. To ensure that everything works fine, we can compute a numerical estimation of the gradient and compare it to the $$\Delta$$ gradient. The derivative of the cost function is :
+
+$$\dfrac{\partial}{\partial\Theta}J(\Theta) \approx \dfrac{J(\Theta + \epsilon) - J(\Theta - \epsilon)}{2\epsilon}$$
+
+And for $$\Theta_j$$
+
+\dfrac{\partial}{\partial\Theta_j}J(\Theta) \approx \dfrac{J(\Theta_1, \dots, \Theta_j + \epsilon, \dots, \Theta_n) - J(\Theta_1, \dots, \Theta_j - \epsilon, \dots, \Theta_n)}{2\epsilon}
+
+Which can be implemented as:
+
+{% highlight matlab %}
+epsilon = 1e-4; % value recommended in the course
+for i = 1:n,
+  thetaPlus = theta;
+  thetaPlus(i) += epsilon;
+  thetaMinus = theta;
+  thetaMinus(i) -= epsilon;
+  gradApprox(i) = (J(thetaPlus) - J(thetaMinus))/(2*epsilon)
+end;
+{% endhighlight %}
+
+Note: gradient checking is only use in debugging. It should be turned off when we train the model because it is a very slow algorithm.
+
+
+
+
