@@ -412,6 +412,17 @@ end;
 
 Note: gradient checking is only use in debugging. It should be turned off when we train the model because it is a very slow algorithm.
 
+### Random Initialization
+
+If we initialize all the parameters at $$0$$, every activation weigths (in their respective layer) wil be the same. Each parameter is initialize to a random value between $$[−\epsilon,\epsilon]$$, for example:
+
+{% highlight matlab %}
+Theta1 = rand(10,11) * (2 * INIT_EPSILON) - INIT_EPSILON;
+{% endhighlight %}
+
+NB: the $$\epsilon$$ used here has nothing to do with gradient checking.
+
+
 
 
 
