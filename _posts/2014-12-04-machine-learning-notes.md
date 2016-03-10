@@ -366,8 +366,23 @@ More details in the [wiki](https://share.coursera.org/wiki/index.php/ML:Neural_N
 
 ### Backpropagation Intuition
 
-Computation of an activation weight:
-First, compute $$ z_1^{(3)} =  \Theta^{(2)}_{10} * 1 + \Theta^{(2)}_{11} * a_1^{(2)} + \Theta^{(2)}_{12} * a_2^{(2)}$$ and then $$a_1^{(3)} = g(z_1^{(3)})$$.
+Computation of an activation weight (forward propagation): first, compute $$ z_1^{(3)} =  \Theta^{(2)}_{10} * 1 + \Theta^{(2)}_{11} * a_1^{(2)} + \Theta^{(2)}_{12} * a_2^{(2)}$$ and then $$a_1^{(3)} = g(z_1^{(3)})$$.
 
-Computation of $$\delta$$ "errors" are very similar:
-For example $$\delta_2^{(2)} = \Theta^{(2)}_{12} * \delta_1^{(3)} + \Theta^{(2)}_{22} * \delta_2^{(3)} $$
+Computation of $$\delta$$ "errors" are very similar (backward propagation): for example $$\delta_2^{(2)} = \Theta^{(2)}_{12} * \delta_1^{(3)} + \Theta^{(2)}_{22} * \delta_2^{(3)} $$
+
+### Implementation Note: Unrolling Parameters
+
+Optimization algorithms expect vectors for theta and gradient. However, in neural networks, theta and gradient are matrices. In order to use optimizing functions such as `fminunc()`, we will want to "unroll" all the elements and put them into one long vector:
+
+{% highlight matlab %}
+thetaVector = [ Theta1(:); Theta2(:); Theta3(:); ]
+deltaVector = [ D1(:); D2(:); D3(:) ]
+{% endhighlight %}
+
+If the dimensions of Theta1 is 10x11, Theta2 is 10x11 and Theta3 is 1x11, then we can get back our original matrices from the "unrolled" versions as follows:
+
+{% highlight matlab %}
+Theta1 = reshape(thetaVector(1:110),10,11)
+Theta2 = reshape(thetaVector(111:220),10,11)
+Theta3 = reshape(thetaVector(221:231),1,11)
+{% endhighlight %}
