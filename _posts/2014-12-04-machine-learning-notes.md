@@ -389,7 +389,7 @@ Theta3 = reshape(thetaVector(221:231),1,11)
 
 ### Gradient Checking
 
-Backpropagation is tricky to implement. To ensure that everything works fine, we can compute a numerical estimation of the gradient and compare it to the $$\Delta$$ gradient. The derivative of the cost function is :
+Backpropagation is tricky to implement. To ensure that everything works fine, we can compute a numerical estimation of the gradient and compare it to the gradient calculated with backpropagation. The derivative of the cost function is :
 
 $$\dfrac{\partial}{\partial\Theta}J(\Theta) \approx \dfrac{J(\Theta + \epsilon) - J(\Theta - \epsilon)}{2\epsilon}$$
 
