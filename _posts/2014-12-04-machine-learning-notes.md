@@ -313,8 +313,8 @@ $$\theta$$ parameters are sometimes called "weights" in the neural networks mode
 
 Considering only the last hidden unit and the output unit, we are doing exactly the same thing as we did in logistic regression, excepted that the neural network, rather than using the original features, is using new features, computed by the hidden unit. More details on the vector implementation can be founded [here](https://share.coursera.org/wiki/index.php/ML:Neural_Networks:_Representation#Model_Representation_II).
 
-* $$a^{(j)} = g(z^{(j)})$$
-* $$z^{(j)} = \Theta^{(j-1)}a^{(j-1)}$$
+* To compute the activations in the layer $$j$$, first we compute $$z^{(j)} = \Theta^{(j-1)}a^{(j-1)}$$
+* And then we apply the sigmoid function: $$a^{(j)} = g(z^{(j)})$$
 
 ### Examples and Intuitions I & II
 
@@ -363,3 +363,11 @@ Since we try to minimize $$J(\Theta)$$, we will need to compute $$J(\Theta)$$ an
 For each example in the training set, we have to do a forward propagation to compute the activation values, then do a backward propagation to compute the $$\delta_j^{(l)}$$ ("error" of node $$j$$ in layer $$l$$) which are added in an "accumulator": $$\Delta^{(l)}_{i,j} := \Delta^{(l)}_{i,j} + a_j^{(l)} \delta_i^{(l+1)}$$.
 
 More details in the [wiki](https://share.coursera.org/wiki/index.php/ML:Neural_Networks:_Learning#Backpropagation_Algorithm).
+
+### Backpropagation Intuition
+
+Computation of an activation weight:
+First, compute $$ z_1^{(3)} =  \Theta^{(2)}_{10} * 1 + \Theta^{(2)}_{11} * a_1^{(2)} + \Theta^{(2)}_{12} * a_2^{(2)}$$ and then $$\a_1^{(3)} = g(z_1^{(3)})$$.
+
+Computation of $$/delta$$ "errors" are very similar:
+For example $$\delta_2^{(2)} = \Theta^{(2)}_{12} * \delta_1^{(3)} + \Theta^{(2)}_{22} * \delta_2^{(3)} $$
