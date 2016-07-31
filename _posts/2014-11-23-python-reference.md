@@ -289,3 +289,6 @@ print astomech_droid.is_alcoholic #False
 bending_unit.description()
 astomech_droid.description()
 {% endhighlight %}
+
+## Pandas Time Series
+* See this [page](http://chrisalbon.com/python/pandas_time_series_basics.html) from Chris Albon's blog.
