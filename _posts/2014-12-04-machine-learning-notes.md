@@ -428,6 +428,7 @@ NB: the $$\epsilon$$ used here has nothing to do with gradient checking.
 ### Deciding What to Try Next
 
 If the machine learning model sucks, here is what we can try:
+
 * Getting more training examples
 * Trying smaller sets of features
 * Trying additional features
@@ -439,6 +440,7 @@ But we shouldn't pick one of these methods randomly.
 ### Evaluating a Hypothesis
 
 We train the model on a subset of the original dataset (train set), and we test it on another subset (test set). A typical split: 70% train set and 30% test set. The procedure can be written:
+
 1. Learn $$\Theta$$ and minimize $$J_{train}(\Theta)$$ using the training set
 2. Compute the test set error $$J_{train}(\Theta)$$
 
@@ -449,6 +451,7 @@ Even better, we can use three subsets: a train set, a cross-validation set and a
 ### Diagnosing Bias vs. Variance
 
 In a nutshell, high bias = underfitting ; high variance = overfitting.
+![bias-vs-variance](/downloads/bias-vs-variance.png "Bias vs variance)
 
 
 ### Regularization and Bias/Variance
