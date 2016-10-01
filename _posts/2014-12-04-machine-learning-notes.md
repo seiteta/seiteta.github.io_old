@@ -462,16 +462,27 @@ To choose the "just right" value for $$\lambda$$ (not too low, not too large), w
 
 ### Learning Curves
 
-If a learning algorithm is suffering from high bias, getting more training data will not (by itself) help much. But if a learning algorithm is suffering from high variance, getting more training data is likely to help.
+If a learning algorithm is suffering from high bias, getting more training data will not (by itself) help much.
 
-![learning-curves](/downloads/learning-curves.png "Learning curves") ![learning-curves2](/downloads/learning-curves2.png "Learning curves 2")
+![learning-curves](/downloads/learning-curves.png "Learning curves")
 
+On the other hand, if a learning algorithm is suffering from high variance, getting more training data is likely to help.
 
+![learning-curves2](/downloads/learning-curves2.png "Learning curves 2")
 
-### Deciding What to Do Next Revisited
+### Deciding What to Do Next (Revisited)
 
-### Model Selection
+Fixes high variance:
+* Getting more training examples
+* Trying smaller sets of features
+* Increasing $$\lambda$$
 
+Fixes high bias:
+* Adding features
+* Adding polynomial features
+* Decreasing $$\lambda$$
+
+About neural networks: small neural networks are prone to underfitting but computationally cheaper. Large neural networks are prone to overfitting and computationally more expensive (use regularization to adress overfitting).
 
 ## XI. Machine Learning System Design (Week 6)
 
