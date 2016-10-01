@@ -291,6 +291,7 @@ $$ J(\theta) = - \frac{1}{m} \sum_{i=1}^m \left [y^{(i)}\log \left (h_\theta (x^
 
 and the gradient descent algorithm looks like the one for linear regression, exept $$h_\theta$$ is a different function.
 
+
 ## VIII. Neural Networks: Representation (Week 4)
 
 ### Non-linear Hypotheses
@@ -345,7 +346,6 @@ It is possible to build more complicated function (XNOR for example) by adding a
 ### Multiclass Classification
 
 To do multiclass classification, we [one-hot](https://en.wikipedia.org/wiki/One-hot) encode the resulting classes.
-
 
 
 ## IX. Neural Networks: Learning (Week 5)
@@ -423,6 +423,42 @@ Theta1 = rand(10,11) * (2 * INIT_EPSILON) - INIT_EPSILON;
 NB: the $$\epsilon$$ used here has nothing to do with gradient checking.
 
 
+## X. Advice for Applying Machine Learning (Week 6)
+
+### Deciding What to Try Next
+
+If the machine learning model sucks, here is what we can try:
+* Getting more training examples
+* Trying smaller sets of features
+* Trying additional features
+* Trying polynomial features
+* Increasing or decreasing $$\lambda$$
+
+But we shouldn't pick one of these methods randomly.
+
+### Evaluating a Hypothesis
+
+We train the model on a subset of the original dataset (train set), and we test it on another subset (test set). A typical split: 70% train set and 30% test set. The procedure can be written:
+1. Learn $$\Theta$$ and minimize $$J_{train}(\Theta)$$ using the training set
+2. Compute the test set error $$J_{train}(\Theta)$$
+
+### Model Selection and Train/Validation/Test Sets
+
+Even better, we can use three subsets: a train set, a cross-validation set and a test set (typical spit: 60/20/20). We train the model with the train set, and select which is the best one with the cross-validation set. Then, we can estimate the generalization error using the test set.
+
+### Diagnosing Bias vs. Variance
+
+In a nutshell, high bias = underfitting ; high variance = overfitting.
 
 
+### Regularization and Bias/Variance
+
+### Learning Curves
+
+### Deciding What to Do Next Revisited
+
+### Model Selection
+
+
+## XI. Machine Learning System Design (Week 6)
 
