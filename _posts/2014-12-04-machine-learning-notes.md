@@ -473,11 +473,13 @@ On the other hand, if a learning algorithm is suffering from high variance, gett
 ### Deciding What to Do Next (Revisited)
 
 Fixes high variance:
+
 * Getting more training examples
 * Trying smaller sets of features
 * Increasing $$\lambda$$
 
 Fixes high bias:
+
 * Adding features
 * Adding polynomial features
 * Decreasing $$\lambda$$
