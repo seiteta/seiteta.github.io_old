@@ -451,12 +451,22 @@ Even better, we can use three subsets: a train set, a cross-validation set and a
 ### Diagnosing Bias vs. Variance
 
 In a nutshell, high bias = underfitting ; high variance = overfitting.
-![bias-vs-variance](/downloads/bias-vs-variance.png "Bias vs variance")
 
+![bias-vs-variance](/downloads/bias-vs-variance.png "Bias vs variance")
 
 ### Regularization and Bias/Variance
 
+To choose the "just right" value for $$\lambda$$ (not too low, not too large), we try different values, and evaluate the cost function on the cross-validation set (/!\ without the regularization term).
+
+![lambda-vs-hypothesis](/downloads/lambda-vs-hypothesis.png "Lambda vs hypothesis")
+
 ### Learning Curves
+
+If a learning algorithm is suffering from high bias, getting more training data will not (by itself) help much. But if a learning algorithm is suffering from high variance, getting more training data is likely to help.
+
+![learning-curves](/downloads/learning-curves.png "Learning curves") ![learning-curves2](/downloads/learning-curves2.png "Learning curves 2")
+
+
 
 ### Deciding What to Do Next Revisited
 
