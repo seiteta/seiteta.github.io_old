@@ -451,7 +451,7 @@ Even better, we can use three subsets: a train set, a cross-validation set and a
 ### Diagnosing Bias vs. Variance
 
 In a nutshell, high bias = underfitting ; high variance = overfitting.
-![bias-vs-variance](/downloads/bias-vs-variance.png "Bias vs variance)
+![bias-vs-variance](/downloads/bias-vs-variance.png "Bias vs variance")
 
 
 ### Regularization and Bias/Variance
