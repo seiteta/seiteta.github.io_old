@@ -503,6 +503,7 @@ To test new ideas, it is also important to get error results as a single numeric
 ### Error Metrics for Skewed Classes
 
 If classes are skewed, only having the error result is not enough. We need the confusion matrix:
+
 |           |   |         Actual | class          |
 |-----------|---|---------------:|----------------|
 |           |   | 1              | 0              |
