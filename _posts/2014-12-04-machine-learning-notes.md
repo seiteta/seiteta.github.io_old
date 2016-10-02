@@ -504,23 +504,29 @@ To test new ideas, it is also important to get error results as a single numeric
 
 If classes are skewed, only having the error result is not enough. To solve this problem, we use the confusion matrix:
 
-|           |   |      Confusion | matrix         |
-|-----------|---|---------------:|----------------|
-|           |   |         Actual | class          |
-|           |   | 1              | 0              |
-| Predicted | 1 | True positive  | False positive |
-| class     | 0 | False negative | True negative  |
+|           |   |    Confusion   |     matrix     |
+|:---------:|:-:|:--------------:|:--------------:|
+|           |   |     Actual     |      class     |
+|           |   |        1       |        0       |
+| Predicted | 1 |  True positive | False positive |
+|   class   | 0 | False negative |  True negative |
 |           |   |                |                |
 
 Then, we calculate new metrics (example with cancer prediction):
 
 * Precision: of all patients we predicted where $$y=1$$, what fraction actually has cancer?
-* $$precision = \frac{TP}{TP+FP}$$
+* $$\text{precision} = \frac{TP}{TP+FP}$$
 * Recall: Of all the patients that actually have cancer, what fraction did we correctly detect as having cancer?
-* $$recall = \frac{TP}{TP+FN}$$
-
+* $$\text{recall} = \frac{TP}{TP+FN}$$
 
 ### Trading Off Precision and Recall
+
+We might want a confident prediction (i.e. predict cancer if very confident): high precision but low recall. But if we want safe prediction (i.e. avoid false negative): high recall but low precision.
+
+To have a single number out of these metrics, we can use the F-score:
+$$\text{F-score} = 2\dfrac{PR}{P + R}$$
+
+Side note: we want to train precision and recall on the cross validation set so as not to bias our test set.
 
 ### Data for Machine Learning
 
