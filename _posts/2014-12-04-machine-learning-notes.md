@@ -524,10 +524,15 @@ Then, we calculate new metrics (example with cancer prediction):
 We might want a confident prediction (i.e. predict cancer if very confident): high precision but low recall. But if we want safe prediction (i.e. avoid false negative): high recall but low precision.
 
 To have a single number out of these metrics, we can use the F-score:
+
 $$\text{F-score} = 2\dfrac{PR}{P + R}$$
 
 Side note: we want to train precision and recall on the cross validation set so as not to bias our test set.
 
 ### Data for Machine Learning
 
-### Quiz instructions
+When to use do you need more data? 
+
+A useful test is: given input $$x$$, would a human expert be able to confidently predict $$y$$? For example, you can't predict the housing price from only size.
+
+The best models have low bias (many features or many parameters) and low variance (lots of data).
