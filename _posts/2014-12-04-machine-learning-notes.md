@@ -502,16 +502,17 @@ To test new ideas, it is also important to get error results as a single numeric
 
 ### Error Metrics for Skewed Classes
 
-If classes are skewed, only having the error result is not enough. We need the confusion matrix:
+If classes are skewed, only having the error result is not enough. To solve this problem, we use the confusion matrix:
 
-|           |   |         Actual | class          |
+|           |   |      Confusion | matrix         |
 |-----------|---|---------------:|----------------|
+|           |   |         Actual | class          |
 |           |   | 1              | 0              |
 | Predicted | 1 | True positive  | False positive |
 | class     | 0 | False negative | True negative  |
 |           |   |                |                |
 
-With that, we can calculate precision and recall (example with cancer prediction):
+Then, we calculate new metrics (example with cancer prediction):
 
 * Precision: of all patients we predicted where $$y=1$$, what fraction actually has cancer?
 * $$precision = \frac{TP}{TP+FP}$$
