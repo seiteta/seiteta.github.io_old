@@ -488,3 +488,38 @@ About neural networks: small neural networks are prone to underfitting but compu
 
 ## XI. Machine Learning System Design (Week 6)
 
+### Prioritizing What to Work On
+What to do when we face a new problem? Collects more data? Develop sophisticated features? Develop sophisticated algorithm?
+
+### Error Analysis
+The recommended approach is :
+
+* Start with a simple algorithm, implement it quickly, and test it early
+* Plot learning curves to decide if more data, more features, etc. will help
+* Error analysis: manually examine the errors on examples in the cross validation set and try to spot a trend
+
+To test new ideas, it is also important to get error results as a single numerical value, in order to assess the algorithm's performance.
+
+### Error Metrics for Skewed Classes
+
+If classes are skewed, only having the error result is not enough. We need the confusion matrix:
+|           |   |         Actual | class          |
+|-----------|---|---------------:|----------------|
+|           |   | 1              | 0              |
+| Predicted | 1 | True positive  | False positive |
+| class     | 0 | False negative | True negative  |
+|           |   |                |                |
+
+With that, we can calculate precision and recall (example with cancer prediction):
+
+* Precision: of all patients we predicted where $$y=1$$, what fraction actually has cancer?
+* $$precision = \frac{TP}{TP+FP}$$
+* Recall: Of all the patients that actually have cancer, what fraction did we correctly detect as having cancer?
+* $$recall = \frac{TP}{TP+FN}$$
+
+
+### Trading Off Precision and Recall
+
+### Data for Machine Learning
+
+### Quiz instructions
