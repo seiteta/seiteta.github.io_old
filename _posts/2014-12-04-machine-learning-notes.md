@@ -536,3 +536,25 @@ When to use do you need more data?
 A useful test is: given input $$x$$, would a human expert be able to confidently predict $$y$$? For example, you can't predict the housing price from only size.
 
 The best models have low bias (many useful features or many parameters) and low variance (lots of data).
+
+### Optimization Objective
+
+The Support Vector Machine (SVM) is another type of supervised machine learning algorithm. Its cost function is:
+
+$$J(\theta) = C\sum_{i=1}^m y^{(i)} \ \text{cost}_1(\theta^Tx^{(i)}) + (1 - y^{(i)}) \ \text{cost}_0(\theta^Tx^{(i)}) + \dfrac{1}{2}\sum_{j=1}^n \Theta^2_j$$
+
+with $$z = \theta^Tx$$, $$\text{cost}_0(z) = \max(0, k(1+z))$$ and \text{cost}_1(z) = \max(0, k(1-z)).
+
+It can be seen as a modification of the logistic regression algorithm, with $$C = \dfrac{1}{\lambda}$$ and [hinge loss](https://en.wikipedia.org/wiki/Hinge_loss) functions instead of $$log$$ functions. The output of SVM is either $$0$$ or $$1$$, not probability like logistic regression.
+
+### Large Margin Intuition
+
+In SVMs, the decision boundary is as far away as possible from both the positive and the negative examples. The distance of the decision boundary to the nearest example is called the margin. Since SVMs maximize this margin, it is often called a Large Margin Classifier (when $$C$$ is large). If we have outlier examples that we don't want to affect the decision boundary, then we can reduce $$C$$. Increasing and decreasing $$C$$ is similar to respectively decreasing and increasing $$\lambda$$, and can simplify our decision boundary.
+
+### Mathematics Behind Large Margin Classification
+
+### Kernels I
+
+### Kernels II
+
+### Using An SVM
