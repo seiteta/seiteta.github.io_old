@@ -553,8 +553,34 @@ In SVMs, the decision boundary is as far away as possible from both the positive
 
 ### Mathematics Behind Large Margin Classification
 
+![<3 Inner product](https://media.giphy.com/media/ohdY5OaQmUmVW/giphy.gif)
+
 ### Kernels I
+
+Kernels allow us to make complex, non-linear classifiers using SVMs. The idea is to measure the proximity of our training examples $$x_j$$ with several landmarks $$l^{(i)}_{j}$$. The most common kernel is the Gaussian kernel:
+
+$$f_i = \exp(-\dfrac{||x - l^{(i)}||^2}{2\sigma^2})$$
+
+$$\sigma^2$$ is a parameter of the Gaussian kernel that can be modified to increase or decrease the drop-off. 
 
 ### Kernels II
 
+Practically, $$m$$ landmarks are put in the exact same locations as all the $$m$$ training examples. We can generate a feature vector containing all the similarities $$f^{(i)}$$. To get the parameters $$\Theta$$ we can use the SVM minimization algorithm but with $$f^{(i)}$$ substituted in for $$x^{(i)}$$:
+
+$$\min_{\Theta} C \sum_{i=1}^m y^{(i)}\text{cost}_1(\Theta^Tf^{(i)}) + (1 - y^{(i)})\text{cost}_0(\theta^Tf^{(i)}) + \dfrac{1}{2}\sum_{j=1}^n \Theta^2_j$$
+
+* Large C: high variance, low bias
+* Small C: low variance, high bias
+* Large $$\sigma^2$$: low variance, high bias
+* Small $$\sigma^2$$: high variance, low bias
+
 ### Using An SVM
+
+Good SVM libraries exist, use them! Reminder: $$n$$ is the number of features, $$m$$ is the number of data.
+
+* If $$n$$ is large (10,000) and $$m$$ is small (10 – 1,000), then use logistic regression, or SVM without a kernel (aka linear kernel)
+* If $$n$$ is small (10 – 1,000) and $$m$$ is intermediate (10 – 10,000), then use SVM with a Gaussian kernel
+* If $$n$$ is small (10 – 1,000) and $$m$$ is large (50,000+), then create features, and use logistic regression or SVM without a kernel.
+
+A neural network is likely to work well for any of these situations, but may be slower to train.
+
