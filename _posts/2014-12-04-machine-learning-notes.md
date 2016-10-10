@@ -535,6 +535,8 @@ A useful test is: given input $$x$$, would a human expert be able to confidently
 
 The best models have low bias (many useful features or many parameters) and low variance (lots of data).
 
+## XII. Support Vector Machines (Week 7)
+
 ### Optimization Objective
 
 The Support Vector Machine (SVM) is another type of supervised machine learning algorithm. Its cost function is:
@@ -582,3 +584,22 @@ Good SVM libraries exist, use them! Reminder: $$n$$ is the number of features, $
 
 A neural network is likely to work well for any of these situations, but may be slower to train.
 
+## XIII. Clustering (Week 8)
+
+### Unsupervised Learning: Introduction
+
+Unsupervised learning deals with unlabeled data ($$x^{(i)}$$ without corresponding $$y^{(i)}$$).
+
+### K-Means Algorithm
+### Optimization Objective
+### Random Initialization
+### Choosing the Number of Clusters
+
+## XIV. Dimensionality Reduction (Week 8)
+### Motivation I: Data Compression
+### Motivation II: Visualization
+### Principal Component Analysis Problem Formulation
+### Principal Component Analysis Algorithm
+### Reconstruction from Compressed Representation
+### Choosing the Number of Principal Components
+### Advice for Applying PCA
