@@ -611,7 +611,13 @@ Repeat:
       mu(k) := average (mean) of points assigned to cluster k
 {% endhighlight %}
 
-The first for-loop is the "cluster assignment" step: $$c^{(i)} = argmin_k\ ||x^{(i)} - \mu_k||^2$$. The second for-loop is the "move centroid": $$\mu_k = \dfrac{1}{n}[x^{(k_1)} + x^{(k_2)} + \dots + x^{(k_n)}]$$
+The first for-loop is the "cluster assignment" step:
+
+$$c^{(i)} = argmin_k\ ||x^{(i)} - \mu_k||^2$$
+
+The second for-loop is the "move centroid":
+
+$\mu_k = \dfrac{1}{n}[x^{(k_1)} + x^{(k_2)} + \dots + x^{(k_n)}]$$
 
 ### Optimization Objective
 ### Random Initialization
