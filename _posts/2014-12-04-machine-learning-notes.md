@@ -66,7 +66,8 @@ and simultaneously update $$\theta_0$$ and $$\theta_1$$.
 
 ## III. Linear Algebra Review (Week 1)
 
-![<3 matrices](https://media.giphy.com/media/ohdY5OaQmUmVW/giphy.gif)
+Some text
+![matrices luv](https://media.giphy.com/media/ohdY5OaQmUmVW/giphy.gif)
 
 ## IV. Linear Regression with Multiple Variables (Week 2)
 
@@ -553,7 +554,7 @@ In SVMs, the decision boundary is as far away as possible from both the positive
 
 ### Mathematics Behind Large Margin Classification
 
-![<3 Inner product](https://media.giphy.com/media/ohdY5OaQmUmVW/giphy.gif)
+![inner product luv](https://media.giphy.com/media/ohdY5OaQmUmVW/giphy.gif)
 
 ### Kernels I
 
