@@ -591,6 +591,27 @@ A neural network is likely to work well for any of these situations, but may be 
 Unsupervised learning deals with unlabeled data ($$x^{(i)}$$ without corresponding $$y^{(i)}$$).
 
 ### K-Means Algorithm
+
+The K-Means Algorithm is a widely used algorithm for automatically grouping data into coherent subsets. For $$K=2$$, steps are:
+
+1. Randomly initialize two points in the dataset called the cluster centroids.
+2. Cluster assignment: assign all examples into one of two groups based on which cluster centroid the example is closest to.
+3. Move centroid: compute the averages for all the points inside each of the two cluster centroid groups, then move the cluster centroid points to those averages.
+4. Re-run (2) and (3) until we have found our clusters.
+
+In pseudo-code:
+
+{% highlight text %}
+Randomly initialize K cluster centroids mu(1), mu(2), ..., mu(K)
+Repeat:
+   for i = 1 to m:
+      c(i) := index (from 1 to K) of cluster centroid closest to x(i)
+   for k = 1 to K:
+      mu(k) := average (mean) of points assigned to cluster k
+{% endhighlight %}
+
+The first for-loop is the "cluster assignment" step: $$c^{(i)} = argmin_k\ ||x^{(i)} - \mu_k||^2$$. The second for-loop is the "move centroid": $$\mu_k = \dfrac{1}{n}[x^{(k_1)} + x^{(k_2)} + \dots + x^{(k_n)}]$$
+
 ### Optimization Objective
 ### Random Initialization
 ### Choosing the Number of Clusters
