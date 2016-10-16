@@ -649,9 +649,35 @@ Since it is not easy to visualize data that is more than three dimensions, we ca
 
 ### Principal Component Analysis Problem Formulation
 
+The goal of PCA is to reduce the projection error, i.e. the average of all the distances of every feature to the projection line (or plane).
 
+PCA is not linear regression: 
+
+* In linear regression, we are minimizing the squared error from every point to our predictor line and these are vertical distances.
+* In PCA, we are minimizing the shortest orthogonal distances to our data points.
 
 ### Principal Component Analysis Algorithm
+
+* Mean normalization and feature scaling (last one optional)
+* Compute the covariance matrix: $$\Sigma = \dfrac{1}{m}\sum^m_{i=1}(x^{(i)})(x^{(i)})^T$$
+
+{% highlight matlab %}
+Sigma = (1/m) * X' * X;
+{% endhighlight %}
+
+* Compute the eigenvectors of the covariance matrix $$\Sigma$$
+
+{% highlight matlab %}
+[U,S,V] = svd(Sigma);
+{% endhighlight %}
+
+* Take the first $$k$$ columns of the $$U$$ matrix and compute $$z$$
+
+{% highlight matlab %}
+Ureduce = U(:,1:k);
+Z = X * Ureduce;   
+{% endhighlight %}
+
 ### Reconstruction from Compressed Representation
 ### Choosing the Number of Principal Components
 ### Advice for Applying PCA
