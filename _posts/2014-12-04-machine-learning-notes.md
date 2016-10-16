@@ -620,13 +620,37 @@ The second for-loop is the "move centroid":
 $$\mu_k = \dfrac{1}{n}[x^{(k_1)} + x^{(k_2)} + \dots + x^{(k_n)}]$$
 
 ### Optimization Objective
+
+The cost function to be minimized is:
+
+$$J(c^{(i)},\dots,c^{(m)},\mu_1,\dots,\mu_K) = \dfrac{1}{m}\sum_{i=1}^m ||x^{(i)} - \mu_{c^{(i)}}||^2$$
+
+This cost function always decreases.
+
 ### Random Initialization
+
+Usually, the initialization is done by setting the cluster centroids equal to $$K$$ unique training examples. Since K-Means can get stuck in local optima, we should run the algorithm on many different random initializations.
+
 ### Choosing the Number of Clusters
 
+One way to choose $$K$$ is the elbow method: plot the cost $$J$$ and the number of clusters $$K$$. The cost function should reduce as we increase the number of clusters, and then flatten out. Choose $$K$$ at the point where the cost function starts to flatten out. However, fairly often, the curve is very gradual, so there's no clear elbow.
+
+Another way to choose $$K$$ is to observe how well K-Means performs on a downstream purpose. In other words, we choose $$K$$ that proves to be most useful for some goal we are trying to achieve from using these clusters.
+
 ## XIV. Dimensionality Reduction (Week 8)
+
 ### Motivation I: Data Compression
+
+We may want to reduce the dimension of our features if we have a lot of redundant data. Dimensionality reduction reduces the number of features but not than the number of examples.
+
 ### Motivation II: Visualization
+
+Since it is not easy to visualize data that is more than three dimensions, we can reduce the dimensions of our data to 3 or less in order to plot it.
+
 ### Principal Component Analysis Problem Formulation
+
+
+
 ### Principal Component Analysis Algorithm
 ### Reconstruction from Compressed Representation
 ### Choosing the Number of Principal Components
