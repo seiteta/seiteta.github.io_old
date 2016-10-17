@@ -749,11 +749,11 @@ We should use supervised learning when:
 
 ### Choosing What Features to Use
 
-If some features are not distributed as Gaussian distribution, we can apply some transform, like $$log(x + c_1)$$ or $$x^{c_2}$$.
+If some features are not distributed as Gaussian distribution, we can apply some transform, like $$\log(x + c_1)$$ or $$x^{c_2}$$.
 
 If the algorithm performs poorly, we should find features with large $$p(x)$$ for normal examples and small $$p(x)$$ for anomalous examples, by figuring out new features that will better distinguish the data.
 
-### Multivariate Gaussian Distribution (Optional)
-### Anomaly Detection using the Multivariate Gaussian Distribution (Optional)
-### Categories
+### Multivariate Gaussian Distribution
+### Anomaly Detection using the Multivariate Gaussian Distribution
+
 
