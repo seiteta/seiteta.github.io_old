@@ -715,7 +715,7 @@ Anomalous examples are the $$x$$ for which $$p(x)<\epsilon$$. If our anomaly det
 
 The probability distribution function of the Gaussian distribution is:
 
-$$p(x;\mu,\sigma^2) = \dfrac{1}{\sigma\sqrt{(2\pi)}}e^{-\dfrac{1}{2}(\dfrac{x - \mu}{\sigma})^2}$$
+$$p(x;\mu,\sigma^2) = \dfrac{1}{\sigma\sqrt{(2\pi)}}e^{-\dfrac{1}{2}\left(\dfrac{x - \mu}{\sigma}\right)^2}$$
 
 If a dataset follows a Gaussian distribution, we can estimate $$\mu$$ and $$\sigma^2$$ with $$\mu = \dfrac{1}{m}\displaystyle \sum_{i=1}^m x^{(i)}$$ and $$\sigma^2 = \dfrac{1}{m}\displaystyle \sum_{i=1}^m(x^{(i)} - \mu)^2$$.
 
@@ -723,7 +723,7 @@ If a dataset follows a Gaussian distribution, we can estimate $$\mu$$ and $$\sig
 
 1. Choose features $$xi$$ that you think might be indicative of anomalous examples.
 2. For $$j=1$$ to $$n$$, calculate $$\mu_j = \dfrac{1}{m}\displaystyle \sum_{i=1}^m x_j^{(i)}$$ and $$\sigma^2_j = \dfrac{1}{m}\displaystyle \sum_{i=1}^m(x_j^{(i)} - \mu_j)^2$$
-3. Given a new example x, compute p(x):$$p(x) = \displaystyle \prod^n_{j=1} p(x_j;\mu_j,\sigma_j^2) = \prod\limits^n_{j=1} \dfrac{1}{\sqrt{2\pi}\sigma_j}exp(-\dfrac{(x_j - \mu_j)^2}{2\sigma^2_j})$$
+3. Given a new example x, compute p(x): $$p(x) = \displaystyle \prod^n_{j=1} p(x_j;\mu_j,\sigma_j^2) = \prod\limits^n_{j=1} \dfrac{1}{\sigma_j\sqrt{(2\pi)}}e^{-\dfrac{1}{2}\left(\dfrac{x_j - \mu_j}{\sigma_j}\right)^2}$$
 4. Anomaly if $$p(x) < \epsilon$$
 
 ### Developing and Evaluating an Anomaly Detection System
