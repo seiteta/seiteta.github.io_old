@@ -515,8 +515,8 @@ If classes are skewed, only having the error result is not enough. To solve this
 
 Then, we calculate new metrics (example with cancer prediction):
 
-* Precision: of all patients we predicted where $$y=1$$, what fraction actually has cancer? $$\text{precision} = \frac{TP}{TP+FP}$$
-* Recall: Of all the patients that actually have cancer, what fraction did we correctly detect as having cancer?$$\text{recall} = \frac{TP}{TP+FN}$$
+* Precision: of all patients we predicted where $$y=1$$, what fraction actually has cancer? $$\text{precision} = \frac{TP}{TP+FP}\displaystyle$$
+* Recall: Of all the patients that actually have cancer, what fraction did we correctly detect as having cancer? $$\text{recall} = \frac{TP}{TP+FN}\displaystyle$$
 
 ### Trading Off Precision and Recall
 
@@ -717,16 +717,19 @@ The probability distribution function of the Gaussian distribution is:
 
 $$p(x;\mu,\sigma^2) = \dfrac{1}{\sigma\sqrt{(2\pi)}}e^{-\dfrac{1}{2}\left(\dfrac{x - \mu}{\sigma}\right)^2}$$
 
-If a dataset follows a Gaussian distribution, we can estimate $$\mu$$ and $$\sigma^2$$ with $$\mu = \dfrac{1}{m}\displaystyle \sum_{i=1}^m x^{(i)}$$ and $$\sigma^2 = \dfrac{1}{m}\displaystyle \sum_{i=1}^m(x^{(i)} - \mu)^2$$.
+If a dataset follows a Gaussian distribution, we can estimate $$\mu$$ and $$\sigma^2$$ with $$\mu = \dfrac{1}{m}\displaystyle \sum_{i=1}^m x^{(i)}$$ and $$\sigma^2 = \dfrac{1}{m}\displaystyle \sum_{i=1}^m\left(x^{(i)} - \mu\right)^2$$.
 
 ### Algorithm
 
 1. Choose features $$xi$$ that you think might be indicative of anomalous examples.
-2. For $$j=1$$ to $$n$$, calculate $$\mu_j = \dfrac{1}{m}\displaystyle \sum_{i=1}^m x_j^{(i)}$$ and $$\sigma^2_j = \dfrac{1}{m}\displaystyle \sum_{i=1}^m(x_j^{(i)} - \mu_j)^2$$
+2. For $$j=1$$ to $$n$$, calculate $$\mu_j = \dfrac{1}{m}\displaystyle \sum_{i=1}^m x_j^{(i)}$$ and $$\sigma^2_j = \dfrac{1}{m}\displaystyle \sum_{i=1}^m\left(x_j^{(i)} - \mu_j\right)^2$$
 3. Given a new example x, compute p(x): $$p(x) = \displaystyle \prod^n_{j=1} p(x_j;\mu_j,\sigma_j^2) = \prod\limits^n_{j=1} \dfrac{1}{\sigma_j\sqrt{(2\pi)}}e^{-\dfrac{1}{2}\left(\dfrac{x_j - \mu_j}{\sigma_j}\right)^2}$$
 4. Anomaly if $$p(x) < \epsilon$$
 
 ### Developing and Evaluating an Anomaly Detection System
+
+
+
 ### Anomaly Detection vs. Supervised Learning
 ### Choosing What Features to Use
 ### Multivariate Gaussian Distribution (Optional)
