@@ -686,10 +686,30 @@ To reconstructe our data from their compressed representation, we can use the fo
 
 To choose $$k$$ (the number of principal components), we can look at the retained variance (here 99% of the variance is retained.):
 
-$$\large \dfrac{\dfrac{1}{m}\sum^m_{i=1}||x^{(i)} - x_{approx}^{(i)}||^2}{\dfrac{1}{m}\sum^m_{i=1}||x^{(i)}||^2} \leq 0.01$$
+$$\dfrac{\dfrac{1}{m}\sum^m_{i=1}||x^{(i)} - x_{approx}^{(i)}||^2}{\dfrac{1}{m}\sum^m_{i=1}||x^{(i)}||^2} \leq 0.01$$
 
-The numerator is the average squared projection error and the denominator is the total variation in the data. Instead of calculating this formula for every $$k$$, we can use the $$S$$ matrix computed when we call the `svd` function: 
-
-$$\dfrac{\sum_{i=1}^kS_{ii}}{\sum_{i=1}^nS_{ii}} \geq 0.99$$
+The numerator is the average squared projection error and the denominator is the total variation in the data. Instead of calculating this formula for every $$k$$, we can use the $$S$$ matrix computed when we call the `svd` function and compute $$\dfrac{\sum_{i=1}^kS_{ii}}{\sum_{i=1}^nS_{ii}} \geq 0.99$$.
 
 ### Advice for Applying PCA
+
+Two main applications:
+
+* Compressions (to reduce data space or speed up the algorithm)
+* Visualization of data (with $$k = 2$$ or $$k = 3$$)
+
+Two warnings:
+
+* PCA reduction should be used on the training set and not on the cross-validation or test sets.
+* PCA reduction should not be used prevrent overfitting (regularization is most effective and doesn't lost so much information).
+
+## XV. Anomaly Detection (Week 9)
+
+### Problem Motivation
+### Gaussian Distribution
+### Algorithm
+### Developing and Evaluating an Anomaly Detection System
+### Anomaly Detection vs. Supervised Learning
+### Choosing What Features to Use
+### Multivariate Gaussian Distribution (Optional)
+### Anomaly Detection using the Multivariate Gaussian Distribution (Optional)
+### Categories
