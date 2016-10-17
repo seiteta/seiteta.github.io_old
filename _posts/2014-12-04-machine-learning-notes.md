@@ -659,19 +659,19 @@ PCA is not linear regression:
 ### Principal Component Analysis Algorithm
 
 * Mean normalization and feature scaling (last one optional)
-* Compute the covariance matrix: $$\Sigma = \dfrac{1}{m}\sum^m_{i=1}(x^{(i)})(x^{(i)})^T$$
+* Compute the covariance matrix $$\Sigma = \dfrac{1}{m}\sum^m_{i=1}(x^{(i)})(x^{(i)})^T$$:
 
 {% highlight matlab %}
 Sigma = (1/m) * X' * X;
 {% endhighlight %}
 
-* Compute the eigenvectors of the covariance matrix $$\Sigma$$
+* Compute the eigenvectors of the covariance matrix $$\Sigma$$:
 
 {% highlight matlab %}
 [U,S,V] = svd(Sigma);
 {% endhighlight %}
 
-* Take the first $$k$$ columns of the $$U$$ matrix and compute $$z$$
+* Take the first $$k$$ columns of the $$U$$ matrix and compute $$z$$:
 
 {% highlight matlab %}
 Ureduce = U(:,1:k);
@@ -679,5 +679,17 @@ Z = X * Ureduce;
 {% endhighlight %}
 
 ### Reconstruction from Compressed Representation
+
+To reconstructe our data from their compressed representation, we can use the following equation: $$x_{approx}^{(1)} = U_{reduce} \cdot z^{(1)}$$
+
 ### Choosing the Number of Principal Components
+
+To choose $$k$$ (the number of principal components), we can look at the retained variance (here 99% of the variance is retained.):
+
+$$\large \dfrac{\dfrac{1}{m}\sum^m_{i=1}||x^{(i)} - x_{approx}^{(i)}||^2}{\dfrac{1}{m}\sum^m_{i=1}||x^{(i)}||^2} \leq 0.01$$
+
+The numerator is the average squared projection error and the denominator is the total variation in the data. Instead of calculating this formula for every $$k$$, we can use the $$S$$ matrix computed when we call the `svd` function: 
+
+$$\dfrac{\sum_{i=1}^kS_{ii}}{\sum_{i=1}^nS_{ii}} \geq 0.99$$
+
 ### Advice for Applying PCA
