@@ -516,7 +516,7 @@ If classes are skewed, only having the error result is not enough. To solve this
 Then, we calculate new metrics (example with cancer prediction):
 
 * Precision: of all patients we predicted where $$y=1$$, what fraction actually has cancer? $$\text{precision} = \dfrac{TP}{TP+FP}$$
-* Recall: Of all the patients that actually have cancer, what fraction did we correctly detect as having cancer? $$\text{recall} = \dfrac{TP}{TP+FN}\displaystyle$$
+* Recall: Of all the patients that actually have cancer, what fraction did we correctly detect as having cancer? $$\text{recall} = \dfrac{TP}{TP+FN}$$
 
 ### Trading Off Precision and Recall
 
@@ -728,10 +728,31 @@ If a dataset follows a Gaussian distribution, we can estimate $$\mu$$ and $$\sig
 
 ### Developing and Evaluating an Anomaly Detection System
 
+1. Fit model $$p(x)$$ on training set $$\lbrace x^{(1)},\dots,x^{(m)} \rbrace$$
+2. On a cross validation/test example $$x$$, predict: $$y=1$$ if $$p(x)<\epsilon$$ (anomaly) or $$y=0$$ if $$p(x)≥\epsilon$$ (normal)
 
+Non-anomalous (negative i.e. $$y=0$$) examples are split 60/20/20 between the training, CV and test sets. Anomalous (positive i.e. $$y=1$$) examples are split 50/50 between the CV and test sets.
+
+Several evaluation metrics can be used: TP, FP, FN, TN, precision, recall or F-score. Accuracy can't be used because classes are highly skewed.
 
 ### Anomaly Detection vs. Supervised Learning
+
+We should use anomaly detection when :
+
+ * we have a very small number of positive examples and a large number of negative (y=0) examples.
+ * we have many different "types" of anomalies and future anomalies may look nothing like any of the anomalous examples we've seen so far.
+
+We should use supervised learning when:
+
+* we have a large number of both positive and negative examples.
+* we have enough positive examples for the algorithm to get a sense of what new positives examples look like and future positive examples are likely similar to the ones in the training set.
+
 ### Choosing What Features to Use
+
+If some features are not distributed as Gaussian distribution, we can apply some transform, like $$log(x + c_1)$$ or $$x^{c_2}$$.
+
+If the algorithm performs poorly, we should find features with large $$p(x)$$ for normal examples and small $$p(x)$$ for anomalous examples, by figuring out new features that will better distinguish the data.
+
 ### Multivariate Gaussian Distribution (Optional)
 ### Anomaly Detection using the Multivariate Gaussian Distribution (Optional)
 ### Categories
