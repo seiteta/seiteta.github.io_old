@@ -515,8 +515,8 @@ If classes are skewed, only having the error result is not enough. To solve this
 
 Then, we calculate new metrics (example with cancer prediction):
 
-* Precision: of all patients we predicted where $$y=1$$, what fraction actually has cancer? $$\text{precision} = \frac{TP}{TP+FP}\displaystyle$$
-* Recall: Of all the patients that actually have cancer, what fraction did we correctly detect as having cancer? $$\text{recall} = \frac{TP}{TP+FN}\displaystyle$$
+* Precision: of all patients we predicted where $$y=1$$, what fraction actually has cancer? $$\text{precision} = \dfrac{TP}{TP+FP}$$
+* Recall: Of all the patients that actually have cancer, what fraction did we correctly detect as having cancer? $$\text{recall} = \dfrac{TP}{TP+FN}\displaystyle$$
 
 ### Trading Off Precision and Recall
 
