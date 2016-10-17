@@ -702,14 +702,34 @@ Two warnings:
 * PCA reduction should be used on the training set and not on the cross-validation or test sets.
 * PCA reduction should not be used prevrent overfitting (regularization is most effective and doesn't lost so much information).
 
+
 ## XV. Anomaly Detection (Week 9)
 
 ### Problem Motivation
+
+We are given a dataset and we want to know whether a new example is anomalous. We define a model $$p(x)$$ that tells us the probability the example is not anomalous and a threshold $$\epsilon$$ as a dividing line so we can say which examples are anomalous and which are not.
+
+Anomalous examples are the $$x$$ for which $$p(x)<\epsilon$$. If our anomaly detector is flagging too many anomalous examples, then we need to decrease our threshold $$\epsilon$$
+
 ### Gaussian Distribution
+
+The probability distribution function of the Gaussian distribution is:
+
+$$p(x;\mu,\sigma^2) = \dfrac{1}{\sigma\sqrt{(2\pi)}}e^{-\dfrac{1}{2}(\dfrac{x - \mu}{\sigma})^2}$$
+
+If a dataset follows a Gaussian distribution, we can estimate $$\mu$$ and $$\sigma^2$$ with $$\mu = \dfrac{1}{m}\displaystyle \sum_{i=1}^m x^{(i)}$$ and $$\sigma^2 = \dfrac{1}{m}\displaystyle \sum_{i=1}^m(x^{(i)} - \mu)^2$$.
+
 ### Algorithm
+
+1. Choose features $$xi$$ that you think might be indicative of anomalous examples.
+2. For $$j=1$$ to $$n$$, calculate $$\mu_j = \dfrac{1}{m}\displaystyle \sum_{i=1}^m x_j^{(i)}$$ and $$\sigma^2_j = \dfrac{1}{m}\displaystyle \sum_{i=1}^m(x_j^{(i)} - \mu_j)^2$$
+3. Given a new example x, compute p(x):$$p(x) = \displaystyle \prod^n_{j=1} p(x_j;\mu_j,\sigma_j^2) = \prod\limits^n_{j=1} \dfrac{1}{\sqrt{2\pi}\sigma_j}exp(-\dfrac{(x_j - \mu_j)^2}{2\sigma^2_j})$$
+4. Anomaly if $$p(x) < \epsilon$$
+
 ### Developing and Evaluating an Anomaly Detection System
 ### Anomaly Detection vs. Supervised Learning
 ### Choosing What Features to Use
 ### Multivariate Gaussian Distribution (Optional)
 ### Anomaly Detection using the Multivariate Gaussian Distribution (Optional)
 ### Categories
+
