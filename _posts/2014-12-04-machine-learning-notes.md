@@ -749,11 +749,26 @@ We should use supervised learning when:
 
 ### Choosing What Features to Use
 
-If some features are not distributed as Gaussian distribution, we can apply some transform, like $$\log(x + c_1)$$ or $$x^{c_2}$$.
+If some features are not distributed as gaussian distribution, we can apply some transform, like $$\log(x + c_1)$$ or $$x^{c_2}$$.
 
 If the algorithm performs poorly, we should find features with large $$p(x)$$ for normal examples and small $$p(x)$$ for anomalous examples, by figuring out new features that will better distinguish the data.
 
 ### Multivariate Gaussian Distribution
+
+If features are correlated, gaussian distributions don't work very well because their contours are always rounds. Instead, we can use multivariate gaussian distributions (an extension of gaussian distributions) because their contours can be ellpsises. Their equation is:
+
+$$p(x;\mu,\Sigma) = \dfrac{1}{(2\pi)^{n/2} |\Sigma|^{1/2}} exp(-1/2(x-\mu)^T\Sigma^{-1}(x-\mu))$$
+
+The covariance matrix $$\Sigma$$ changes the shape, $$\mu$$ changes the center.
+
 ### Anomaly Detection using the Multivariate Gaussian Distribution
 
+We can fit the model $$p(x)$$ by calculating the parameters $$\mu$$ and $$\Sigma$$:
 
+$$\mu = \dfrac{1}{m}\displaystyle \sum_{i=1}^m x^{(i)}$$
+
+$$\Sigma = \dfrac{1}{m}\sum^m_{i=1}(x^{(i)}-\mu)(x^{(i)}-\mu)^T$$
+
+Then, we can flag an anomaly if $$p(x) < \epsilon$$.
+
+Gaussian distribution models are a special case of multivariate gaussian distribution model. In gaussian distribution models, the covariance matrix is a diagonal matrix, so there is no matrix to inverse. Hence, these models are computationally cheaper and we don't need to have $$m \gg n$$ (more training example than features). The problem is they don't automatically capture correlations between features, so we have to build our own features.
