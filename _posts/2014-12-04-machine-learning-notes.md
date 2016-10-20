@@ -772,3 +772,38 @@ $$\Sigma = \dfrac{1}{m}\sum^m_{i=1}(x^{(i)}-\mu)(x^{(i)}-\mu)^T$$
 Then, we can flag an anomaly if $$p(x) < \epsilon$$.
 
 Gaussian distribution models are a special case of multivariate gaussian distribution model. In gaussian distribution models, the covariance matrix is a diagonal matrix, so there is no matrix to inverse. Hence, these models are computationally cheaper and we don't need to have $$m \gg n$$ (more training example than features). The problem is they don't automatically capture correlations between features, so we have to build our own features.
+
+
+## XVI. Recommender Systems (Week 9)
+### Problem Formulation
+
+Recommendation is a very popular application of machine learning. For example we can recommend movies to customer, with the following definitions:
+
+* $$n_u$$= number of users
+* $$n_m$$= number of movies
+* $$r(i,j)=1$$ if user $$j$$ has rated movie $$i$$
+* $$y(i,j)=$$ rating given by user $$j$$ to movie $$i$$ (defined only if $$r(i,j)=1$$)
+
+### Content Based Recommendations
+
+We can introduce some features $$x^{i}$$ describing the movie $$i$$. Then, we can try to find a parameter $$\theta^{(j)}$$ for each user $$j$$. This is in fact a linear regression problem. For the user $$j$$, we are looking for:
+
+$$min_{\theta^{(j)}} = \dfrac{1}{2}\displaystyle \sum_{i:r(i,j)=1} ((\theta^{(j)})^T(x^{(i)}) - y^{(i,j)})^2 + \dfrac{\lambda}{2} \sum_{k=1}^n(\theta_k^{(j)})^2$$
+
+For all the users, it is:
+
+$$min_{\theta^{(1)},\dots,\theta^{(n_u)}} = \dfrac{1}{2}\displaystyle \sum_{j=1}^{n_u} \sum_{i:r(i,j)=1} ((\theta^{(j)})^T(x^{(i)}) - y^{(i,j)})^2 + \dfrac{\lambda}{2} \sum_{j=1}^{n_u} \sum_{k=1}^n(\theta_k^{(j)})^2$$
+
+We can solve these equation with our traditional gradient descent method.
+
+### Collaborative Filtering
+
+If we suppose we know the parameters $$\theta^{(j)}$$, we can do a linear regression to find the features $$x^{i}$$:
+
+$$min_{x^{(1)},\dots,x^{(n_m)}} \dfrac{1}{2} \displaystyle \sum_{i=1}^{n_m} \sum_{j:r(i,j)=1} ((\theta^{(j)})^T x^{(i)} - y^{(i,j)})^2 + \dfrac{\lambda}{2}\sum_{i=1}^{n_m} \sum_{k=1}^{n} (x_k^{(i)})^2$$
+
+In fact, we can randomly guess the values for $$\theta$$ to guess the features $$x$$ repeatedly and we will actually converge to a good set of features.
+
+### Collaborative Filtering Algorithm
+### Vectorization: Low Rank Matrix Factorization
+### Implementation Detail: Mean Normalization
