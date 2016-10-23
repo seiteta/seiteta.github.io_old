@@ -60,7 +60,7 @@ For a linear regression model, repeat until convergence:
 
 $$\theta_0 := \theta_0 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} \left (h_\theta (x^{(i)}) - y^{(i)} \right )$$
 
-$$\theta_1 := \theta_1 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} \left (h_\theta (x^{(i)}) - y^{(i)} \right)\cdot  x^{(i)}$$
+$$\theta_1 := \theta_1 - \alpha \dfrac{1}{m} \sum_{i=1}^{m} \left (h_\theta (x^{(i)}) - y^{(i)} \right)\cdot x^{(i)}$$
 
 and simultaneously update $$\theta_0$$ and $$\theta_1$$.
 
@@ -86,9 +86,9 @@ Size ($$x_1$$)|Number of bedroom ($$x_2$$)|Age of home ($$x_3$$)|Price ($$y$$)
 
 The hypothesis function become:
 
-$$h_\theta (x) = \begin{bmatrix} \theta_0  &\theta_1  & ... & \theta_n \end{bmatrix} + \begin{bmatrix}  x_0  \\ x_1  \\ ...  \\ x_n\end{bmatrix} = \theta^T x$$
+$$h_\theta (x) = \begin{bmatrix} \theta_0 &\theta_1 & ... & \theta_n \end{bmatrix} + \begin{bmatrix} x_0 \\ x_1 \\ ... \\ x_n\end{bmatrix} = \theta^T x$$
 
-$$\theta = \begin{bmatrix} \theta_0  \\ \theta_1  \\ ... \\ \theta_n \end{bmatrix}$$ is a parameter vector.
+$$\theta = \begin{bmatrix} \theta_0 \\ \theta_1 \\ ... \\ \theta_n \end{bmatrix}$$ is a parameter vector.
 
 ### Feature scaling and mean normalization
 Make sure the feature are on a similar scale in order to avoid hemstitching phenomenon due to the narrow valley of the cost function. In practice, it means to get every value of the different features between -1 and 1 approximately.
@@ -125,7 +125,7 @@ Note that if $$ X^TX $$ is non-invertible (it can happen when their are too many
 
 Compared to the descent algorithm, there is no need to choose $$\alpha$$ nor the number of iteration, which is good. But the inversion of the matrix can make the algorithme slow when the number of features $$n$$ become big (for our computer $$n>=10^6$$) because it has a complexity in $$O(n^3)$$.
 
-One last thing:  using the normal equation does not require any feature scaling.
+One last thing: using the normal equation does not require any feature scaling.
 
 ## V. Octave Tutorial (Week 2)
 
@@ -802,8 +802,28 @@ If we suppose we know the parameters $$\theta^{(j)}$$, we can do a linear regres
 
 $$min_{x^{(1)},\dots,x^{(n_m)}} \dfrac{1}{2} \displaystyle \sum_{i=1}^{n_m} \sum_{j:r(i,j)=1} ((\theta^{(j)})^T x^{(i)} - y^{(i,j)})^2 + \dfrac{\lambda}{2}\sum_{i=1}^{n_m} \sum_{k=1}^{n} (x_k^{(i)})^2$$
 
-In fact, we can randomly guess the values for $$\theta$$ to guess the features $$x$$ repeatedly and we will actually converge to a good set of features.
+In fact, we can randomly guess the values for $$\theta$$ to guess the features $$x$$, then $$\theta$$, then $$x$$ and so on, and we will actually converge to a good set of features.
 
 ### Collaborative Filtering Algorithm
+
+Instead, we can simultaneously minimize features and parameters:
+
+$$J(x,\theta) = \dfrac{1}{2} \displaystyle \sum_{(i,j):r(i,j)=1}((\theta^{(j)})^Tx^{(i)} - y^{(i,j)})^2 + \dfrac{\lambda}{2}\sum_{i=1}^{n_m} \sum_{k=1}^{n} (x_k^{(i)})^2 + \dfrac{\lambda}{2}\sum_{j=1}^{n_u} \sum_{k=1}^{n} (\theta_k^{(j)})^2$$
+
+The algorithm is:
+
+1. Initilize $$x^{(i)},...,x^{(n_m)},\theta^{(1)},...,\theta^{(n_u)}$$ to small random values (to break symmetry).
+2. Minimize $$J(x^{(i)},...,x^{(n_m)},\theta^{(1)},...,\theta^{(n_u)})$$ with gradient descent. $$x_k^{(i)} := x_k^{(i)} - \alpha\left (\displaystyle \sum_{j:r(i,j)=1}{((\theta^{(j)})^T x^{(i)} - y^{(i,j)}) \theta_k^{(j)}} + \lambda x_k^{(i)} \right)$$ and $$\theta_k^{(j)} := \theta_k^{(j)} - \alpha\left (\displaystyle \sum_{i:r(i,j)=1}{((\theta^{(j)})^T x^{(i)} - y^{(i,j)}) x_k^{(i)}} + \lambda \theta_k^{(j)} \right)$$
+3. For a user with parameters $$\theta$$ and a movie with learned features $$x$$, predict a star rating of $$\theta^{T}x$$.
+
 ### Vectorization: Low Rank Matrix Factorization
+
+Given matrices $$X$$ (each row containing features of a particular movie) and $$\Theta$$ (each row containing the weights for those features for a given user), the full matrix $$Y$$ of all predicted ratings of all movies by all users is $$Y = X\Theta^T$$.
+
+Predicting how similar two movies $$i$$ and $$j$$ are can be done using the distance between their respective feature vectors $$x$$: $$||x^{(i)} - x^{(j)}||$$. A small distance between two movies means that these two movies are similar.
+
 ### Implementation Detail: Mean Normalization
+
+If we use the algorithm as if, new users will have all their predicted movie ranks equal to 0. To change that, for each movie, we can substract its mean rating to its rating: $$\mu_i = \frac{\sum_{j:r(i,j)=1}{Y_{i,j}}}{\sum_{j}{r(i,j)}}$$.
+
+Prediction are now equal to $$(\theta^{(j)})^T x^{(i)} + \mu_i$$ and new users will have their predicted movie ranks equal to each movie mean rating.
