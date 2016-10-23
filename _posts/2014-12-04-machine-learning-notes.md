@@ -820,7 +820,7 @@ The algorithm is:
 
 Given matrices $$X$$ (each row containing features of a particular movie) and $$\Theta$$ (each row containing the weights for those features for a given user), the full matrix $$Y$$ of all predicted ratings of all movies by all users is $$Y = X\Theta^T$$.
 
-Predicting how similar two movies $$i$$ and $$j$$ are can be done using the distance between their respective feature vectors $$x$$: $$\left\|x^{(i)} - x^{(j)}\rigth\|$$. A small distance between two movies means that these two movies are similar.
+Predicting how similar two movies $$i$$ and $$j$$ are can be done using the distance between their respective feature vectors $$x$$: $$\left\Vert x^{(i)} - x^{(j)} \rigth\Vert$$. A small distance between two movies means that these two movies are similar.
 
 ### Implementation Detail: Mean Normalization
 
