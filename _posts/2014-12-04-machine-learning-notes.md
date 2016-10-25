@@ -775,6 +775,7 @@ Gaussian distribution models are a special case of multivariate gaussian distrib
 
 
 ## XVI. Recommender Systems (Week 9)
+
 ### Problem Formulation
 
 Recommendation is a very popular application of machine learning. For example we can recommend movies to customer, with the following definitions:
@@ -827,3 +828,15 @@ Predicting how similar two movies $$i$$ and $$j$$ are can be done using the dist
 If we use the algorithm as if, new users will have all their predicted movie ranks equal to 0. To change that, for each movie, we can substract its mean rating to its rating: $$\mu_i = \frac{\sum_{j:r(i,j)=1}{Y_{i,j}}}{\sum_{j}{r(i,j)}}$$.
 
 Prediction are now equal to $$(\theta^{(j)})^T x^{(i)} + \mu_i$$ and new users will have their predicted movie ranks equal to each movie mean rating.
+
+## XVII. Large Scale Machine Learning (Week 10)
+
+### Learning with Large Datasets
+
+If our algorithm has high variance when $$m$$ (the number of example) is small, it can benefit from a larger dataset. But doing gradient descent with $$m = 100,000,000$$ would be too slow and we need to use other approaches.
+
+### Stochastic Gradient Descent
+### Mini-Batch Gradient Descent
+### Stochastic Gradient Descent Convergence
+### Online Learning
+### Map Reduce and Data Parallelism
