@@ -836,7 +836,40 @@ Prediction are now equal to $$(\theta^{(j)})^T x^{(i)} + \mu_i$$ and new users w
 If our algorithm has high variance when $$m$$ (the number of example) is small, it can benefit from a larger dataset. But doing gradient descent with $$m = 100,000,000$$ would be too slow and we need to use other approaches.
 
 ### Stochastic Gradient Descent
+
+In stochastic gradient descent, the cost function is calculated for just one training example at the time (instead of every example for the classic batch gradient descent):
+
+* Step 1, the dataset is randomly shuffled
+* Step 2, for $$i = 1\dots m$$, $$\Theta_j := \Theta_j - \alpha (h_{\Theta}(x^{(i)}) - y^{(i)}) \cdot x^{(i)}_j$$
+
+This way, we can make progress in gradient descent without having to scan all $$m$$ training examples first.
+
+The algorithm will be unlikely to converge at the global minimum and will instead wander around it randomly, but usually yields a result that is close enough.
+
+Stochastic gradient descent will usually take 1-10 passes through the data set to get near the global minimum.
+
 ### Mini-Batch Gradient Descent
+
+Instead of using all $$m$$ examples as in batch gradient descent, or only 1 example as in stochastic gradient descent, we can use some in-between number of examples $$b$$ (usually between 2 and 100). For example, with $$b = 10$$ and $$m = 1000$$, the algorithm repeats:
+
+* For i = 1,11,21,31,\dots,991, $$\theta_j := \theta_j - \alpha \dfrac{1}{10} \displaystyle \sum_{k=i}^{i+9} (h_\theta(x^{(k)}) - y^{(k)})x_j^{(k)}$$
+
+Mini-batch gradient descent is usually faster than stochastic gradient descent because it can be vectorized.
+
 ### Stochastic Gradient Descent Convergence
+
+In order to choose the learning rate $$\alpha$$ and study the convergence of the algorithm, we can plot the average cost of the hypothesis applied to every 1000 or so training examples. These costs can be computed during the gradient descent iterations.
+
+To converge toward the global minimum we can slowly decrease $$\alpha$$ over time: $$\alpha = \dfrac{C^1}{iterationNumber + C^2}$$ ($$C^1$$ and $$C^2$$ are constant).
+
 ### Online Learning
+
+If a website has a continuous stream of users, we collect some user actions for the features in $$x$$ to predict some behavior $$y$$ and we can run an endless loop that update $$\theta$$ for each individual $$(x,y)$$ pair as we collect them. This way, the model can adapt to new pools of users.
+
 ### Map Reduce and Data Parallelism
+
+We can divide up batch gradient descent and dispatch the cost function for a subset of the data to many different machines to train our algorithm in parallel. First, the training set is split into $$z$$ subsets (one for each machine). Then MapReduce 'map' the computation to the $$z$$ machines, and 'reduce' them by calculating:
+
+$$\Theta_j := \Theta_j - \alpha \dfrac{1}{z}(temp_j^{(1)} + temp_j^{(2)} + \cdots + temp_j^{(z)})$$
+
+Linear regression, logistic regression are easily parallelizable. For neural networks, we can compute forward propagation and back propagation on subsets of data on many machines.
