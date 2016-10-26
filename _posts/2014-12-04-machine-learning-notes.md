@@ -852,7 +852,7 @@ Stochastic gradient descent will usually take 1-10 passes through the data set t
 
 Instead of using all $$m$$ examples as in batch gradient descent, or only 1 example as in stochastic gradient descent, we can use some in-between number of examples $$b$$ (usually between 2 and 100). For example, with $$b = 10$$ and $$m = 1000$$, the algorithm repeats:
 
-* For i = 1,11,21,31,\dots,991, $$\theta_j := \theta_j - \alpha \dfrac{1}{10} \displaystyle \sum_{k=i}^{i+9} (h_\theta(x^{(k)}) - y^{(k)})x_j^{(k)}$$
+* For $$i = 1,11,21,31,\dots,991$$, $$\theta_j := \theta_j - \alpha \dfrac{1}{10} \displaystyle \sum_{k=i}^{i+9} (h_\theta(x^{(k)}) - y^{(k)})x_j^{(k)}$$
 
 Mini-batch gradient descent is usually faster than stochastic gradient descent because it can be vectorized.
 
@@ -860,7 +860,7 @@ Mini-batch gradient descent is usually faster than stochastic gradient descent b
 
 In order to choose the learning rate $$\alpha$$ and study the convergence of the algorithm, we can plot the average cost of the hypothesis applied to every 1000 or so training examples. These costs can be computed during the gradient descent iterations.
 
-To converge toward the global minimum we can slowly decrease $$\alpha$$ over time: $$\alpha = \dfrac{C^1}{iterationNumber + C^2}$$ ($$C^1$$ and $$C^2$$ are constant).
+To converge toward the global minimum we can slowly decrease $$\alpha$$ over time: $$\alpha = \dfrac{C^1}{\text{iteration} + C^2}$$ ($$C^1$$ and $$C^2$$ are constant).
 
 ### Online Learning
 
