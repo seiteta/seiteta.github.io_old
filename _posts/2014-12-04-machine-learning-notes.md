@@ -5,7 +5,7 @@ title: MOOC Machine Learning – notes
 author: Frédéric Bardolle
 ---
 
-My notes from the [ML Coursera class](https://www.coursera.org/course/ml), taught by Andrew Ng. See also this [wiki](https://share.coursera.org/wiki/index.php/ML:Main).
+My notes from the [Machine Learning class](https://www.coursera.org/course/ml), taught by Andrew Ng from Stanford on Coursera. See also this [wiki](https://share.coursera.org/wiki/index.php/ML:Main).
 
 ## I. Introduction (Week 1)
 
