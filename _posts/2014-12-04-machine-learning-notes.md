@@ -66,7 +66,7 @@ and simultaneously update $$\theta_0$$ and $$\theta_1$$.
 
 ## III. Linear Algebra Review (Week 1)
 
-Some text
+ 
 ![matrices luv](https://media.giphy.com/media/ohdY5OaQmUmVW/giphy.gif)
 
 ## IV. Linear Regression with Multiple Variables (Week 2)
