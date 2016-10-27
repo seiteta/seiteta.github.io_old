@@ -229,6 +229,8 @@ Filtre de Bloom : basé sur sur plusieurs fonctions de hachage.
     * Filtrage des nuplets par sélections
     * Simplification par des projections
     * —> Sélection et projections le plus tôt possible
+ 
+![propriete-algebrique](/downloads/bdd-propriete-algebrique.png "Propriétés algébriques")
 
 ### 3. Opérateurs
 
