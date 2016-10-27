@@ -5,20 +5,20 @@ title: MOOC Relational Databases – notes
 author: Frédéric Bardolle
 ---
 
-My notes from the [Relational Databases Inria class](https://www.fun-mooc.fr/courses/inria/41008/session01/), taught by Serge Abiteboul, Benjamin Nguyen and Philippe Rigaux.
+My notes from the [Relational Databases class](https://www.fun-mooc.fr/courses/inria/41008/session01/), taught by Serge Abiteboul, Benjamin Nguyen and Philippe Rigaux from Inria on FUN.
 
 ## Semaine 1 : Transactions et concurrence
 
 ### 1. Introduction : les transactions
 
-Propriétés des transactions ACID :
-Atomicité
-Cohérence (garantie par le programmeur, à la différence des autres propriétés qui sont garanties par le système)
-Isolation
-Durabilité
-COMMIT : valider une transaction
-ROLLBACK : annuler une transaction
-Une transaction : ensemble séquentiel d’opérations permettant de passer d’un état cohérent de la base à un autre état cohérent.
+* Propriétés des transactions ACID :
+    * Atomicité
+    * Cohérence (garantie par le programmeur, à la différence des autres propriétés qui sont garanties par le système)
+    * Isolation
+    * Durabilité
+* COMMIT : valider une transaction
+* ROLLBACK : annuler une transaction
+* Une transaction : ensemble séquentiel d’opérations permettant de passer d’un état cohérent de la base à un autre état cohérent.
 
 ### 2. Les problèmes
 
