@@ -873,3 +873,33 @@ We can divide up batch gradient descent and dispatch the cost function for a sub
 $$\Theta_j := \Theta_j - \alpha \dfrac{1}{z}(temp_j^{(1)} + temp_j^{(2)} + \cdots + temp_j^{(z)})$$
 
 Linear regression, logistic regression are easily parallelizable. For neural networks, we can compute forward propagation and back propagation on subsets of data on many machines.
+
+## XVII. Photo OCR (Week 11)
+
+### Problem Description and Pipeline
+
+A machine learning pipeline is a system with many components, several of which may use a machine learning.
+
+In this example, the photo OCR pipeline is Photo OCR Pipeline: Image –> Text detection –> Character segmentation –> Character recognition
+
+### Sliding Windows
+
+First, we collect positive and negative examples of a fixed dimension to build a training set for a supervised learning algorithm. The algorithm takes an input image patch and classifies it as either containing a text or not.
+
+Then, we start by taking a rectangular patch of the image and run this image patch through our classifier, as the patch slides through the entire photo. The amount by which we shift the patch each time is a parameter called step-size or stride.
+
+### Getting Lots of Data and Artificial Data
+
+To get a high performance machine learning system we can take a low bias learning algorithm and train it on a massive training set. Artificial data synthesis is an easy way to provide such training set. Date can be created from scratch or can be modified version of a small labeled training set.
+
+When creating artifical data, introduced distortions should represent the type of distortions in the test set. Adding purely random noise usually does not help.
+
+Before getting more data, we should make sure that we have a low bias classifier (by plotting learning curves), for example a neural network with lots of features or hiddent units.
+
+### Ceiling Analysis
+
+Ceiling analysis is used to evaluate each module of the pipeline in terms of potential performance improvement of the entire system. It can help us to decide on which module we should spend our time on. To estimate the performance improvement of each module, we can build manually perfect outputs for each module and see how it affects the overall performance of the system.
+
+## Conclusion
+
+This MOOC was amazing. Thank you very much Andrew Ng!
