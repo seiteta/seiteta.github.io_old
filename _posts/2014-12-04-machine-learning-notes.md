@@ -86,9 +86,9 @@ Size ($$x_1$$)|Number of bedroom ($$x_2$$)|Age of home ($$x_3$$)|Price ($$y$$)
 
 The hypothesis function become:
 
-$$h_\theta (x) = \begin{bmatrix} \theta_0 &\theta_1 & ... & \theta_n \end{bmatrix} + \begin{bmatrix} x_0 \\ x_1 \\ ... \\ x_n\end{bmatrix} = \theta^T x$$
+$$h_\theta (x) = \begin{bmatrix} \theta_0 &\theta_1 & ... & \theta_n \end{bmatrix} + \begin{bmatrix} x_0 \\ x_1 \\ \vdots \\ x_n\end{bmatrix} = \theta^T x$$
 
-$$\theta = \begin{bmatrix} \theta_0 \\ \theta_1 \\ ... \\ \theta_n \end{bmatrix}$$ is a parameter vector.
+$$\theta = \begin{bmatrix} \theta_0 \\ \theta_1 \\ \vdots \\ \theta_n \end{bmatrix}$$ is a parameter vector.
 
 ### Feature scaling and mean normalization
 Make sure the feature are on a similar scale in order to avoid hemstitching phenomenon due to the narrow valley of the cost function. In practice, it means to get every value of the different features between -1 and 1 approximately.
