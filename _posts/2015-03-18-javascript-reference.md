@@ -71,4 +71,4 @@ x === 5 || y === 5; //or
 {% endhighlight %}
 
 Test
-<iframe width="560" height="315" src="http://www.youtube.com/embed/EKoxLxzWNOk" frameborder="0" allowfullscreen></iframe>
+<iframe width="800" height="600" src="http://seiteta.github.io/d3test.html" frameborder="0" allowfullscreen></iframe>
