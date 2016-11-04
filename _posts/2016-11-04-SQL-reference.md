@@ -8,8 +8,6 @@ author: Frédéric Bardolle
 
 # Manipulation
 
-## Create
-
 Create a table:
 {% highlight SQL%}
 CREATE TABLE ponies (id INTEGER, name TEXT, kind TEXT);
@@ -19,8 +17,6 @@ Add a row:
 {% highlight SQL%}
 INSERT INTO ponies (id, name, kind) VALUES (1, 'Pinkie Pie', 'Earth');
 {% endhighlight %}
-
-## Select
 
 Select a column:
 {% highlight SQL%}
@@ -32,22 +28,19 @@ Select every column:
 SELECT * FROM ponies;
 {% endhighlight %}
 
-## Update
-
+Update:
 {% highlight SQL%}
 UPDATE ponies 
 SET name = "Applejack" 
 WHERE id = 1; 
 {% endhighlight %}
 
-## Alter
-
+Alter:
 {% highlight SQL%}
 ALTER TABLE ponies ADD COLUMN color TEXT; 
 {% endhighlight %}
 
-## Delete
-
+Delete:
 {% highlight SQL%}
 DELETE FROM ponies WHERE color IS NULL;
 {% endhighlight %}
@@ -55,22 +48,22 @@ DELETE FROM ponies WHERE color IS NULL;
 
 # Queries
 
-Query two columns
+Query two columns:
 {% highlight SQL%}
 SELECT name, imdb_rating FROM movies;
 {% endhighlight %}
 
-Return unique values
+Return unique values:
 {% highlight SQL%}
 SELECT DISTINCT genre FROM movies;
 {% endhighlight %}
 
-Filter with condition
+Filter with condition:
 {% highlight SQL%}
 SELECT * FROM movies WHERE imdb_rating > 8;
 {% endhighlight %}
 
-Search for a specific pattern
+Search for a specific pattern:
 {% highlight SQL%}
 SELECT * FROM movies
 WHERE name LIKE 'Se_en';
@@ -121,51 +114,52 @@ LIMIT 3;
 
 # Aggregate Functions
 
-Count
+Count:
 {% highlight SQL%}
 SELECT COUNT(*) FROM fake_apps;
 {% endhighlight %}
 
-Group by
+Group by:
 {% highlight SQL%}
 SELECT price, COUNT(*) FROM fake_apps
 GROUP BY price;
 {% endhighlight %}
 
-Sum
+Sum:
 {% highlight SQL%}
 SELECT SUM(downloads) FROM fake_apps;
 {% endhighlight %}
 
-Max
+Max:
 {% highlight SQL%}
 SELECT MAX(downloads) FROM fake_apps;
 {% endhighlight %}
 
-Min
+Min:
 {% highlight SQL%}
 SELECT MIN(downloads) FROM fake_apps;
 {% endhighlight %}
 
-Average
+Average:
 {% highlight SQL%}
 SELECT AVG(downloads) FROM fake_apps;
 {% endhighlight %}
 
-Round
+Round:
 {% highlight SQL%}
 SELECT price, ROUND(AVG(downloads), 2) FROM fake_apps
 GROUP BY price;d
 {% endhighlight %}
 
+
 # Multiple Tables
 
-Primary key
+Primary key:
 {% highlight SQL%}
 CREATE TABLE artists(id INTEGER PRIMARY KEY, name TEXT)
 {% endhighlight %}
 
-Data from two tables (cross join) (NB: this query sucks)
+Data from two tables (cross join) (NB: this query sucks):
 {% highlight SQL%}
 SELECT albums.name, albums.year, artists.name FROM albums, artists;
 {% endhighlight %}
