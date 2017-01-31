@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /bdd-notes.html
-title: MOOC Relational Databases – notes
+title: 🏫 MOOC Relational Databases – notes
 author: Frédéric Bardolle
 ---
 
