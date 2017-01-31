@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /ml-notes.html
-title: MOOC Machine Learning – notes
+title: 🏫 MOOC Machine Learning – notes
 author: Frédéric Bardolle
 ---
 
